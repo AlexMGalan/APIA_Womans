@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/lambert_bw" />
+
+    <ImageView
+        android:id="@+id/imageViewPia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pia" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewPia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+       android:layout_toRightOf="@+id/imageViewPia"
+        android:layout_below="@id/imageView1"
+        android:text="APIA Head Office: Pia Scarselleta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TVAddressPia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewPia"
+        android:layout_below="@id/TextViewPia"
+        android:text="Address: Lambert Park, Marion Street, Leichhardt"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TVPhonePia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewPia"
+        android:layout_below="@id/TVAddressPia"
+        android:text="Phone: 9572 6888"
+        android:textAlignment="center"
+        android:textSize="14sp"
+         />
+
+    <ImageView
+        android:id="@+id/imageViewTony"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/TVPhonePia"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tony" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewTony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewTony"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/TVPhonePia"
+        android:text="EDP - Elite Development Program: Tony Raciti"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TVPhoneTony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewTony"
+        android:layout_below="@id/TextViewTony"
+        android:text="Phone: 0402 306 666"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewVince"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageViewTony"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/vince" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewVince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewVince"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/TVPhoneTony"
+        android:text="Skills Acquisition Program (SAP): Vince Ciolino"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TVPhoneVince"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewVince"
+        android:layout_below="@id/TextViewVince"
+        android:text="Phone: 0414 991 603"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMatteo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageViewVince"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/matteo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewMatteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewMatteo"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/TVPhoneVince"
+        android:text="Womens Football Manager: Matteo Maiorana"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TVPhoneMatteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewMatteo"
+        android:layout_below="@id/TextViewMatteo"
+        android:text="Phone: 0410 562 695"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>
+

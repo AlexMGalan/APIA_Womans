@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/imageViewLB"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/firstgradegf"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+       />
+
+    <TextView
+        android:id="@+id/textViewNextGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APIA's Next Game"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"     />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.acacias.altfc.MatchFragment">
+
+        <ImageView
+            android:id="@+id/imageViewAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/textViewVS"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/apia_logo" />
+
+    <TextView
+        android:id="@+id/textViewVS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vs"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical"
+        android:layout_marginTop="40dp"
+        />
+
+        <ImageView
+            android:id="@+id/imageViewnsw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/footballnsw"
+            android:layout_toRightOf="@+id/textViewVS"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewLB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lambert park"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewTBA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TBA"
+        android:gravity="center"
+        android:textSize="18dp"
+         />
+
+    <TextView
+        android:id="@+id/textViewfirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="First Grade: 7:00pm"
+        android:gravity="center"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserve Grade: 5:00pm"
+        android:gravity="center"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:id="@+id/textViewr17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="u17: 3:00pm"
+        android:gravity="center"
+        android:textSize="14dp"/>
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="u15: 1:00pm"
+        android:gravity="center"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="u14: 11:00am"
+        android:gravity="center"
+        android:textSize="14dp"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">APIA Leichhardt Tigers Womens</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="About">The APIA Leichhardt Tigers FC is based in the heartland of Australian Football</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Histnames">
+        <item>Year 2015</item>
+        <item>Year 2016</item>
+        <item>Year 2017</item>
+    </string-array>
+
+    <string-array name="Squadnames">
+        <item>1st Grade</item>
+        <item>Reserve Grade</item>
+        <item>Under 17</item>
+        <item>Under 15</item>
+        <item>Under 14</item>
+    </string-array>
+
+</resources>

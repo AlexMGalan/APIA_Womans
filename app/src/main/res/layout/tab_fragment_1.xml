@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="A.P.I.A. Leichhardt Tigers is one of Australia’s pioneer football clubs having been formed in 1954 in the suburb of Leichhardt. The club’s home ground, Lambert Park, has been the Tigers home since its inception in 1954.
+
+The club’s First Grade, Under 20s and Under 18s teams currently compete in the National NSW Premier League Men’s 1 Competition which is the highest league in the State and the league immediately beneath the A-League.
+
+A.P.I.A. Leichhardt Tigers’ representative Premier Youth League Teams ….
+The Under 12, 13, 14, 15 and 16 teams compete in the NSW National Premier Youth League Competition conducted by Football NSW.
+
+A.P.I.A. has also been fielding Women and Girls competition teams successfully since 2008 and in 2013 were included in the Women State League with under 13, 15, 17s, Reserve and First Grade sides.
+
+Our  SAP (Skills Acquisition Program) Teams participate in the Football NSW program and currently fields 6 teams; two teams in each of the following age groups; Under 9, Under 10s and Under 11s.
+
+ The club also has Nursery and Children’s, Youth, All Age Men and Women’s, Over 35s and O45 teams that compete in the Canterbury District Soccer Football Association Competitions.
+
+Our 365 Soccer Sixes provides for competitions in all age groups commencing from under 6s though to All age , over 35s, over 45s for Men and Woman..
+"
+        android:layout_weight="18.35"
+        />
+
+</RelativeLayout>
