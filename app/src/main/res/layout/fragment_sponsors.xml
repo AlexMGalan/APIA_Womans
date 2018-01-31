@@ -8,53 +8,35 @@
         android:id="@+id/imageViewcubic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:src="@mipmap/cubic" />
+
+    <ImageView
+        android:id="@+id/imageViewGFDA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="openBrowserGFDA"
+        android:src="@drawable/gfda"
+        android:tag="https://www.girlsfootballacademyaustralia.com/" />
 
     <ImageView
         android:id="@+id/imageViewWests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
         android:src="@drawable/wests_ashfield"
         android:tag="http://westsashfield.com.au/"
         android:onClick="openBrowserWests" />
-
-    <ImageView
-        android:id="@+id/imageViewDolc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/dolcissimo"
-        android:tag="http://www.dolcissimo.com.au/home.asp"
-        android:onClick="openBrowserDolc"/>
-
-    <ImageView
-        android:id="@+id/imageViewGFDA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/gfda"
-        android:tag="https://www.girlsfootballacademyaustralia.com/"
-        android:onClick="openBrowserGFDA"/>
-
-
-
-
-
-
 
 
 </LinearLayout>

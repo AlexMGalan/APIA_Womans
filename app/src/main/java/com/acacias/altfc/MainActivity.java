@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity
 
         // Reading all contacts
         //Log.d("Reading: ", "Reading all contacts..");
-        List<Player> players = db.getAllContacts();
+        List<Player> players = db.getAllPlayers();
 
         for (Player cn : players) {
            //   Toast.makeText(MainActivity.this, "Name: " + cn.getName(),

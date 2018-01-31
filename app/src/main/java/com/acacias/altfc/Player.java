@@ -8,42 +8,67 @@ import java.util.ArrayList;
 
 public class Player {
     int _id;
-    String _name;
-    String _phone_number;
+    int _team;
+    int _number;
+    String _firstname;
+    String _lastname;
+
+
     public Player(){   }
-    public Player(int id, String name, String _phone_number){
-        this._id = id;
-        this._name = name;
-        this._phone_number = _phone_number;
+    public Player( int team, int number, String firstname, String lastname){
+       // this._id = id;
+       // this._id = id;
+        this._team = team;
+        this._number = number;
+        this._firstname= firstname;
+        this._lastname=lastname;
+
     }
 
-    public Player(String name, String _phone_number){
-        this._name = name;
-        this._phone_number = _phone_number;
-    }
-    public int getID(){
+   // public Player(String name, String _phone_number){
+    //    this._name = name;
+    //    this._phone_number = _phone_number;
+   // }
+   public int getID(){
         return this._id;
     }
 
-    public void setID(int id){
-        this._id = id;
+  //  public void setID(int id){
+    //    this._id = id;
+  //  }
+
+    //public int get_id(){
+    //    return this._id();
+    //}
+
+    public int getTeam(){
+        return this._team;
+    }
+    public int getNumber(){
+        return this._number;
+    }
+    public  String  get_firstname(){
+        return this._firstname;
+    }
+    public  String  get_lastname(){
+        return this._lastname;
     }
 
-    public String getName(){
-        return this._name;
+    public void setID(int id){   this._id = id;};
+    public void setTeam(int team){   this._team = team;};
+    public void setNumber(int number){   this._number = number;};
+
+    public void setFirstName(String name){
+        this._firstname = name;
     }
 
-    public void setName(String name){
-        this._name = name;
+    public void setLastName(String name){
+        this._lastname = name;
     }
 
-    public String getPhoneNumber(){
-        return this._phone_number;
-    }
-
-    public void setPhoneNumber(String phone_number){
-        this._phone_number = phone_number;
-    }
+  //  public void setPhoneNumber(String phone_number){
+   //     this._phone_number = phone_number;
+   // }
 
 //    public static ArrayList<Player> getRecipesFromFile(String s, SquadsFragment squadsFragment) {
   //      return [Player]"Alannah Galan";
