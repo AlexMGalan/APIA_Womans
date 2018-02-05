@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -15,10 +16,10 @@
        />
 
     <TextView
-        android:id="@+id/textViewNextGame"
+        android:id="@+id/textViewDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="APIA's Next Game"
+        android:text="Date"
         android:textSize="18dp"
         android:layout_marginTop="10dp"
         android:gravity="center"     />
@@ -31,54 +32,93 @@
         tools:context="com.acacias.altfc.MatchFragment">
 
         <ImageView
-            android:id="@+id/imageViewAL"
+            android:id="@+id/imageViewHOME"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/textViewVS"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/textViewVS"
             android:src="@mipmap/apia_logo" />
 
-    <TextView
-        android:id="@+id/textViewVS"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vs"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center|center_vertical"
-        android:layout_marginTop="40dp"
-        />
+        <TextView
+            android:id="@+id/textViewHome"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewHOME"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/textViewVS"
+            android:text="APIA"
+            android:textSize="20dp"
+            android:gravity="center"/>
 
-        <ImageView
-            android:id="@+id/imageViewnsw"
+        <TextView
+            android:id="@+id/textViewVS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/footballnsw"
-            android:layout_toRightOf="@+id/textViewVS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center|center_vertical"
+            android:text="Vs"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageViewVISIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"/>
+            android:layout_toRightOf="@+id/textViewVS"
+            android:src="@mipmap/footballnsw" />
+
+        <TextView
+            android:id="@+id/textViewVisit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewVISIT"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/textViewVS"
+            android:text="SB"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewHome"
+            tools:context="com.acacias.altfc.MatchFragment">
+
+            <TextView
+                android:id="@+id/textViewGround"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Lambert park"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textViewMAP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewGround"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="( Map )"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textViewLB"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lambert park"
-        android:gravity="center"
-        android:textSize="14dp"
-        android:layout_marginTop="20dp" />
-
-    <TextView
-        android:id="@+id/textViewTBA"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TBA"
-        android:gravity="center"
-        android:textSize="18dp"
-         />
 
     <TextView
         android:id="@+id/textViewfirst"

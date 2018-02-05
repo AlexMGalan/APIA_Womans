@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
@@ -36,31 +37,30 @@ public class NextGameFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_next_game, container, false);
 
-            getActivity().setTitle("Next Game");
+        getActivity().setTitle("Next Game");
+
+
 
         //Set up database
-        DatabaseHandler db = new DatabaseHandler(getActivity());
+       DatabaseHandler db = new DatabaseHandler(getActivity());
 
         // Inserting Contacts
-        // Log.d("Insert: ", "Inserting ..");
-         db.addPlayer(new Player(1,7,"Carla", "Canini"));
-       //   db.addContact(new Player("Srinivas", "9199999999"));
-       //   db.addContact(new Player("Tommy", "9522222222"));
-       //   db.addContact(new Player("Karthik", "9533333333"));
+        db.addPlayer(new Player(1,76,"Alannah", "Galan"));
+        db.addMatch(new Match("11/03/2018","Southern Branch","APIA", "SOUTH NOWRA FOOTBALL COMPLEX", "3:00PM", "3:00PM", "3:00PM","3:00PM","3:00PM" ));
+
 
         // Reading all contacts
         //Log.d("Reading: ", "Reading all contacts..");
-        List<Player> players = db.getAllPlayers();
+        List<Match> Matches = db.getAllMatches();
 
-        for (Player cn : players) {
-              Toast.makeText(getActivity(), "Name: " + cn.getNumber() + "- " + cn.get_firstname() + " " + cn.get_lastname(),
-                      Toast.LENGTH_LONG).show();
+     //   for (Match cn : Matches) {
+       //       Toast.makeText(getActivity(), "Next Match: " + cn.getDate() + ": " + cn.getHomeTeam() + " vs " + cn.getVisitTeam(),
+       //               Toast.LENGTH_LONG).show();
+      //  }
 
-            //   String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " +
-            //          cn.getPhoneNumber();
-            // Writing Contacts to log
-            //  Log.d("Name: ", log);
-        }
+        TextView TVDate = (TextView)v.findViewById(R.id.textViewDate);
+        TVDate.setText("My Awesome Text");
+
 
 
 

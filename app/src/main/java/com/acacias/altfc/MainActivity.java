@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
     //Set up database
-    DatabaseHandler db = new DatabaseHandler(this);
+   // DatabaseHandler db = new DatabaseHandler(this);
 
         // Inserting Contacts
        // Log.d("Insert: ", "Inserting ..");
@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity
 
         // Reading all contacts
         //Log.d("Reading: ", "Reading all contacts..");
-        List<Player> players = db.getAllPlayers();
+      //  List<Player> players = db.getAllPlayers();
 
-        for (Player cn : players) {
+        //for (Player cn : players) {
            //   Toast.makeText(MainActivity.this, "Name: " + cn.getName(),
            //          Toast.LENGTH_LONG).show();
 
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
           //          cn.getPhoneNumber();
             // Writing Contacts to log
           //  Log.d("Name: ", log);
-        }
+       // }
 
         //Set up Next Game Fragment
         NextGameFragment nextgamefragment = new NextGameFragment();
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_game) {
             // Handle the camera action
          //  Toast.makeText(MainActivity.this, "Next Game",
-          //         Toast.LENGTH_LONG).show();
+           //       Toast.LENGTH_LONG).show();
            NextGameFragment nextgamefragment = new NextGameFragment();
           android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
          manager.beginTransaction()
