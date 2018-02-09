@@ -7,15 +7,29 @@
 
     <ImageView
         android:id="@+id/imageViewLB"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_margin="10dp"
-        android:src="@drawable/firstgradegf"
-        android:scaleType="fitXY"
+        android:layout_width="273dp"
+        android:layout_height="145dp"
         android:layout_gravity="center_horizontal"
-       />
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/firstgradegf" />
 
     <TextView
+        android:id="@+id/textViewRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Round"
+        android:textSize="18dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.acacias.altfc.MatchFragment">
+
+        <TextView
         android:id="@+id/textViewDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,9 +40,10 @@
 
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewDate"
         tools:context="com.acacias.altfc.MatchFragment">
 
         <ImageView
@@ -39,7 +54,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:layout_toLeftOf="@+id/textViewVS"
-            android:src="@mipmap/apia_logo" />
+            android:src="@mipmap/southern_branch" />
 
         <TextView
             android:id="@+id/textViewHome"
@@ -71,7 +86,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_toRightOf="@+id/textViewVS"
-            android:src="@mipmap/footballnsw" />
+            android:src="@mipmap/apia_logo" />
 
         <TextView
             android:id="@+id/textViewVisit"
@@ -86,39 +101,41 @@
             android:textSize="20dp"
             android:gravity="center"/>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewHome"
-            tools:context="com.acacias.altfc.MatchFragment">
+    </RelativeLayout>
 
-            <TextView
-                android:id="@+id/textViewGround"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="Lambert park"
-                android:textSize="14dp" />
-
-            <TextView
-                android:id="@+id/textViewMAP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/textViewGround"
-                android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:textColor="@color/colorAccent"
-                android:text="( Map )"
-                android:textSize="14dp" />
-
-        </RelativeLayout>
 
     </RelativeLayout>
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        tools:context="com.acacias.altfc.MatchFragment">
+
+        <TextView
+            android:id="@+id/textViewGround"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Lambert park"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textViewMAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/textViewGround"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="( Map )"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textViewfirst"
@@ -138,14 +155,14 @@
         android:gravity="center"
         android:textSize="14dp"
         />
+
     <TextView
         android:id="@+id/textViewr17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="u17: 3:00pm"
         android:gravity="center"
-        android:textSize="14dp"/>
-
+        android:text="u17: 3:00pm"
+        android:textSize="14dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -159,8 +176,10 @@
         android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="u14: 11:00am"
         android:gravity="center"
-        android:textSize="14dp"/>
+        android:text="u14: 11:00am"
+        android:textSize="14dp" />
+
+
 
 </LinearLayout>
