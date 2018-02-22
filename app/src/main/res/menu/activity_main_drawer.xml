@@ -4,36 +4,33 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_game"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_event_available_black_24dp"
             android:title="Next Game!" />
         <item
             android:id="@+id/nav_squads"
-            android:icon="@drawable/ic_people_black_24dp"
-            android:title="Squads" />
-        <item
-            android:id="@+id/nav_fixtures"
-            android:icon="@drawable/ic_view_list_black_24dp"
-            android:title="Fixtures/Results" />
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_library_books_black_24dp"
-            android:title="About Us" />
-        <item
-            android:id="@+id/nav_sponsors"
-            android:icon="@drawable/ic_live_help_black_24dp"
-            android:title="Sponsors" />
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="2018 Squads" />
         <item
             android:id="@+id/nav_coaches"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="Coaching Staff" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="APIA Contacts" />
+        <item
+            android:id="@+id/nav_partners"
             android:icon="@drawable/ic_live_help_black_24dp"
-            android:title="Coaches" />
+            android:title="Partners" />
+
     </group>
 
-    <item android:title="Administration">
+    <item android:title="Notifications">
         <menu>
             <item
-                android:id="@+id/nav_matchday"
+                android:id="@+id/nav_notifications"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Match Day Notify" />
+                android:title="Send Notifications" />
 
         </menu>
     </item>

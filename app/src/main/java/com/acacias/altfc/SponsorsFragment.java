@@ -30,7 +30,7 @@ public class SponsorsFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_sponsors, container, false);
 
-        getActivity().setTitle("APIA's Sponsors");
+        getActivity().setTitle("Partners");
 
         return v;
 

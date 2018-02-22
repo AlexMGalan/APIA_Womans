@@ -2,6 +2,7 @@ package com.acacias.altfc;
 
 
 import java.util.ArrayList;
+import java.util.Date;
 
 
 /**
@@ -9,6 +10,7 @@ import java.util.ArrayList;
  */
 
 public class Match {
+    int _round;
     String _date;
     String _teamhome;
     String _teamvisit;
@@ -18,12 +20,17 @@ public class Match {
     String _time17;
     String _time15;
     String _time14;
+    String _logo;
+    double _lat;
+    double _long;
 
 
     public Match(){   }
-    public Match( String date, String teamhome, String teamvisit, String ground,String time1, String time2, String time17, String time15, String time14){
+    public Match(int round, String date, String teamhome, String teamvisit, String ground,String time1, String time2, String time17, String time15, String time14, String logo,
+                 double mlat, double mlong){
         // this._id = id;
         // this._id = id;
+        this._round = round;
         this._date = date;
         this._teamhome = teamhome;
         this._teamvisit= teamvisit;
@@ -34,6 +41,9 @@ public class Match {
         this._time17=time17;
         this._time15=time15;
         this._time14=time14;
+        this._logo=logo;
+        this._lat=mlat;
+        this._long=mlong;
 
     }
 
@@ -41,6 +51,9 @@ public class Match {
     //    this._name = name;
     //    this._phone_number = _phone_number;
     // }
+    public int getRound(){
+        return this._round;
+    }
     public String getDate(){
         return this._date;
     }
@@ -66,7 +79,12 @@ public class Match {
         return this._time15;
     }
     public  String  getTime14(){return this._time14;}
+    public  String  getlogo(){return this._logo;}
+    public  double  getlat(){return this._lat;}
+    public  double  getlong(){return this._long;}
 
+
+    public void setRound(int round){   this._round= round;};
     public void setDate(String date){   this._date = date;};
     public void setHomeTeam(String hometeam){   this._teamhome = hometeam;};
     public void setVisitTeam(String visitteam){   this._teamvisit = visitteam;};
@@ -76,23 +94,21 @@ public class Match {
     public void setTime1(String time1st){
         this._time1 = time1st;
     }
-   public void setTime2(String timeres){
+    public void setTime2(String timeres){
         this._time2 = timeres;
     }
-
-   public void setTime17(String time17){
-        this._time17 = time17;
-    }
-
+    public void setTime17(String time17){ this._time17 = time17;}
     public void setTime15(String time15){
         this._time15 = time15;
    }
-
     public void setTime14(String time14){
         this._time14 = time14;
     }
-
-
-
+    public void setLat(double mlat){
+        this._lat = mlat;
+    }
+    public void setLong(double mlong){
+        this._long = mlong;
+    }
 
 }

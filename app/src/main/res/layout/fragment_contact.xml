@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/lambert_bw" />
+
+    <ImageView
+        android:id="@+id/imageViewPia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageView1"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pia" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewPia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageViewPia"
+        android:layout_below="@id/imageView1"
+        android:text="APIA Head Office: Pia Scarselleta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewPia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewPia"
+        android:layout_below="@id/TextViewPia1"
+        android:text="Address: Lambert Park, Marion Street, Leichhardt"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewPia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewPia"
+        android:layout_below="@id/TextViewPia2"
+        android:text="Phone: 9572 6888"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewAlex"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageViewPia"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/alexcic" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewAlex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageViewAlex"
+        android:layout_below="@id/TextViewPia3"
+        android:text="APIA Womans Administration: Alex Ciccio"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewAlex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewAlex"
+        android:layout_below="@id/TextViewAlex1"
+        android:text="Phone: 0404 095 605"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewMatteo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/imageViewAlex"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/matteo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewMatteo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewMatteo"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/TextViewAlex2"
+        android:text="Womens Football Manager: Matteo Maiorana"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewMatteo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageViewMatteo"
+        android:layout_below="@id/TextViewMatteo1"
+        android:text="Phone: 0410 562 695"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageViewig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/TextViewMatteo2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/instagram2"
+        android:tag="https://www.instagram.com/apiawomens"
+        android:onClick="openBrowserInstagram"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageViewfb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/TextViewMatteo2"
+        android:layout_toLeftOf="@id/imageViewig"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/facebook"
+        android:tag="https://www.facebook.com/apiatigerswomens/"
+        android:onClick="openBrowserFacebook" />
+
+
+    <TextView
+        android:text="https://www.apiatigers.com"
+        android:id="@+id/TextViewWeb"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/imageViewfb"
+        android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+</RelativeLayout>
+

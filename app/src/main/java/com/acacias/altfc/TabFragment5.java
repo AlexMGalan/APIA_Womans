@@ -8,34 +8,34 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class TabFragment1 extends Fragment {
+public class TabFragment5 extends Fragment {
 
     ListView listView ;
 
 
     //RECORDING HOW MANY TIMES THE BUTTON HAS BEEN CLICKED
-   // int clickCounter=0;
-  //  public SquadsFragment() {
-        // Required empty public constructor
-   // }
+    // int clickCounter=0;
+    //  public SquadsFragment() {
+    // Required empty public constructor
+    // }
 
 
     @Override
-   // public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-   //     return inflater.inflate(R.layout.tab_fragment_1, container, false);
+    // public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    //     return inflater.inflate(R.layout.tab_fragment_1, container, false);
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.tab_fragment_1, container, false);
+        View v = inflater.inflate(R.layout.tab_fragment_5, container, false);
         listView = (ListView) v.findViewById(R.id.recipe_list_view);
 
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Squadnames));
 
         String[]
                 values1st = new String[] {
-                "Coach: Matteo Maiorana",
-                "Mangager: Robbie Maiorana",
+                "Coach: TBA",
+                "Mangager: TBA",
                 "16 J. Bennett",
                 "8 C. Canini",
                 "22 N. Carmichael",
@@ -53,14 +53,13 @@ public class TabFragment1 extends Fragment {
                 "38 S. Urquhart",
                 "14 R. Watts"};
 
-                //1st Grade
-                listView.setAdapter(null);
-                ArrayAdapter<String> adapter0 = new ArrayAdapter<String>(getActivity(),
-                        android.R.layout.simple_list_item_1, android.R.id.text1, values1st);
+        //1st Grade
+        listView.setAdapter(null);
+        ArrayAdapter<String> adapter0 = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1, android.R.id.text1, values1st);
 
-                // Assign adapter to ListView
-                listView.setAdapter(adapter0);
-               // getActivity().setTitle("Squads");
+        // Assign adapter to ListView
+        listView.setAdapter(adapter0);
 
         return v;
 

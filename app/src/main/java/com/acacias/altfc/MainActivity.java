@@ -1,15 +1,8 @@
 package com.acacias.altfc;
 
-import android.app.FragmentManager;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -18,44 +11,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.Toast;
-
-
-import java.util.List;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-    //Set up database
-   // DatabaseHandler db = new DatabaseHandler(this);
-
-        // Inserting Contacts
-       // Log.d("Insert: ", "Inserting ..");
-      //  db.addContact(new Player("Ravi", "9100000000"));
-      //  db.addContact(new Player("Srinivas", "9199999999"));
-      //  db.addContact(new Player("Tommy", "9522222222"));
-      //  db.addContact(new Player("Karthik", "9533333333"));
-
-        // Reading all contacts
-        //Log.d("Reading: ", "Reading all contacts..");
-      //  List<Player> players = db.getAllPlayers();
-
-        //for (Player cn : players) {
-           //   Toast.makeText(MainActivity.this, "Name: " + cn.getName(),
-           //          Toast.LENGTH_LONG).show();
-
-         //   String log = "Id: "+cn.getID()+" ,Name: " + cn.getName() + " ,Phone: " +
-          //          cn.getPhoneNumber();
-            // Writing Contacts to log
-          //  Log.d("Name: ", log);
-       // }
 
         //Set up Next Game Fragment
         NextGameFragment nextgamefragment = new NextGameFragment();
@@ -127,6 +92,7 @@ public class MainActivity extends AppCompatActivity
          manager.beginTransaction()
                   .replace(R.id.mainLayout, nextgamefragment)
                 .commit();
+            this.setTitle("Next Game");
 
         } else if (id == R.id.nav_squads) {
             SquadsFragment squadsfragment = new SquadsFragment();
@@ -135,52 +101,40 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.mainLayout, squadsfragment)
                     .commit();
 
-          //  startActivity(new Intent(getApplicationContext(), ListViewAndroidExample.class));
-          //  return true;
+          //  this.setTitle("Squads");
 
-
-        } else if (id == R.id.nav_fixtures) {
-            FixturesFragment fixturesfragment = new FixturesFragment();
+        } else if (id == R.id.nav_coaches) {
+            CoachesFragment coachesfragment = new CoachesFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
-                    .replace(R.id.mainLayout, fixturesfragment)
+                    .replace(R.id.mainLayout, coachesfragment)
                     .commit();
 
-        } else if (id == R.id.nav_about) {
-            HistoryFragment historyfragment = new HistoryFragment();
-            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction()
-                    .replace(R.id.mainLayout, historyfragment)
-                    .commit();
+            this.setTitle("Coaches");
 
-        } else if (id == R.id.nav_about) {
-            HomeFragment homefragment = new HomeFragment();
+        } else if (id == R.id.nav_contacts) {
+            ContactsFragment contactsfragment = new ContactsFragment();
            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
            manager.beginTransaction()
-                 .replace(R.id.mainLayout, homefragment)
+                 .replace(R.id.mainLayout, contactsfragment)
                    .commit();
+            this.setTitle("Contacts");
 
-
-        } else if (id == R.id.nav_sponsors) {
+        } else if (id == R.id.nav_partners) {
             SponsorsFragment sponsorsfragment = new SponsorsFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
                     .replace(R.id.mainLayout, sponsorsfragment)
                     .commit();
+            this.setTitle("Partners");
 
-        } else if (id == R.id.nav_coaches) {
-            HomeFragment homefragment = new HomeFragment();
+        }   else if (id == R.id.nav_notifications) {
+            NotifyFragment notifyfragment = new NotifyFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
-                    .replace(R.id.mainLayout, homefragment)
+                    .replace(R.id.mainLayout, notifyfragment)
                     .commit();
-
-        }   else if (id == R.id.nav_matchday) {
-            MatchFragment matchfragment = new MatchFragment();
-            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction()
-                    .replace(R.id.mainLayout, matchfragment)
-                    .commit();
+            this.setTitle("Notifications");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -295,5 +249,34 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    public void onBackStackChanged() {
+        try {
+            for (android.support.v4.app.Fragment fragment : getSupportFragmentManager().getFragments()) {
+                if (fragment != null && fragment.isVisible()) {
+                    if (fragment.getTag().equals(ContactsFragment.class.getSimpleName())) {
+                      //  setTitle("Contacts");
+                    } else if (fragment.getTag().equals(CoachesFragment.class.getSimpleName())) {
+                    //    setTitle("Coaches");
+                    } else if (fragment.getTag().equals(TabFragment1.class.getSimpleName())) {
+                   //     setTitle("Squads");
+                    } else if (fragment.getTag().equals(TabFragment2.class.getSimpleName())) {
+                     //   setTitle("Squads");
+                    } else if (fragment.getTag().equals(TabFragment3.class.getSimpleName())) {
+                    //    setTitle("Squads");
+                    } else if (fragment.getTag().equals(TabFragment4.class.getSimpleName())) {
+                      //  setTitle("Squads");
+                    } else if (fragment.getTag().equals(TabFragment5.class.getSimpleName())) {
+                     //   setTitle("Squads");
+                    } else if (fragment.getTag().equals(NextGameFragment.class.getSimpleName())) {
+                            setTitle("NextGame");
+                    } else if (fragment.getTag().equals(SponsorsFragment.class.getSimpleName())) {
+                        setTitle("Partners");
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     }

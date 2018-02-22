@@ -1,20 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
+    <TableRow
+        android:id="@+id/tr"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="APIA Leichhardt Tigers Football Club, also known simply as APIA, based in the suburb of Leichhardt in Sydney, Australia and we play our home games at the state of the art Lambert Park. The club was formed in 1954 as APIA Leichhardt, by Italian Australians (APIA stands for Associazione Poli-sportiva Italo Australiana). APIA, winner of the national Australian championship of 1987, is currently a member of the NSW Premier League.
-The Women's division started in 2009 with some early success, we now have in place robust structure and our goal is to 'ensure the smooth and professional conduct so as to match and equal the strength and the profile of the club's Men and Boys' teams' :Tony Raciti"
-        android:layout_weight="18.35"
-        />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </TableRow>
 
-</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+
+    <ListView
+        android:id="@+id/recipe_list_view"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+    </ListView>
+
+
+
+
+
+</LinearLayout>

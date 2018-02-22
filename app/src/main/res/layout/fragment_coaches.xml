@@ -54,20 +54,20 @@
         android:textStyle="bold" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewCF"
+        android:id="@+id/imageViewMM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCoaches"
-        android:text="u14: Craig Fletcher"
+        android:text="First Grade:  Matteo Maiorana"
         android:textAlignment="center"
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewEB"
+        android:id="@+id/imageViewPL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewCF"
-        android:text="u15: Ernesto Bivona"
+        android:layout_below="@id/imageViewMM"
+        android:text="Reserve Grade: Paul De Lucca"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -75,27 +75,27 @@
         android:id="@+id/imageViewRM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewEB"
-        android:text="u17: Roberto Maiorana"
+        android:layout_below="@id/imageViewPL"
+        android:text="Under 17: Roberto Maiorana"
         android:textAlignment="center"
         android:textSize="14sp" />
 
-
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewPL"
+        android:id="@+id/imageViewCC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewRM"
-        android:text="Reserve Grade: Paul De Lucca"
+        android:text="Under 15: Claudio Caravajal"
         android:textAlignment="center"
         android:textSize="14sp" />
 
+
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewMM"
+        android:id="@+id/imageViewCF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewPL"
-        android:text="First Grade:  Matteo Maiorana"
+        android:layout_below="@id/imageViewCC"
+        android:text="Under 14: Craig Fletcher"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -103,7 +103,7 @@
         android:id="@+id/imageViewC1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewMM"
+        android:layout_below="@id/imageViewCF"
         android:layout_marginTop="20dp"
         android:text="Proudly sponsored by:"
         android:textAlignment="center"
@@ -120,51 +120,6 @@
         android:onClick="openBrowser"
         android:src="@mipmap/cubic"
         android:tag="http://cubicgroup.biz/cubic-design-construction/" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/imageViewig"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/imageViewC2"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/instagram2"
-        android:tag="https://www.instagram.com/apiawomens"
-        android:onClick="openBrowserInstagram"/>
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/imageViewfb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/imageViewC2"
-        android:layout_toLeftOf="@id/imageViewig"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/facebook"
-        android:tag="https://www.facebook.com/apiatigerswomens/"
-        android:onClick="openBrowserFacebook" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/imageViewC2"
-        android:layout_toRightOf="@id/imageViewig"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
-    <TextView
-        android:text="https://www.apiatigers.com"
-        android:id="@+id/TextViewWeb"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_below="@id/imageViewfb"
-        android:layout_marginTop="10dp"
-        android:autoLink="web"
-        android:linksClickable="true"
-        android:layout_centerHorizontal="true">
-    </TextView>
 
 </RelativeLayout>
 
