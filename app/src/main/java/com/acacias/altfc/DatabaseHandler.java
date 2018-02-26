@@ -19,6 +19,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "dbAPIA";
     private static final String TABLE_PLAYERS = "players";
     private static final String TABLE_MATCHES = "matches";
+    private static final String TABLE_SYSTEM = "system";
 
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";
@@ -37,6 +38,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String mTIME14 = "m_time14";
     private static final String mLOGO = "m_logo";
 
+    private static final String ADMIN = "admin";
+
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -48,6 +51,14 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Creating Tables
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+        String CREATE_SYSTEM_TABLE = "CREATE TABLE " + TABLE_SYSTEM + "("
+                + "s_admin TINYINT" + ")";
+        db.execSQL(CREATE_SYSTEM_TABLE);
+
+      //  db.execSQL("INSERT INTO "  +  CREATE_SYSTEM_TABLE + "(s_admin) "
+        //        + "VALUES (1) ");
+
         String CREATE_PLAYERS_TABLE = "CREATE TABLE " + TABLE_PLAYERS + "("
                 + "p_team TINYINT, p_number INT, p_firstname TEXT, p_lastname TEXT" + ")";
         db.execSQL(CREATE_PLAYERS_TABLE);
@@ -77,7 +88,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + "VALUES (5, '2018-04-08', 'APIA', 'Sydney Olympic', 'Lambert Park', '7:00PM','5:05PM', '3:30PM', '1:55PM', '12:00PM', 'sydneyolympic', -33.8845574,151.1441807 )");
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long  ) "
-                + "VALUES (6, '2018-04-15', 'Nepeam FC', 'APIA', 'Cook Park', '6:30PM','4:35PM', '3:00PM', '1:25PM', '12:30PM', 'nepean', -33.7756267,150.7653697 )");
+                + "VALUES (6, '2018-04-15', 'Nepean FC', 'APIA', 'Cook Park', '6:30PM','4:35PM', '3:00PM', '1:25PM', '12:30PM', 'nepean', -33.7756267,150.7653697 )");
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long  ) "
                 + "VALUES (7, '2018-04-22', 'APIA', 'Inter Lions', 'Lambert Park', '7:00PM','5:05PM', '3:30PM', '1:55PM', '12:30PM', 'interlions', -33.8845574,151.1441807 )");
@@ -127,8 +138,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long  ) "
                 + "VALUES (22, '2018-08-05', 'St George', 'APIA', 'St George Stadium', '3:00PM','1:35PM', '12:00PM', '9:55AM', '8:30AM', 'stgeorge',-33.9420635,151.1520375 )");
-
-
 
     }
 
