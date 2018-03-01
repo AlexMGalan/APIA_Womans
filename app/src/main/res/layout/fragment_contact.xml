@@ -130,18 +130,31 @@
         android:onClick="openBrowserInstagram"/>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/imageViewfb"
+    android:id="@+id/imageViewfb"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_below="@id/TextViewMatteo2"
+    android:layout_toLeftOf="@id/imageViewig"
+    android:layout_centerHorizontal="true"
+    android:src="@mipmap/facebook"
+    android:tag="https://www.facebook.com/apiatigerswomens/"
+    android:onClick="openBrowserFacebook" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageViewTW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:layout_below="@id/TextViewMatteo2"
-        android:layout_toLeftOf="@id/imageViewig"
-        android:layout_centerHorizontal="true"
-        android:src="@mipmap/facebook"
-        android:tag="https://www.facebook.com/apiatigerswomens/"
-        android:onClick="openBrowserFacebook" />
+        android:layout_toRightOf="@id/imageViewig"
+        android:src="@mipmap/twitter"
+        android:tag="https://twitter.com/apialeichhardt?lang=en"
+        android:onClick="openBrowserTwitter" />
 
 
     <TextView

@@ -25,14 +25,18 @@
 
     </group>
 
-    <item android:title="Notifications">
-        <menu>
-            <item
-                android:id="@+id/nav_notifications"
+    <!--  -->
+
+    <!--
+      <item android:title="Notifications">
+          <menu>
+               <item
+                     android:id="@+id/nav_notifications"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send Notifications" />
+                     android:title="Send Notifications" />
 
-        </menu>
-    </item>
+            </menu>
+         </item>
+         -->
 
-</menu>
+   </menu>

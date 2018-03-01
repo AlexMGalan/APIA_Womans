@@ -52,20 +52,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="10dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="left"/>
 
-        <TextView
-            android:id="@+id/textViewDate"
+        <Spinner
+            android:id="@+id/spDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:gravity="right"
             android:layout_weight="1"
-            android:layout_marginRight="20dp"
-            android:text="11 March 2018"
-            android:textColor="@color/colorFontGrey"
-            android:textSize="16dp"
-            />
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:gravity="right"/>
 
     </LinearLayout>
 
@@ -236,6 +234,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:src="@mipmap/cubic" />
+        android:src="@drawable/cubiclarge"
+        android:tag="http://cubicgroup.biz/cubic-design-construction/"/>
 
 </LinearLayout>

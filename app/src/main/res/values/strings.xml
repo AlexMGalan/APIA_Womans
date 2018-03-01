@@ -46,6 +46,32 @@
         <item>Round 21</item>
         <item>Round 22</item>
     </string-array>
+
+    <string-array name="Date">
+        <item>11 March 2018</item>
+        <item>18 March 2018</item>
+        <item>25 March 2018</item>
+        <item>2 April 2018</item>
+        <item>8 April 2018</item>
+        <item>15 April 2018</item>
+        <item>22 April 2018</item>
+        <item>29 April 2018</item>
+        <item>6 May 2018</item>
+        <item>13 May 2018</item>
+        <item>20 May 2018</item>
+        <item>27 May 2018</item>
+        <item>3 June 2018</item>
+        <item>10 June 2018</item>
+        <item>17 June 2018</item>
+        <item>24 June 2018</item>
+        <item>1 July 2018</item>
+        <item>8 July 2018</item>
+        <item>15 July 2018</item>
+        <item>22 July 2018</item>
+        <item>29 July 2018</item>
+        <item>5 August 2018</item>
+    </string-array>
+
     <string name="title_activity_maps">Map</string>
 
 </resources>

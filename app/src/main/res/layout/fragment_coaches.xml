@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewAC"
         android:layout_marginTop="10dp"
-        android:text="Coaches:"
+        android:text="2018 Coaches:"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold" />
@@ -118,7 +118,7 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="10dp"
         android:onClick="openBrowser"
-        android:src="@mipmap/cubic"
+        android:src="@drawable/cubiclarge"
         android:tag="http://cubicgroup.biz/cubic-design-construction/" />
 
 </RelativeLayout>

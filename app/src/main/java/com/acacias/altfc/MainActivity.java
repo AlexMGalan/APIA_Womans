@@ -128,13 +128,14 @@ public class MainActivity extends AppCompatActivity
                     .commit();
             this.setTitle("Partners");
 
-        }   else if (id == R.id.nav_notifications) {
-            NotifyFragment notifyfragment = new NotifyFragment();
-            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction()
-                    .replace(R.id.mainLayout, notifyfragment)
-                    .commit();
-            this.setTitle("Notifications");
+
+      // }   else if (id == R.id.nav_notifications) {
+       //     NotifyFragment notifyfragment = new NotifyFragment();
+        //    android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+       //     manager.beginTransaction()
+        //            .replace(R.id.mainLayout, notifyfragment)
+       //             .commit();
+       //     this.setTitle("Notifications");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -204,6 +205,21 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void openBrowserWests(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    public void openBrowserCubic(View view){
 
         //Get url from tag
         String url = (String)view.getTag();

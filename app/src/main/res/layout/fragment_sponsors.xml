@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/textViewSpace1"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/colorlightgrey" />
 
@@ -15,16 +15,17 @@
         android:id="@+id/imageViewcubic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="10dp"
-        android:src="@mipmap/cubic" />
+        android:onClick="openBrowserCubic"
+        android:src="@drawable/cubic"
+        android:tag="http://cubicgroup.biz/cubic-design-construction/" />
 
     <TextView
         android:id="@+id/textViewSpace2"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/colorlightgrey" />
 
@@ -34,8 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:onClick="openBrowserGFDA"
         android:src="@drawable/gfda"
         android:tag="https://www.girlsfootballacademyaustralia.com/" />
@@ -43,16 +43,15 @@
     <TextView
         android:id="@+id/textViewSpace3"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewWests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
         android:src="@drawable/wests_ashfield"
@@ -72,8 +71,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom = "true"
+        android:gravity="center|bottom"
+        android:layout_marginTop="10dp"
         android:onClick="openBrowserWests"
         android:src="@drawable/acacia_sw"
         android:tag="http://acaciasoftware.com/" />

@@ -56,8 +56,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + "s_admin TINYINT" + ")";
         db.execSQL(CREATE_SYSTEM_TABLE);
 
-      //  db.execSQL("INSERT INTO "  +  CREATE_SYSTEM_TABLE + "(s_admin) "
-        //        + "VALUES (1) ");
+       db.execSQL("INSERT INTO "  +  TABLE_SYSTEM + "(s_admin) "
+               + "VALUES (1) ");
 
         String CREATE_PLAYERS_TABLE = "CREATE TABLE " + TABLE_PLAYERS + "("
                 + "p_team TINYINT, p_number INT, p_firstname TEXT, p_lastname TEXT" + ")";
@@ -110,7 +110,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long  ) "
-                + "VALUES (13, '2018-06-03', 'APIA', 'Central Coast', 'Lambert Park', '7:00PM','5:05PM', '3:30PM', '1:55PM', '12:30PM', 'centralcoast', -33.8845574,151.1441807 )");
+                + "VALUES (13, '2018-06-03', 'APIA', 'Central Coast', 'Lambert Park', '7:00PM','5:05PM', '3:30PM', '1:55PM', '12:30PM', 'central_coast', -33.8845574,151.1441807 )");
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long  ) "
                 + "VALUES (14, '2018-06-10', 'Sd Raiders', 'APIA', 'Ernie Smith Reserve', '6:00PM','4:05PM', '2:30PM', '12:55PM', '12:00PM', 'sdraiders', -33.9340737,150.9414135 )");

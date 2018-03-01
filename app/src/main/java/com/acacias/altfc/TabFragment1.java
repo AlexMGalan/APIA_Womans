@@ -1,5 +1,6 @@
 package com.acacias.altfc;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class TabFragment1 extends Fragment {
 
@@ -65,4 +67,5 @@ public class TabFragment1 extends Fragment {
         return v;
 
     }
-}
+
+    }
