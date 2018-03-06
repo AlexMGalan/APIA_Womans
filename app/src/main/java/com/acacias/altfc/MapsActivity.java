@@ -47,7 +47,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Sydney and move the camera
         final DatabaseHandler db = new DatabaseHandler(this);
-        Match match = db.getMatch(stuff+1);
+        Match match = db.getMatch(stuff);
 
         //LatLng sydney = new LatLng(-34.9003438, 150.604564);
         LatLng matchlocation = new LatLng(match.getlat(), match.getlong());

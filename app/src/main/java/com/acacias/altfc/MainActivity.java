@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-       if (id == R.id.action_settings) {
+       if (id == R.id.action_exit) {
+           this.finish();
             return true;
         }
 
@@ -129,13 +130,13 @@ public class MainActivity extends AppCompatActivity
             this.setTitle("Partners");
 
 
-      // }   else if (id == R.id.nav_notifications) {
-       //     NotifyFragment notifyfragment = new NotifyFragment();
-        //    android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-       //     manager.beginTransaction()
-        //            .replace(R.id.mainLayout, notifyfragment)
-       //             .commit();
-       //     this.setTitle("Notifications");
+       }   else if (id == R.id.nav_notifications) {
+            NotifyFragment notifyfragment = new NotifyFragment();
+           android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction()
+                    .replace(R.id.mainLayout, notifyfragment)
+                    .commit();
+            this.setTitle("Notifications");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

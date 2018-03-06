@@ -8,14 +8,14 @@
         android:id="@+id/textViewSpace1"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_marginTop="10dp"
+
         android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewcubic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
         android:onClick="openBrowserCubic"
@@ -26,7 +26,7 @@
         android:id="@+id/textViewSpace2"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_marginTop="10dp"
+
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+
         android:onClick="openBrowserGFDA"
         android:src="@drawable/gfda"
         android:tag="https://www.girlsfootballacademyaustralia.com/" />
@@ -44,14 +44,13 @@
         android:id="@+id/textViewSpace3"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewWests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
         android:src="@drawable/wests_ashfield"
@@ -61,8 +60,7 @@
     <TextView
         android:id="@+id/textViewSpace4"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="10dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -72,10 +70,15 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentBottom = "true"
-        android:gravity="center|bottom"
-        android:layout_marginTop="10dp"
         android:onClick="openBrowserWests"
         android:src="@drawable/acacia_sw"
         android:tag="http://acaciasoftware.com/" />
+
+    <TextView
+        android:id="@+id/textViewSpace5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorlightgrey" />
+
 </LinearLayout>
 

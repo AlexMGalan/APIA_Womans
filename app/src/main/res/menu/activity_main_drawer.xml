@@ -26,8 +26,6 @@
     </group>
 
     <!--  -->
-
-    <!--
       <item android:title="Notifications">
           <menu>
                <item
@@ -37,6 +35,5 @@
 
             </menu>
          </item>
-         -->
 
    </menu>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "776209495120",
+    "firebase_url": "https://apia-npl2.firebaseio.com",
+    "project_id": "apia-npl2",
+    "storage_bucket": "apia-npl2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776209495120:android:39cf708866f9b2f6",
+        "android_client_info": {
+          "package_name": "com.acacias.altfc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "776209495120-lhp5o0bnnik98iakgr6um32t8tricdgo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYngFiDBgvMyft0IGEBsqkyJN_ocpObFk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

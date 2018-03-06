@@ -115,7 +115,7 @@ public class NextGameFragment extends Fragment {
     void LoadScreen(int Pos){
 
         if (IFirstLoad==1) {
-            IPOS=0;
+          //  IPOS=0;
         } else {
             IPOS=Pos+1;
         }

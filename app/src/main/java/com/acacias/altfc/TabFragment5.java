@@ -34,8 +34,6 @@ public class TabFragment5 extends Fragment {
 
         String[]
                 values1st = new String[] {
-                "Coach: TBA",
-                "Mangager: TBA",
                 "16 J. Bennett",
                 "8 C. Canini",
                 "22 N. Carmichael",

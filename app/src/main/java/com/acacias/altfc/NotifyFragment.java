@@ -57,7 +57,8 @@ public class NotifyFragment extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                igoalAPIA=igoalAPIA+1;
+             //   igoalAPIA=igoalAPIA+1;
+               // addNotification();
                 addNotification();
             }
         });
@@ -94,6 +95,8 @@ public class NotifyFragment extends Fragment {
     }
 
 }
+
+
 
 
 
