@@ -95,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCC"
-        android:text="Under 14: Craig Fletcher"
+        android:text="Under 14: John Jiggins"
         android:textAlignment="center"
         android:textSize="14sp" />
 

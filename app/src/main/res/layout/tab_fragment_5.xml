@@ -1,7 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#7CB9D6">
 
     <TableRow
         android:id="@+id/tr"
@@ -10,40 +11,53 @@
         android:orientation="horizontal">
     </TableRow>
 
-    
-
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/TextViewPia1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Coach: "
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textViewSpace4"
+        android:id="@+id/TextViewCoachTitle"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@color/colorlightgrey" />
+        android:layout_height="wrap_content"
+        android:text="Coach:"
+        android:background="#5E1529"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
 
-    <android.support.v7.widget.AppCompatTextView
+    <TextView
+        android:id="@+id/textViewSpace1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#7CB9D6" />
+
+    <TextView
         android:id="@+id/TextViewCoach"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/imageView1"
-        android:text="Players:"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:text="John Jiggins"
+        android:textSize="14sp"/>
 
     <TextView
-        android:id="@+id/textViewSpace4"
+        android:id="@+id/TextViewPlayers"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@color/colorlightgrey" />
-
+        android:layout_height="wrap_content"
+        android:text="Players:"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#5E1529"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/textViewSpace3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#7CB9D6" />
 
     <ListView
         android:id="@+id/recipe_list_view"
@@ -51,12 +65,10 @@
         android:layout_width="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp">
+        android:textSize="12sp"
+        android:isScrollContainer="false"
+        android:background="#ffffff">
     </ListView>
-
-
-
-
 
 </LinearLayout>
 

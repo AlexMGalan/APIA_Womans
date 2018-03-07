@@ -177,54 +177,179 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textViewfirst"
-        android:layout_width="match_parent"
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="First Grade: 7:00pm"
-        android:gravity="center"
-        android:textSize="14dp"
-        />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textViewres"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView1HomeScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/textViewfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="1st Grade: 5:00pm"
+           android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="14dp"            />
+
+        <TextView
+            android:id="@+id/textView1VisitScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Reserve Grade: 5:00pm"
-        android:gravity="center"
-        android:textSize="14dp"
-        />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textViewr17"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView2HomeScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/textViewres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Reserves : 5:00pm"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="14dp"            />
+
+        <TextView
+            android:id="@+id/textView2VisitScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Under 17: 3:00pm"
-        android:textSize="14dp" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView3HomeScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/textViewr17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Under 17 : 3:00pm"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView3VisitScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Under 15: 1:00pm"
-        android:gravity="center"
-        android:textSize="14dp"/>
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/textView4HomeScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Under 15 : 1:00pm"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView4VisitScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Under 14: 11:00am"
-        android:textSize="14dp" />
+        android:orientation="horizontal">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:background="@color/colorlightgrey"/>
+        <TextView
+            android:id="@+id/textView5HomeScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Under 14 : 11:30am"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/textView5VisitScore"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="-" />
+
+    </LinearLayout>
+
+
 
     <ImageView
         android:id="@+id/imageViewcubic"

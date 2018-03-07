@@ -183,16 +183,16 @@ public class NextGameFragment extends Fragment {
         tvtime1.setText("1st Grade: " +  match.getTime1());
 
         TextView tvtime2= (TextView)v.findViewById(R.id.textViewres);
-        tvtime2.setText("Res Grade: " + match.getTime2());
+        tvtime2.setText("Reserves : " + match.getTime2());
 
         TextView tvtime3= (TextView)v.findViewById(R.id.textViewr17);
-        tvtime3.setText("Under 17: " + match.getTime17());
+        tvtime3.setText("Under 17 : " + match.getTime17());
 
         TextView tvtime4= (TextView)v.findViewById(R.id.textView15);
-        tvtime4.setText("Under 15: " + match.getTime15());
+        tvtime4.setText("Under 15 : " + match.getTime15());
 
         TextView tvtime5= (TextView)v.findViewById(R.id.textView14);
-        tvtime5.setText("Under 14: " + match.getTime14());
+        tvtime5.setText("Under 14 : " + match.getTime14());
 
         String strhomeTeam= match.getHomeTeam();
 

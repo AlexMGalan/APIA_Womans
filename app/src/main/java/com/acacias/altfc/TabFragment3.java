@@ -34,22 +34,22 @@ public class TabFragment3 extends Fragment {
 
         String[]
                 values1st = new String[] {
-                "16 J. Bennett",
-                "8 C. Canini",
-                "22 N. Carmichael",
-                "5 O. Cicco",
-                "7 E. Clout",
-                "9 C. Ferreyra",
-                "2 S. Glanville-Fyfe",
-                "1 C. Halpin1",
-                "2 M. Latham1",
-                "5 K. Manias",
-                "20 G. Raymond",
-                "R. Scarlato",
-                "4 S. Scarlato",
-                "13 M. Sim-Sing",
-                "38 S. Urquhart",
-                "14 R. Watts"};
+                "40-Claira Jovanovski",
+                "42-Beth Sanderson",
+                "41-Abbey Harrison",
+                "54-Alyssa Sklias",
+                "47-Tiarne Schuman",
+                "48-Alannah Galan",
+                "53-Christina Spathis",
+                "55-Lara Mascaro",
+                "49-Ally Beaufils",
+                "44-Hazel Duwenbeck",
+                "43-Alina Stojevski",
+                "50-Maya Urquhart",
+                "51-Marissa Papoulidis",
+                "45-Moya Denford",
+                "52-Natalie Bartolotto",
+                "46-Mia Rea"};
 
         //1st Grade
         listView.setAdapter(null);
