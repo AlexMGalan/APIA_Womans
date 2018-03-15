@@ -3,7 +3,7 @@ package com.acacias.altfc;
 
 import java.util.ArrayList;
 import java.util.Date;
-
+import com.google.firebase.database.IgnoreExtraProperties;
 
 /**
  * Created by Alex.Galan on 30/10/2017.
@@ -23,11 +23,12 @@ public class Match {
     String _logo;
     double _lat;
     double _long;
+    String _address;
 
 
     public Match(){   }
     public Match(int round, String date, String teamhome, String teamvisit, String ground,String time1, String time2, String time17, String time15, String time14, String logo,
-                 double mlat, double mlong){
+                 double mlat, double mlong, String address){
         // this._id = id;
         // this._id = id;
         this._round = round;
@@ -44,6 +45,7 @@ public class Match {
         this._logo=logo;
         this._lat=mlat;
         this._long=mlong;
+        this._address=address;
 
     }
 
@@ -82,6 +84,7 @@ public class Match {
     public  String  getlogo(){return this._logo;}
     public  double  getlat(){return this._lat;}
     public  double  getlong(){return this._long;}
+    public  String  getAddress(){return this._address;}
 
 
     public void setRound(int round){   this._round= round;};
@@ -107,8 +110,7 @@ public class Match {
     public void setLat(double mlat){
         this._lat = mlat;
     }
-    public void setLong(double mlong){
-        this._long = mlong;
-    }
+    public void setLong(double mlong){this._long = mlong;}
+    public void setAddress(String address){this._address = address;}
 
 }

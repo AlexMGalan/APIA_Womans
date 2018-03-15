@@ -13,14 +13,23 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
 
         //Set up Next Game Fragment
         NextGameFragment nextgamefragment = new NextGameFragment();
@@ -130,13 +139,13 @@ public class MainActivity extends AppCompatActivity
             this.setTitle("Partners");
 
 
-       }   else if (id == R.id.nav_notifications) {
-            NotifyFragment notifyfragment = new NotifyFragment();
-           android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction()
-                    .replace(R.id.mainLayout, notifyfragment)
-                    .commit();
-            this.setTitle("Notifications");
+      // }   else if (id == R.id.nav_notifications) {
+       //     NotifyFragment notifyfragment = new NotifyFragment();
+       //    android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+       //     manager.beginTransaction()
+        //            .replace(R.id.mainLayout, notifyfragment)
+        //            .commit();
+        //    this.setTitle("Notifications");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -296,4 +305,9 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+
+
+
+
     }
+

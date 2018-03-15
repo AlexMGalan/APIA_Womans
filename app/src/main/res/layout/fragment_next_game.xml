@@ -167,11 +167,10 @@
             android:id="@+id/textViewMAP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_toRightOf="@+id/textViewGround"
+            android:layout_below="@+id/textViewGround"
+            android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:paddingLeft="10dp"
-            android:text="( Map )"
+            android:text="Marion St Leichardt"
             android:textColor="@color/colorAccent"
             android:textSize="14dp" />
 
@@ -359,7 +358,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/cubiclarge"
+        android:src="@drawable/cubiclargenew"
         android:tag="http://cubicgroup.biz/cubic-design-construction/"/>
 
 </LinearLayout>

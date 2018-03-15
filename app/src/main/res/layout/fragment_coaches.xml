@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="APIA Club Champions 2017"
         android:textAlignment="center"
         android:textSize="16sp"
@@ -118,7 +119,7 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="10dp"
         android:onClick="openBrowser"
-        android:src="@drawable/cubiclarge"
+        android:src="@drawable/cubiclargenew"
         android:tag="http://cubicgroup.biz/cubic-design-construction/" />
 
 </RelativeLayout>
