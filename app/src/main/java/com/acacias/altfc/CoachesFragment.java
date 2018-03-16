@@ -2,18 +2,12 @@ package com.acacias.altfc;
 
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Spinner;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class CoachesFragment extends Fragment {
 
 
@@ -32,18 +26,7 @@ public class CoachesFragment extends Fragment {
 
         getActivity().setTitle("Coaches");
 
-        //  FloatingActionButton fab = (FloatingActionButton) v.findViewById(R.id.fab);
 
-        //   FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        //  fab.setOnClickListener(new View.OnClickListener() {
-        //      @Override
-        //      public void onClick(View view) {
-        //          Snackbar.make(view, "Email", Snackbar.LENGTH_LONG)
-        //                  .setAction("Action", null).show();
-
-
-        //   }
-        // });
         return v;
     }
 

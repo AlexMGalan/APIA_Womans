@@ -12,17 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,9 +67,6 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-       //  Handle action bar item clicks here. The action bar will
-       //  automatically handle clicks on the Home/Up button, so long
-      //   as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -83,7 +74,6 @@ public class MainActivity extends AppCompatActivity
            this.finish();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -94,9 +84,6 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_game) {
-            // Handle the camera action
-         //  Toast.makeText(MainActivity.this, "Next Game",
-           //       Toast.LENGTH_LONG).show();
            NextGameFragment nextgamefragment = new NextGameFragment();
           android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
          manager.beginTransaction()
@@ -110,8 +97,6 @@ public class MainActivity extends AppCompatActivity
             manager.beginTransaction()
                     .replace(R.id.mainLayout, squadsfragment)
                     .commit();
-
-          //  this.setTitle("Squads");
 
         } else if (id == R.id.nav_coaches) {
             CoachesFragment coachesfragment = new CoachesFragment();
@@ -137,22 +122,12 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.mainLayout, sponsorsfragment)
                     .commit();
             this.setTitle("Partners");
-
-
-      // }   else if (id == R.id.nav_notifications) {
-       //     NotifyFragment notifyfragment = new NotifyFragment();
-       //    android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-       //     manager.beginTransaction()
-        //            .replace(R.id.mainLayout, notifyfragment)
-        //            .commit();
-        //    this.setTitle("Notifications");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
     public void openBrowser(View view){
 

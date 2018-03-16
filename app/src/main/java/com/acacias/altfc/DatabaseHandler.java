@@ -1,29 +1,16 @@
 package com.acacias.altfc;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-
-import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
-
-import static android.widget.Toast.LENGTH_LONG;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "dbAPIA";
     private static final String TABLE_PLAYERS = "players";
     private static final String TABLE_MATCHES = "matches";
-    private static final String TABLE_SYSTEM = "system";
-
-    private static final String KEY_ID = "id";
-    private static final String KEY_NAME = "name";
-    private static final String KEY_PH_NO = "phone_number";
 
     //Matches
     private static final String m_Round = "m_round";
@@ -44,33 +31,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         //3rd argument to be passed is CursorFactory instance
-
-
     }
 
     // Creating Tables
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-     //   String CREATE_SYSTEM_TABLE = "CREATE TABLE " + TABLE_SYSTEM + "("
-     //           + "s_admin TINYINT" + ")";
-     //   db.execSQL(CREATE_SYSTEM_TABLE);
-
-    //   db.execSQL("INSERT INTO "  +  TABLE_SYSTEM + "(s_admin) "
-      //         + "VALUES (1) ");
-
-      //  String CREATE_PLAYERS_TABLE = "CREATE TABLE " + TABLE_PLAYERS + "("
-       //         + "p_team TINYINT, p_number INT, p_firstname TEXT, p_lastname TEXT" + ")";
-       // db.execSQL(CREATE_PLAYERS_TABLE);
-
         String CREATE_MATCHES_TABLE = "CREATE TABLE " + TABLE_MATCHES + "("
                 + "m_round INT, m_date TEXT, m_hometeam TEXT, m_visitteam TEXT, m_ground TEXT, m_time1 TEXT, m_time2 TEXT, m_time17 TEXT, m_time15 TEXT, m_time14 TEXT, m_logo TEXT, m_lat Double, m_long Double, m_address TEXT)";
 
         db.execSQL(CREATE_MATCHES_TABLE);
-
-        db.execSQL("INSERT INTO "  +  TABLE_PLAYERS + "(p_team,p_number,p_firstname,p_lastname) "
-                + "VALUES (3, 48, 'Alannah', 'Galan' )");
-
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round,m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long, m_address ) "
            + "VALUES (1, '2018-03-11', 'Southern Branch', 'APIA', 'SOUTH NOWRA FOOTBALL COMPLEX', ' 3:00PM',' 1:35PM', '12:00PM', ' 9:55AM', ' 8:30AM', 'southern_branch',-34.9003438, 150.604564, 'Mulbulla Street, South Nowra' )");
@@ -143,87 +113,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Upgrading database
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // Drop older table if existed
-     //   db.execSQL("DROP TABLE IF EXISTS " + TABLE_PLAYERS);
-
-        // Create tables again
-      //  onCreate(db);
-
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_MATCHES);
 
         // Create tables again
         onCreate(db);
-    }
-
-    // code to add the new player
-    void addPlayer(Player player) {
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-        values.put("p_team", player.getTeam()); // Team Id
-        values.put("p_number", player.getNumber()); // Player Number
-        values.put("p_firstname", player.get_firstname()); // Player First Name
-        values.put("p_lastname", player.get_lastname()); // Player Last Name
-
-        // Inserting Row
-        db.insert(TABLE_PLAYERS, null, values);
-        //2nd argument is String containing nullColumnHack
-        db.close(); // Closing database connection
-    }
-
-    // code to get the single contact
-    Player getPlayer(int id) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor cursor = db.query(TABLE_PLAYERS, new String[] { KEY_ID,
-                        KEY_NAME, KEY_PH_NO }, KEY_ID + "=?",
-                new String[] { String.valueOf(id) }, null, null, null, null);
-        if (cursor != null)
-            cursor.moveToFirst();
-
-        Player player = new Player( cursor.getInt(1), cursor.getInt(2), cursor.getString(3), cursor.getString(4));
-        // return contact
-        return player;
-    }
-
-    // code to get all contacts in a list view
-    public List<Player> getAllPlayers() {
-        List<Player> contactList = new ArrayList<Player>();
-        // Select All Query
-        String selectQuery = "SELECT  * FROM " + TABLE_PLAYERS;
-
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery(selectQuery, null);
-
-        // looping through all rows and adding to list
-        if (cursor.moveToFirst()) {
-            do {
-                Player player = new Player();
-               // player.setID(Integer.parseInt(cursor.getString(0)));
-                player.setTeam(Integer.parseInt(cursor.getString(0)));
-                player.setNumber(Integer.parseInt(cursor.getString(1)));
-                player.setFirstName(cursor.getString(2));
-               player.setLastName(cursor.getString(3));
-                // Adding contact to list
-                contactList.add(player);
-            } while (cursor.moveToNext());
-        }
-
-        // return contact list
-        return contactList;
-    }
-
-    // code to update the single contact
-    public int updateContact(Player player) {
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues values = new ContentValues();
-      //  values.put(KEY_NAME, player.getName());
-       // values.put(KEY_PH_NO, player.getPhoneNumber());
-
-        // updating row
-        return db.update(TABLE_PLAYERS, values, KEY_ID + " = ?",
-                new String[] { String.valueOf(player.getID()) });
     }
 
     // code to get a Match
@@ -250,35 +143,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return match;
     }
-
-  //  public List<Match>  getMatch() {
-  //      List<Match> matchList = new ArrayList<Match>();
-        // Select All Query
-    //    String selectQuery = "SELECT  * FROM " + TABLE_MATCHES;
-    //    SQLiteDatabase db = this.getWritableDatabase();
-     //   Cursor cursor = db.rawQuery(selectQuery, null);
-
-        // looping through all rows and adding to list
-     //   if (cursor.moveToFirst()) {
-      //      do {
-         //       Match match = new Match();
-         //       match.setDate(cursor.getString(0));
-         //       match.setHomeTeam(cursor.getString(1));
-         //       match.setVisitTeam(cursor.getString(2));
-         //       match.setGround(cursor.getString(3));
-         //       match.setTime1(cursor.getString(4));
-         //       match.setTime2(cursor.getString(5));
-        //        match.setTime17(cursor.getString(6));
-        //        match.setTime15(cursor.getString(7));
-        //        match.setTime14(cursor.getString(8));
-
-                // Adding Match to list
-        //        matchList.add(match);
-
-         //   } while (cursor.moveToNext());
-       // }
-       // return matchList;
-   // }
 
     // code to get all contacts in a list view
     public List<Match> getAllMatches() {

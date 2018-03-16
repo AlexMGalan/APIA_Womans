@@ -13,17 +13,7 @@ public class TabFragment2 extends Fragment {
     ListView listView ;
 
 
-    //RECORDING HOW MANY TIMES THE BUTTON HAS BEEN CLICKED
-    // int clickCounter=0;
-    //  public SquadsFragment() {
-    // Required empty public constructor
-    // }
-
-
     @Override
-    // public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-    //     return inflater.inflate(R.layout.tab_fragment_1, container, false);
-
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 

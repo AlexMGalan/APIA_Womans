@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,30 +13,17 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.ArrayList;
-
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class NextGameFragment extends Fragment {
 
     int  IPOS;
     int  IFirstLoad;
     View v;
-
-    TextView tvHomeScore;
-
 
     public NextGameFragment() {
         // Required empty public constructor
@@ -55,8 +41,8 @@ public class NextGameFragment extends Fragment {
         IFirstLoad=1;
         IPOS=0;
 
+        // Call Google Maps Activity
         TextView tvmap= (TextView)v.findViewById(R.id.textViewMAP);
-
         tvmap.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Bundle dataBundle = new Bundle();
@@ -67,19 +53,20 @@ public class NextGameFragment extends Fragment {
             }
         });
 
+        //Set up Spinner for Rounds and Dates
         Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Rounds));
 
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
-      // mySpinner.setSelection(0);
 
-       Spinner mySpinnerdate = (Spinner) v.findViewById(R.id.spDate);
-       ArrayAdapter<String> myAdapterDate = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Date));
+        Spinner mySpinnerdate = (Spinner) v.findViewById(R.id.spDate);
+        ArrayAdapter<String> myAdapterDate = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Date));
 
         myAdapterDate.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinnerdate.setAdapter(myAdapterDate);
 
+        //Listener for Rounds Spinner
         mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -90,9 +77,9 @@ public class NextGameFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parentView) {
                 // your code here
             }
-
         });
 
+        //Listener for Dates Spinner
         mySpinnerdate.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
@@ -103,15 +90,11 @@ public class NextGameFragment extends Fragment {
             public void onNothingSelected(AdapterView<?> parentView) {
                 // your code here
             }
-
         });
-
-
 
         return v;}
 
-
-
+    //Main Load Screen
     void LoadScreen(int Pos) {
 
         if (IFirstLoad == 1) {
@@ -123,53 +106,51 @@ public class NextGameFragment extends Fragment {
         final DatabaseHandler db = new DatabaseHandler(getActivity());
         Match match = db.getMatch(IPOS);
 
-       String sRound = String.valueOf(match.getRound()) ;
-
+        //Set up Firebase Database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
+
+        String sRound = String.valueOf(match.getRound()) ;
         DatabaseReference myRef = database.getReference().child(sRound);
         // DatabaseReference myRef = database.getReference();
 
-
-        // Read from the database
+// For Listener, get data direct from snapshot
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-
                 //FirstGrade
-                TextView tv1HomeScore = (TextView) v.findViewById(R.id.textView1HomeScore);
-                tv1HomeScore.setText(dataSnapshot.child("1GradeHome").getValue(String.class));
+                   TextView tv1HomeScore = (TextView) v.findViewById(R.id.textView1HomeScore);
+                   tv1HomeScore.setText(dataSnapshot.child("1GradeHome").getValue(String.class));
 
-                TextView tv1VisitScore = (TextView) v.findViewById(R.id.textView1VisitScore);
-                tv1VisitScore.setText(dataSnapshot.child("1GradeVisit").getValue(String.class));
+                   TextView tv1VisitScore = (TextView) v.findViewById(R.id.textView1VisitScore);
+                  tv1VisitScore.setText(dataSnapshot.child("1GradeVisit").getValue(String.class));
 
                 //Res
-                TextView tv2HomeScore = (TextView) v.findViewById(R.id.textView2HomeScore);
-                tv2HomeScore.setText(dataSnapshot.child("2GradeHome").getValue(String.class));
+                 TextView tv2HomeScore = (TextView) v.findViewById(R.id.textView2HomeScore);
+                 tv2HomeScore.setText(dataSnapshot.child("2GradeHome").getValue(String.class));
 
-                TextView tv2VisitScore = (TextView) v.findViewById(R.id.textView2VisitScore);
-                tv2VisitScore.setText(dataSnapshot.child("2GradeVisit").getValue(String.class));
+                 TextView tv2VisitScore = (TextView) v.findViewById(R.id.textView2VisitScore);
+                 tv2VisitScore.setText(dataSnapshot.child("2GradeVisit").getValue(String.class));
 
                 //17
-                TextView tv3HomeScore = (TextView) v.findViewById(R.id.textView3HomeScore);
-                tv3HomeScore.setText(dataSnapshot.child("3GradeHome").getValue(String.class));
+                 TextView tv3HomeScore = (TextView) v.findViewById(R.id.textView3HomeScore);
+                  tv3HomeScore.setText(dataSnapshot.child("3GradeHome").getValue(String.class));
 
-                TextView tv3VisitScore = (TextView) v.findViewById(R.id.textView3VisitScore);
-                tv3VisitScore.setText(dataSnapshot.child("3GradeVisit").getValue(String.class));
+                  TextView tv3VisitScore = (TextView) v.findViewById(R.id.textView3VisitScore);
+                  tv3VisitScore.setText(dataSnapshot.child("3GradeVisit").getValue(String.class));
 
                 //15
-                TextView tv4HomeScore = (TextView) v.findViewById(R.id.textView4HomeScore);
-                tv4HomeScore.setText(dataSnapshot.child("4GradeHome").getValue(String.class));
+                  TextView tv4HomeScore = (TextView) v.findViewById(R.id.textView4HomeScore);
+                  tv4HomeScore.setText(dataSnapshot.child("4GradeHome").getValue(String.class));
 
-                TextView tv4VisitScore = (TextView) v.findViewById(R.id.textView4VisitScore);
-                tv4VisitScore.setText(dataSnapshot.child("4GradeVisit").getValue(String.class));
+                  TextView tv4VisitScore = (TextView) v.findViewById(R.id.textView4VisitScore);
+                   tv4VisitScore.setText(dataSnapshot.child("4GradeVisit").getValue(String.class));
 
                 //14
-                TextView tv5HomeScore = (TextView) v.findViewById(R.id.textView5HomeScore);
-                tv5HomeScore.setText(dataSnapshot.child("5GradeHome").getValue(String.class));
+                  TextView tv5HomeScore = (TextView) v.findViewById(R.id.textView5HomeScore);
+                  tv5HomeScore.setText(dataSnapshot.child("5GradeHome").getValue(String.class));
 
-                TextView tv5VisitScore = (TextView) v.findViewById(R.id.textView5VisitScore);
-                tv5VisitScore.setText(dataSnapshot.child("5GradeVisit").getValue(String.class));
-
+                  TextView tv5VisitScore = (TextView) v.findViewById(R.id.textView5VisitScore);
+                  tv5VisitScore.setText(dataSnapshot.child("5GradeVisit").getValue(String.class));
             }
 
             @Override
@@ -177,25 +158,17 @@ public class NextGameFragment extends Fragment {
             }
         });
 
-
+        //Set Spinner Round
         Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
-
-        //   if (IFirstLoad==1) {
         mySpinner.setSelection(match.getRound() - 1);
-        //  };
 
+        //Set Spinner Date
         Spinner mySpinnerDate = (Spinner) v.findViewById(R.id.spDate);
         mySpinnerDate.setSelection(match.getRound() - 1);
-
-        // mySpinner.setSelection(match.getRound() - 1);
-
 
         String dtStart = match.getDate();
 
         String strmonthNbr = dtStart.substring(5, 7);
-        String strday = dtStart.substring(8, 10);
-        String stryear = dtStart.substring(0, 4);
-
         String strmonth = null;
 
         switch (strmonthNbr) {
@@ -235,7 +208,7 @@ public class NextGameFragment extends Fragment {
         tvground.setText(match.getGround());
 
         TextView tvaddress = (TextView) v.findViewById(R.id.textViewMAP);
-        tvaddress.setText(match.getAddress());
+        tvaddress.setText(match.getAddress() + " (map)");
 
         TextView tvtime1 = (TextView) v.findViewById(R.id.textViewfirst);
         tvtime1.setText("1st Grade: " + match.getTime1());
@@ -251,23 +224,6 @@ public class NextGameFragment extends Fragment {
 
         TextView tvtime5 = (TextView) v.findViewById(R.id.textView14);
         tvtime5.setText("Under 14 : " + match.getTime14());
-
-
-
-    //    DatabaseReference mconditionHome = mRootRef.child("HomeScore");
-    //    DataSnapshot dataSnapshotHome = null;
-    //    String texthome = dataSnapshotHome.getValue(String.class);
-
-     //   TextView tv5HomeScore = (TextView) v.findViewById(R.id.textView5HomeScore);
-     //   tv5HomeScore.setText(texthome);
-
-      //  DatabaseReference mconditionVisit = mRootRef.child("VisitScore");
-    //    DataSnapshot dataSnapshotVisit = null;
-     //   String textvisit = dataSnapshotVisit.getValue(String.class);
-
-     //   TextView tv5VisitScore = (TextView) v.findViewById(R.id.textView5HomeScore);
-     //   tv5VisitScore.setText(textvisit);
-
 
         String strhomeTeam = match.getHomeTeam();
 
@@ -290,27 +246,7 @@ public class NextGameFragment extends Fragment {
             IVVisit.setImageResource(R.mipmap.apia_logo);
         }
         IFirstLoad = 0;
-
-
 }
-
-    ValueEventListener valueEventListener = new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-
-            String texthome = dataSnapshot.getValue(String.class);
-            TextView tv5HomeScore = (TextView) v.findViewById(R.id.textView5HomeScore);
-            tv5HomeScore.setText(texthome);
-
-
-        }
-
-        @Override
-        public void onCancelled(DatabaseError databaseError) {
-            Log.w("LogFragment", "loadLog:onCancelled", databaseError.toException());
-        }
-    };
-
 
 
 }

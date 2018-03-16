@@ -8,14 +8,12 @@
         android:id="@+id/textViewSpace1"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-
         android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewcubic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
         android:onClick="openBrowserCubic"
@@ -26,7 +24,6 @@
         android:id="@+id/textViewSpace2"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -35,7 +32,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-
         android:onClick="openBrowserGFDA"
         android:src="@drawable/gfda"
         android:tag="https://www.girlsfootballacademyaustralia.com/" />

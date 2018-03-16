@@ -1,10 +1,5 @@
 package com.acacias.altfc;
 
-
-import java.util.ArrayList;
-import java.util.Date;
-import com.google.firebase.database.IgnoreExtraProperties;
-
 /**
  * Created by Alex.Galan on 30/10/2017.
  */

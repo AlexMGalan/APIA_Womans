@@ -90,7 +90,6 @@
         android:textAlignment="center"
         android:textSize="14sp" />
 
-
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/imageViewCF"
         android:layout_width="match_parent"

@@ -1,7 +1,6 @@
 package com.acacias.altfc;
 
 
-import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -47,9 +46,7 @@ public class NotifyFragment extends Fragment {
         getActivity().setTitle("Notifications");
         addListenerNotButton();
         return v;
-
         //return inflater.inflate(R.layout.result, container, false);
-
     }
 
     public void addListenerNotButton() {
