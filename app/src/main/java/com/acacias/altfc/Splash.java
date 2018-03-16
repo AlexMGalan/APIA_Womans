@@ -7,10 +7,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Splash extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         setContentView(R.layout.splash);
         //Small Change
         int secondsDelayed = 1;

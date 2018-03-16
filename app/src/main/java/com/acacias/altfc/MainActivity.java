@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-
         //Set up Next Game Fragment
         NextGameFragment nextgamefragment = new NextGameFragment();
         android.support.v4.app.FragmentManager manager = getSupportFragmentManager();

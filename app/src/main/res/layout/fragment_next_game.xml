@@ -187,7 +187,7 @@
 
         <TextView
             android:id="@+id/textViewfirst"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="1st Grade: 5:00pm"
@@ -221,7 +221,7 @@
 
         <TextView
             android:id="@+id/textViewres"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="Reserves : 5:00pm"
             android:layout_weight="3"
@@ -253,7 +253,7 @@
 
         <TextView
             android:id="@+id/textViewr17"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="Under 17 : 3:00pm"
             android:layout_weight="3"
@@ -286,7 +286,7 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="Under 15 : 1:00pm"
             android:layout_weight="3"
@@ -319,7 +319,7 @@
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="wrap_content"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="Under 14 : 11:30am"
             android:layout_weight="3"
