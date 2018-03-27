@@ -3,23 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.acacias.altfc.HomeFragment">
+   >
 
     <TextView
+        android:id="@+id/txtvChamp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:text="APIA Club Champions 2017"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="16dp"
         android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
-        android:layout_height="212dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtvChamp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:src="@mipmap/premiers2017" />
 
     <android.support.v7.widget.AppCompatTextView
