@@ -11,6 +11,10 @@
             android:icon="@drawable/ic_group_black_24dp"
             android:title="2018 Squads" />
         <item
+            android:id="@+id/nav_ladders"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Ladders" />
+        <item
             android:id="@+id/nav_coaches"
             android:icon="@drawable/ic_assignment_ind_black_24dp"
             android:title="Coaching Staff" />

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTint="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Tables as at 2 May 2018"
+        android:gravity="center"
+       />
+
+    <Button
+        android:id="@+id/buttoncc"
+        android:text="Club Championship"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#ff5e1529"
+        android:onClick="openBrowserCC"
+        android:tag="http://nplnsw.com.au/club-championship-2-nsw-womens/"
+
+        />
+
+    <Button
+        android:id="@+id/button1st"
+        android:text="1st Grade"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#ff5e1529"
+        android:onClick="openBrowser1st"
+        android:tag= "http://bit.ly/2HLhrPo"
+        />
+
+    <Button
+        android:id="@+id/buttonres"
+        android:text="Reserve Grade"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#ff5e1529"
+        android:onClick="openBrowserRes"
+        android:tag= "http://bit.ly/2rec9pC"
+        />
+
+    <Button
+        android:id="@+id/button17"
+        android:text="Under 17"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#ff5e1529"
+        android:onClick="openBrowser17"
+        android:tag= "http://bit.ly/2I43Dmz"
+        />
+
+    <Button
+        android:id="@+id/button15"
+        android:text="Under 15"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#ff5e1529"
+        android:onClick="openBrowser15"
+        android:tag= "http://bit.ly/2HJgLu4"
+        />
+
+    <Button
+        android:id="@+id/button14"
+        android:text="Under 14"
+        android:textColor="#FFFFFFFF"
+        android:textSize="12dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="#ff5e1529"
+        android:onClick="openBrowser14"
+        android:tag= "http://bit.ly/2HOHg1n"
+        />
+
+</LinearLayout>

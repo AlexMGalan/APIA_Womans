@@ -2,58 +2,107 @@ package com.acacias.altfc;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
-public class TabFragment1 extends Fragment {
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class TabFragment1 extends ListFragment {
 
     ListView listView ;
+    private String[] drawerListViewItems;
+    private ListView drawerListView;
+
+    String[] players={
+            "1-Courtney Halpin",
+            "3-Olivia Hardaker",
+            "4-Samantha Scarlato",
+            "5-Olivia Cicco",
+            "6-Lucy Gilfedder",
+            "8-Carla Canini",
+            "9-Christy Ferreyra",
+            "10-Filiz Urkanci",
+            "11-Ashleigh Palombi",
+            "12-Maddie Latham",
+            "13-Beatrice Sim Sing",
+            "14-Rebecca Watts",
+            "15-Kylie Manias",
+            "16-Jennifer Bennett",
+            "17-Sarah Urquhart",
+            "18-Jessica Martinez",
+            "19-Karen Saavedra",
+            "20-Stephanie Marsh",
+            "21-Nicole Carmichael",
+            "99-Gill Raymond" };
+
+    // Array of integers points to images stored in /res/drawable-ldpi/
+    int[] images={R.drawable.halp,R.drawable.noi,R.drawable.sca,R.drawable.cic,
+            R.drawable.gil,R.drawable.can,R.drawable.fer
+            ,R.drawable.urk,R.drawable.palo,R.drawable.lath,R.drawable.sim
+            ,R.drawable.noi,R.drawable.man,R.drawable.ben,R.drawable.urq
+            ,R.drawable.mart,R.drawable.sav,R.drawable.mar,R.drawable.car
+            ,R.drawable.noi};
+
+    ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
+    SimpleAdapter adapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.tab_fragment_1, container, false);
-        listView = (ListView) v.findViewById(R.id.recipe_list_view);
 
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Squadnames));
+        //MAP
+        HashMap<String, String> map=new HashMap<String, String>();
 
-        String[]
-                values1st = new String[] {
-                "1-Courtney Halpin",
-                "3-Olivia Hardaker",
-                "4-Samantha Scarlato",
-                "5-Olivia Cicco",
-                "6-Lucy Gilfedder",
-                "8-Carla Canini",
-                "9-Christy Ferreyra",
-                "10-Filiz Urkanci",
-                "11-Ashleigh Palombi",
-                "12-Maddie Latham",
-                "13-Beatrice Sim Sing",
-                "14-Rebecca Watts",
-                "15-Kylie Manias",
-                "16-Jennifer Bennett",
-                "17-Sarah Urquhart",
-                "18-Jessica Martinez",
-                "19-Karen Saavedra",
-                "20-Stephanie Marsh",
-                "21-Nicole Carmichael",
-                "99-Gill Raymond" };
+        //FILL
+        for(int i=0;i<players.length;i++)
+        {
+            map=new HashMap<String, String>();
+            map.put("Player", players[i]);
+            map.put("Image", Integer.toString(images[i]));
 
-                //1st Grade
-                listView.setAdapter(null);
-                ArrayAdapter<String> adapter0 = new ArrayAdapter<String>(getActivity(),
-                        android.R.layout.simple_list_item_1, android.R.id.text1, values1st);
+            data.add(map);
+        }
 
-                // Assign adapter to ListView
-                listView.setAdapter(adapter0);
-               // getActivity().setTitle("Squads");
+        //KEYS IN MAP
+        String[] from={"Player","Image"};
 
-        return v;
+        //IDS OF VIEWS
+        int[] to={R.id.nameTxt,R.id.imageView1};
+
+        //ADAPTER
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model, from, to);
+        setListAdapter(adapter);
+
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    public void onStart() {
+        // TODO Auto-generated method stub
+        super.onStart();
+
+        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> av, View v, int pos,
+                                    long id) {
+                // TODO Auto-generated method stub
+
+                Toast.makeText(getActivity(), data.get(pos).get("Player"), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
 
     }
 

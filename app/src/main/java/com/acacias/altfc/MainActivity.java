@@ -96,6 +96,15 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.mainLayout, squadsfragment)
                     .commit();
 
+        } else if (id == R.id.nav_ladders) {
+            LadderFragment ladderfragment = new LadderFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction()
+                    .replace(R.id.mainLayout, ladderfragment)
+                    .commit();
+
+
+
         } else if (id == R.id.nav_coaches) {
             CoachesFragment coachesfragment = new CoachesFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
@@ -217,7 +226,67 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    public void openBrowserDolc(View view){
+    public void openBrowser1st(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    public void openBrowserRes(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    public void openBrowser17(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    public void openBrowser15(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
+
+    public void openBrowser14(View view){
 
         //Get url from tag
         String url = (String)view.getTag();
@@ -247,6 +316,21 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+
+    public void openBrowserCC(View view){
+
+        //Get url from tag
+        String url = (String)view.getTag();
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.addCategory(Intent.CATEGORY_BROWSABLE);
+
+        //pass the url to intent data
+        intent.setData(Uri.parse(url));
+
+        startActivity(intent);
+    }
 
     public void onBackStackChanged() {
         try {

@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/textViewSpace1"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="5dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -23,7 +23,9 @@
     <TextView
         android:id="@+id/textViewSpace2"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -35,12 +37,13 @@
         android:onClick="openBrowserGFDA"
         android:src="@drawable/gfda"
         android:tag="https://www.girlsfootballacademyaustralia.com/" />
-
     <TextView
         android:id="@+id/textViewSpace3"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="5dp"
         android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -56,7 +59,9 @@
     <TextView
         android:id="@+id/textViewSpace4"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:background="@color/colorlightgrey" />
 
     <ImageView
@@ -70,11 +75,6 @@
         android:src="@drawable/acacia_sw"
         android:tag="http://acaciasoftware.com/" />
 
-    <TextView
-        android:id="@+id/textViewSpace5"
-        android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@color/colorlightgrey" />
 
 </LinearLayout>
 

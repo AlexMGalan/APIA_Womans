@@ -1,3 +1,12 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
@@ -7,21 +16,20 @@
     <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
-        android:layout_height="145dp"
+        android:layout_height="fill_parent"
         android:orientation="vertical"
         android:background="@color/colorAccent">
 
     <ImageView
         android:id="@+id/imageViewLB"
         android:layout_width="273dp"
-        android:layout_height="145dp"
+        android:layout_height="120dp"
         android:scaleType="fitXY"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/firstgradegf" />
     </LinearLayout>
 
     <TextView
-
         android:id="@+id/textViewNPL"
         android:layout_width="fill_parent"
         android:layout_height="30dp"
@@ -49,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="10dp"
+            android:layout_marginLeft="10dp"
             android:textStyle="bold"
             android:gravity="left"/>
 
@@ -58,6 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="10dp"
+            android:layout_marginRight="10dp"
             android:textStyle="bold"
             android:paddingLeft="5dp"
             android:gravity="right"/>
@@ -81,7 +91,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:layout_marginTop="20dp"
             android:src="@mipmap/apia_logo" />
 
         <TextView
@@ -89,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="20dp"
             android:gravity="center|center_vertical"
             android:text="Vs"
             android:textSize="20dp" />
@@ -99,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="20dp"
+
             android:layout_alignParentRight="true"
             android:src="@mipmap/southern_branch" />
     </LinearLayout>
@@ -152,7 +161,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Lambert park"
             android:textSize="14dp" />
@@ -180,7 +189,7 @@
             android:id="@+id/textView1HomeScore"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="2"
             android:gravity="end"
             android:text="-" />
@@ -189,7 +198,7 @@
             android:id="@+id/textViewfirst"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="1st Grade: 5:00pm"
            android:layout_weight="3"
             android:gravity="center"
@@ -199,7 +208,7 @@
             android:id="@+id/textView1VisitScore"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="2"
             android:gravity="left"
             android:text="-" />
@@ -342,7 +351,9 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/cubiclargenew"
         android:tag="http://cubicgroup.biz/cubic-design-construction/"/>
 </LinearLayout>
+    </TableLayout>
+</ScrollView>

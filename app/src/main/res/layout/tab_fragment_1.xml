@@ -2,7 +2,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#7CB9D6">
+    android:background="#ffffff"   >
 
     <TableRow
         android:id="@+id/tr"
@@ -53,10 +53,11 @@
         android:textStyle="bold"
         android:textColor="@android:color/white" />
     <TextView
-        android:id="@+id/textViewSpace3"
+        android:id="@+id/text1Space"
         android:layout_width="match_parent"
         android:layout_height="5dp"
         android:background="#7CB9D6" />
+
 
     <ListView
         android:id="@+id/recipe_list_view"
