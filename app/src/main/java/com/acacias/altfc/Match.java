@@ -81,7 +81,6 @@ public class Match {
     public  double  getlong(){return this._long;}
     public  String  getAddress(){return this._address;}
 
-
     public void setRound(int round){   this._round= round;};
     public void setDate(String date){   this._date = date;};
     public void setHomeTeam(String hometeam){   this._teamhome = hometeam;};
@@ -107,5 +106,4 @@ public class Match {
     }
     public void setLong(double mlong){this._long = mlong;}
     public void setAddress(String address){this._address = address;}
-
 }

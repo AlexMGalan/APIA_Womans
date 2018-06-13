@@ -1,22 +1,27 @@
 package com.acacias.altfc;
 
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import com.google.firebase.database.FirebaseDatabase;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public static String myReport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,7 @@ public class MainActivity extends AppCompatActivity
         //This Toolbar is for the AboutUs
         Toolbar toolbar2 = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar2);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //This is the Main Menu Drawer
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -46,15 +52,6 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
     }
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -63,6 +60,25 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    private boolean exit = false;
+    @Override
+    public void onBackPressed() {
+        if (exit)
+            this.finish();
+        else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -72,8 +88,15 @@ public class MainActivity extends AppCompatActivity
            this.finish();
             return true;
         }
+
+        if (item.getItemId() == android.R.id.home) {
+            //Title bar back press triggers onBackPressed()
+            onBackPressed();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -96,13 +119,19 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.mainLayout, squadsfragment)
                     .commit();
 
+        } else if (id == R.id.nav_reports) {
+            ReportsFragment reportsfragment = new ReportsFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction()
+                    .replace(R.id.mainLayout, reportsfragment)
+                    .commit();
+
         } else if (id == R.id.nav_ladders) {
             LadderFragment ladderfragment = new LadderFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
                     .replace(R.id.mainLayout, ladderfragment)
                     .commit();
-
 
 
         } else if (id == R.id.nav_coaches) {

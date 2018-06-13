@@ -35,8 +35,10 @@ public class TabFragment4 extends Fragment {
                 "71-Ashleigh Warr",
                 "72-Sorcha Ryall",
                 "73-Caitlin Webster",
-                "74-Ella Burgess",
-                "75-Lone Bromley"};
+                "74-Therese Bechara",
+                "75-Lone Bromley",
+                "76-Vivienne Dehn",
+                "77-Alix Morrant"};
 
         //1st Grade
         listView.setAdapter(null);

@@ -38,7 +38,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#ffffff"
-        android:text="Claudio Caravajal"
+        android:text=""
         android:textSize="14sp"/>
 
     <TextView

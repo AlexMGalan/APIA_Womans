@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 public class NextGameFragment extends Fragment {
 
     int  IPOS;
+    String sReport;
     int  IFirstLoad;
     View v;
 
@@ -40,6 +41,7 @@ public class NextGameFragment extends Fragment {
 
         IFirstLoad=1;
         IPOS=0;
+        sReport="";
 
         // Call Google Maps Activity
         TextView tvmap= (TextView)v.findViewById(R.id.textViewMAP);
@@ -52,6 +54,8 @@ public class NextGameFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
 
         //Set up Spinner for Rounds and Dates
         Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
@@ -151,6 +155,7 @@ public class NextGameFragment extends Fragment {
 
                   TextView tv5VisitScore = (TextView) v.findViewById(R.id.textView5VisitScore);
                   tv5VisitScore.setText(dataSnapshot.child("5GradeVisit").getValue(String.class));
+
             }
 
             @Override

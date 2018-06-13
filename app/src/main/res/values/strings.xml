@@ -47,6 +47,32 @@
         <item>Round 22</item>
     </string-array>
 
+    <string-array name="MatchReports">
+        <item>R1: Southern Branch Away</item>
+        <item>R2: Central Coast Away</item>
+        <item>R3: SD Raiders Home</item>
+        <item>R4: Western NSW Home</item>
+        <item>R5: Sydney Olympic Home</item>
+        <item>R6: Nepean Away</item>
+        <item>R7: Inter Lions Home</item>
+        <item>R8: Marconi Away</item>
+        <item>R9: UNSW Home</item>
+        <item>R10: Gladesville Ravens Away</item>
+        <item>R11: St George Home</item>
+        <item>R12: Southern Branch Away</item>
+        <item>R13: Central Coast Home</item>
+        <item>R14: SD Raiders Away</item>
+        <item>R15: Western NSW Away</item>
+        <item>R16: Sydney Olympic Away</item>
+        <item>R17: Nepean Home</item>
+        <item>R18: Inter Lions Away</item>
+        <item>R19: Marconi Home</item>
+        <item>R20: UNSW Away</item>
+        <item>R21: Gladesville Ravens Home</item>
+        <item>R22: St George Away</item>
+    </string-array>
+
+
     <string-array name="Date">
         <item>11 March 2018</item>
         <item>18 March 2018</item>
@@ -61,7 +87,7 @@
         <item>20 May 2018</item>
         <item>27 May 2018</item>
         <item>3 June 2018</item>
-        <item>10 June 2018</item>
+        <item>11 June 2018</item>
         <item>17 June 2018</item>
         <item>24 June 2018</item>
         <item>1 July 2018</item>

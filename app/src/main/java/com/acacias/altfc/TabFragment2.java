@@ -24,7 +24,9 @@ public class TabFragment2 extends Fragment {
 
         String[]
                 values1st = new String[] {
+                "2-Stephanie Fyfe",
                 "16-Emma Mason",
+                "22-Yadira Rengifo",
                 "24-Hannah Macri",
                 "25-Kim Cozens",
                 "26-Victoria Kakoliris",

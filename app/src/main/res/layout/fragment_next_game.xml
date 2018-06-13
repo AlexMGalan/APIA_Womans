@@ -177,6 +177,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="14dp" />
 
+
     </RelativeLayout>
 
     <LinearLayout
@@ -335,6 +336,8 @@
             android:gravity="center"
             android:textSize="14dp" />
 
+
+
         <TextView
             android:id="@+id/textView5VisitScore"
             android:layout_width="20dp"
@@ -343,6 +346,7 @@
             android:gravity="left"
             android:text="-" />
     </LinearLayout>
+
 
     <ImageView
         android:id="@+id/imageViewcubic"
