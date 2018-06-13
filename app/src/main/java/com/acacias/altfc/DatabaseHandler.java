@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
     private static final String DATABASE_NAME = "dbAPIA";
     private static final String TABLE_PLAYERS = "players";
     private static final String TABLE_MATCHES = "matches";
@@ -85,7 +85,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + "VALUES (14, '2018-06-11', 'Sd Raiders', 'APIA', 'Ernie Smith Reserve', ' 6:00PM',' 4:05PM', ' 2:30PM', '12:55PM', '11:30AM', 'sdraiders', -33.9340737,150.9414135, 'Kelso Crescent Moorebank' )");
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long, m_address ) "
-                + "VALUES (15, '2018-06-17', 'Western NSW', 'APIA', 'Proctor Park', ' 3:00PM',' 1:05PM', '11:30AM', ' 9:55AM', ' 8:30AM', 'westnsw', -33.4301031,149.5862814, 'Gormans Hill Rd, Bathurst' )");
+                + "VALUES (15, '2018-06-17', 'Western NSW', 'APIA', 'Sir Jack Brabham Park', ' 3:00PM',' 1:05PM', '11:30AM', ' 9:55AM', ' 8:30AM', 'westnsw', -33.3097367,149.0972249, '1641 Forest Rd, Orange' )");
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long, m_address  ) "
                 + "VALUES (16, '2018-06-24', 'Sydney Olympic', 'APIA', 'Peter Moore Field', ' 3:00PM',' 1:05PM', ' 11:30AM', ' 9:55AM', '8:30AM', 'sydneyolympic', -33.915913,151.0941328, '1C Leylands Parade, Belmore' )");
