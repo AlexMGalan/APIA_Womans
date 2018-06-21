@@ -25,6 +25,7 @@ public class NextGameFragment extends Fragment {
     String sReport;
     int  IFirstLoad;
     View v;
+    static boolean called=false;
 
     public NextGameFragment() {
         // Required empty public constructor
@@ -111,10 +112,20 @@ public class NextGameFragment extends Fragment {
         Match match = db.getMatch(IPOS);
 
         //Set up Firebase Database
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+      //  FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         String sRound = String.valueOf(match.getRound()) ;
-        DatabaseReference myRef = database.getReference().child(sRound);
+
+        if (!called)
+        {
+            FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+            called = true;
+        }
+
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef  = database.getReference().child(sRound);
+
         // DatabaseReference myRef = database.getReference();
 
 // For Listener, get data direct from snapshot
