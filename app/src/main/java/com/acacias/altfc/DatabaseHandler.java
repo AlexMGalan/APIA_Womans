@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHandler extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
     private static final String DATABASE_NAME = "dbAPIA";
     private static final String TABLE_PLAYERS = "players";
     private static final String TABLE_MATCHES = "matches";
@@ -106,7 +106,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + "VALUES (21, '2018-07-29', 'APIA', 'Gladesville Ravens', 'Lambert Park', ' 7:00PM',' 5:05PM', ' 3:30PM', ' 1:55PM', '12:30PM', 'ravens', -33.8845574,151.1441807, '20-22 Marion St, Leichhardt' )");
 
         db.execSQL("INSERT INTO "  +  TABLE_MATCHES + "(m_round, m_date,m_hometeam,m_visitteam,m_ground,m_time1,m_time2, m_time17, m_time15, m_time14, m_logo, m_lat, m_long, m_address  ) "
-                + "VALUES (22, '2018-08-05', 'St George', 'APIA', 'St George Stadium', ' 3:00PM',' 1:35PM', '11:30AM', ' 9:55AM', ' 8:30AM', 'stgeorge',-33.9420635,151.1520375, '88 Bestic Street, Rockdale' )");
+                + "VALUES (22, '2018-08-05', 'St George', 'APIA', 'St George Stadium', ' 3:00PM',' 1:05PM', '11:30AM', ' 9:55AM', ' 8:30AM', 'stgeorge',-33.9420635,151.1520375, '88 Bestic Street, Rockdale' )");
 
     }
 

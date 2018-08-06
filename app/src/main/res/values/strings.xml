@@ -72,6 +72,12 @@
         <item>R22: St George Away</item>
     </string-array>
 
+    <string-array name="News">
+        <item>2018 Finals LIVE!</item>
+        <item>Presentation Night</item>
+        <item>Trials for NPL 2019</item>
+    </string-array>
+
 
     <string-array name="Date">
         <item>11 March 2018</item>

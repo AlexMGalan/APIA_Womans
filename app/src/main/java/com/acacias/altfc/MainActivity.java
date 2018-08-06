@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     public static String myReport;
+    public static String myNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,6 +132,13 @@ public class MainActivity extends AppCompatActivity
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
                     .replace(R.id.mainLayout, ladderfragment)
+                    .commit();
+
+        } else if (id == R.id.nav_news) {
+            NewsFragment newsfragment = new NewsFragment();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction()
+                    .replace(R.id.mainLayout, newsfragment)
                     .commit();
 
 
