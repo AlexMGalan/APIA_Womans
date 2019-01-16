@@ -1,33 +1,42 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="@drawable/lambertparklarge">
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary" >
 
     <TextView
         android:id="@+id/textViewTitle1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center_horizontal"
-        android:includeFontPadding="false"
-        android:text="APIA Leichhardt Football"
+        android:padding="40dp"
+        android:layout_above="@+id/imageViewAPIA"
+        android:text="APIA Leichhardt Tigers Football"
         android:textColor="#ffffff"
         android:textSize="24dp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewAPIA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/apialogoclean3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true" />
 
     <TextView
         android:id="@+id/textViewTitle2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:padding="40dp"
         android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@+id/imageViewAPIA"
         android:gravity="center_horizontal"
         android:text="NSW Womans NPL 2"
         android:textColor="#ffffff"
         android:textSize="18dp"
         android:textStyle="bold" />
 
-</LinearLayout >
+
+</RelativeLayout >

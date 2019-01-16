@@ -43,7 +43,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser1st"
-        android:tag= "http://bit.ly/2HLhrPo"
+        android:tag= "http://bit.ly/2CoUaBD"
         />
 
     <Button
@@ -59,7 +59,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowserRes"
-        android:tag= "http://bit.ly/2rec9pC"
+        android:tag= "http://bit.ly/2FuF3u7"
         />
 
     <Button
@@ -75,7 +75,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser17"
-        android:tag= "http://bit.ly/2I43Dmz"
+        android:tag= "http://bit.ly/2TRjnLQ"
         />
 
     <Button
@@ -91,7 +91,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser15"
-        android:tag= "http://bit.ly/2HJgLu4"
+        android:tag= "http://bit.ly/2suTF4m"
         />
 
     <Button
@@ -107,7 +107,6 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser14"
-        android:tag= "http://bit.ly/2HOHg1n"
-        />
+        android:tag= "http://bit.ly/2VTH2gK"/>
 
 </LinearLayout>

@@ -19,6 +19,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class NextGameFragment extends Fragment {
 
     int  IPOS;
@@ -26,6 +30,7 @@ public class NextGameFragment extends Fragment {
     int  IFirstLoad;
     View v;
     static boolean called=false;
+    int sRound;
 
     public NextGameFragment() {
         // Required empty public constructor
@@ -65,16 +70,21 @@ public class NextGameFragment extends Fragment {
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
 
-        Spinner mySpinnerdate = (Spinner) v.findViewById(R.id.spDate);
-        ArrayAdapter<String> myAdapterDate = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Date));
+      //  Spinner mySpinnerdate = (Spinner) v.findViewById(R.id.spDate);
+      //  ArrayAdapter<String> myAdapterDate = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Date));
 
-        myAdapterDate.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinnerdate.setAdapter(myAdapterDate);
+     //   myAdapterDate.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+      //  mySpinnerdate.setAdapter(myAdapterDate);
+
+
 
         //Listener for Rounds Spinner
         mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                sRound= position;
+
+
                 LoadScreen(position);
             }
 
@@ -85,17 +95,17 @@ public class NextGameFragment extends Fragment {
         });
 
         //Listener for Dates Spinner
-        mySpinnerdate.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                LoadScreen(position);
-            }
+     //   mySpinnerdate.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+     //       @Override
+     //       public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+     //           LoadScreen(position);
+     //       }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> parentView) {
-                // your code here
-            }
-        });
+     //       @Override
+     //       public void onNothingSelected(AdapterView<?> parentView) {
+     //           // your code here
+      //      }
+      //  });
 
         return v;}
 
@@ -108,13 +118,13 @@ public class NextGameFragment extends Fragment {
             IPOS = Pos + 1;
         }
 
-        final DatabaseHandler db = new DatabaseHandler(getActivity());
-        Match match = db.getMatch(IPOS);
+      //  final DatabaseHandler db = new DatabaseHandler(getActivity());
+      //  Match match = db.getMatch(IPOS);
 
         //Set up Firebase Database
       //  FirebaseDatabase database = FirebaseDatabase.getInstance();
 
-        String sRound = String.valueOf(match.getRound()) ;
+
 
         if (!called)
         {
@@ -122,9 +132,17 @@ public class NextGameFragment extends Fragment {
             called = true;
         }
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yyyy");
+        String currentDate = sdf.format(new Date());
+
+     //  if (sRound==0) {
+     //       sRound=1;
+      //  };
+
+        sRound=sRound+1;
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef  = database.getReference().child(sRound);
+        DatabaseReference myRef  = database.getReference().child( Integer.toString(sRound));
 
         // DatabaseReference myRef = database.getReference();
 
@@ -132,6 +150,105 @@ public class NextGameFragment extends Fragment {
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                //Set Spinner Round
+          //      Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
+               // mySpinner.setSelection(match.getRound() - 1);
+           //     mySpinner.setSelection(match.getRound() - 1
+
+                //Set Spinner Date
+             //   Spinner mySpinnerDate = (Spinner) v.findViewById(R.id.spDate);
+             //   mySpinnerDate.setSelection(sRound);
+
+             //   String dtStart = match.getDate();
+
+              // String strmonthNbr = dtStart.substring(5, 7);
+               // String strmonth = null;
+
+               // switch (strmonthNbr) {
+                  //  case "03":
+                    //    strmonth = "March";
+                   //     break;
+                  //  case "04":
+                    //    strmonth = "April";
+                   //     break;
+                  //  case "05":
+                   //     strmonth = "May";
+                 //       break;
+                   // case "06":
+                   //     strmonth = "June";
+                  //      break;
+                 //   case "07":
+                    //    strmonth = "July";
+                    //    break;
+                   // case "08":
+                   //     strmonth = "August";
+                   //     break;
+                  //  case "09":
+                  //      strmonth = "September";
+                 //       break;
+                 //   default:
+                  //      strmonth = "January";
+                //        break;
+              //  }
+
+                //Date
+                //Spinner mySpinnerDate = (Spinner) v.findViewById(R.id.spDate);
+               // mySpinnerDate.setSelection(sRound);
+               // TextView tv1HomeScore = (TextView) v.findViewById(R.id.textView1HomeScore);
+               // tv1HomeScore.setText(dataSnapshot.child("1GradeHome").getValue(String.class));
+
+                //Date
+                TextView tvDate= (TextView) v.findViewById(R.id.textviewDate);
+                tvDate.setText(dataSnapshot.child("Date").getValue(String.class));
+
+
+                //Ground
+                TextView tvGround= (TextView) v.findViewById(R.id.textViewGround);
+                tvGround.setText(dataSnapshot.child("Ground").getValue(String.class));
+
+                //Address
+                TextView tvAddress= (TextView) v.findViewById(R.id.textviewAddress);
+                tvAddress.setText(dataSnapshot.child("Address").getValue(String.class));
+
+
+                if (tvGround.getText().equals("Lambert Park")) {
+
+                    ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
+                      IVLogohome.setImageResource(R.mipmap.apia_logo);
+
+                       ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
+                       Context context = IVLogohome.getContext();
+                       int idl = context.getResources().getIdentifier(dataSnapshot.child("Logo").getValue(String.class), "mipmap", context.getPackageName());
+                       IVVisit.setImageResource(idl);
+
+
+                    TextView tvHome = (TextView) v.findViewById(R.id.textViewHome);
+                    tvHome.setText("APIA Leichhardt");
+
+                    TextView tvVisit = (TextView) v.findViewById(R.id.textViewVisit);
+                    tvVisit.setText(dataSnapshot.child("Opponent").getValue(String.class));
+
+                } else {
+
+                     ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
+                     Context context = IVLogohome.getContext();
+                     int idl = context.getResources().getIdentifier(dataSnapshot.child("Logo").getValue(String.class), "mipmap", context.getPackageName());
+                     IVLogohome.setImageResource(idl);
+
+                     ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
+                     IVVisit.setImageResource(R.mipmap.apia_logo);
+
+                    TextView tvHome = (TextView) v.findViewById(R.id.textViewHome);
+                    tvHome.setText(dataSnapshot.child("Opponent").getValue(String.class));
+
+                    TextView tvVisit = (TextView) v.findViewById(R.id.textViewVisit);
+                    tvVisit.setText("APIA Leichhardt");
+                }
+
+
+
+
                 //FirstGrade
                    TextView tv1HomeScore = (TextView) v.findViewById(R.id.textView1HomeScore);
                    tv1HomeScore.setText(dataSnapshot.child("1GradeHome").getValue(String.class));
@@ -174,93 +291,54 @@ public class NextGameFragment extends Fragment {
             }
         });
 
-        //Set Spinner Round
-        Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
-        mySpinner.setSelection(match.getRound() - 1);
 
-        //Set Spinner Date
-        Spinner mySpinnerDate = (Spinner) v.findViewById(R.id.spDate);
-        mySpinnerDate.setSelection(match.getRound() - 1);
+      //  TextView tvhome = (TextView) v.findViewById(R.id.textViewHome);
+      //  tvhome.setText(match.getHomeTeam());
 
-        String dtStart = match.getDate();
+       // TextView tvvisit = (TextView) v.findViewById(R.id.textViewVisit);
+       // tvvisit.setText(match.getVisitTeam());
 
-        String strmonthNbr = dtStart.substring(5, 7);
-        String strmonth = null;
+      //  TextView tvground = (TextView) v.findViewById(R.id.textViewGround);
+      //  tvground.setText(match.getGround());
 
-        switch (strmonthNbr) {
-            case "03":
-                strmonth = "March";
-                break;
-            case "04":
-                strmonth = "April";
-                break;
-            case "05":
-                strmonth = "May";
-                break;
-            case "06":
-                strmonth = "June";
-                break;
-            case "07":
-                strmonth = "July";
-                break;
-            case "08":
-                strmonth = "August";
-                break;
-            case "09":
-                strmonth = "September";
-                break;
-            default:
-                strmonth = "January";
-                break;
-        }
+      //  TextView tvaddress = (TextView) v.findViewById(R.id.textViewMAP);
+      //  tvaddress.setText(match.getAddress() + " (map)");
 
-        TextView tvhome = (TextView) v.findViewById(R.id.textViewHome);
-        tvhome.setText(match.getHomeTeam());
+      //  TextView tvtime1 = (TextView) v.findViewById(R.id.textViewfirst);
+      //  tvtime1.setText("1st Grade: " + match.getTime1());
 
-        TextView tvvisit = (TextView) v.findViewById(R.id.textViewVisit);
-        tvvisit.setText(match.getVisitTeam());
+      //  TextView tvtime2 = (TextView) v.findViewById(R.id.textViewres);
+       // tvtime2.setText("Reserves : " + match.getTime2());
 
-        TextView tvground = (TextView) v.findViewById(R.id.textViewGround);
-        tvground.setText(match.getGround());
+      //  TextView tvtime3 = (TextView) v.findViewById(R.id.textViewr17);
+       // tvtime3.setText("Under 17 : " + match.getTime17());
 
-        TextView tvaddress = (TextView) v.findViewById(R.id.textViewMAP);
-        tvaddress.setText(match.getAddress() + " (map)");
+       // TextView tvtime4 = (TextView) v.findViewById(R.id.textView15);
+        //tvtime4.setText("Under 15 : " + match.getTime15());
 
-        TextView tvtime1 = (TextView) v.findViewById(R.id.textViewfirst);
-        tvtime1.setText("1st Grade: " + match.getTime1());
+       // TextView tvtime5 = (TextView) v.findViewById(R.id.textView14);
+       // tvtime5.setText("Under 14 : " + match.getTime14());
 
-        TextView tvtime2 = (TextView) v.findViewById(R.id.textViewres);
-        tvtime2.setText("Reserves : " + match.getTime2());
+     //   String strhomeTeam = match.getHomeTeam();
 
-        TextView tvtime3 = (TextView) v.findViewById(R.id.textViewr17);
-        tvtime3.setText("Under 17 : " + match.getTime17());
+      //  if (strhomeTeam.equals("APIA")) {
+       //     ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
+       //     IVLogohome.setImageResource(R.mipmap.apia_logo);
 
-        TextView tvtime4 = (TextView) v.findViewById(R.id.textView15);
-        tvtime4.setText("Under 15 : " + match.getTime15());
+       //     ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
+        //    Context context = IVLogohome.getContext();
+        //    int idl = context.getResources().getIdentifier(match.getlogo(), "mipmap", context.getPackageName());
+        //    IVVisit.setImageResource(idl);
+       // } else {
 
-        TextView tvtime5 = (TextView) v.findViewById(R.id.textView14);
-        tvtime5.setText("Under 14 : " + match.getTime14());
+         //   ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
+         //   Context context = IVLogohome.getContext();
+         //   int idl = context.getResources().getIdentifier(match.getlogo(), "mipmap", context.getPackageName());
+           // IVLogohome.setImageResource(idl);
 
-        String strhomeTeam = match.getHomeTeam();
-
-        if (strhomeTeam.equals("APIA")) {
-            ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
-            IVLogohome.setImageResource(R.mipmap.apia_logo);
-
-            ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
-            Context context = IVLogohome.getContext();
-            int idl = context.getResources().getIdentifier(match.getlogo(), "mipmap", context.getPackageName());
-            IVVisit.setImageResource(idl);
-        } else {
-
-            ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
-            Context context = IVLogohome.getContext();
-            int idl = context.getResources().getIdentifier(match.getlogo(), "mipmap", context.getPackageName());
-            IVLogohome.setImageResource(idl);
-
-            ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
-            IVVisit.setImageResource(R.mipmap.apia_logo);
-        }
+          //  ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
+          // IVVisit.setImageResource(R.mipmap.apia_logo);
+      //  }
         IFirstLoad = 0;
 }
 

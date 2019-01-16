@@ -7,6 +7,6 @@
     <color name="colorlightgrey">#e6e6e6</color>
     <color name="colorblack">#000000</color>
     <color name="colorFontGrey">#838383</color>
-
+    <color name="common_border_color">#838383</color>
 
 </resources>
