@@ -64,7 +64,7 @@
                 android:padding="5dp"
                 android:text="Lambert Park"
                 android:textColor="@color/colorWhite"
-                android:textSize="10dp" />
+                android:textSize="12dp" />
 
             <TextView
                 android:id="@+id/textviewAddress"
@@ -76,7 +76,7 @@
                 android:background="#07000000"
                 android:text="20-22 Marion St, Leichhardt"
                 android:textColor="@color/colorWhite"
-                android:textSize="10dp" />
+                android:textSize="11dp" />
 
             <ImageView
                 android:id="@+id/imageViewVISIT"
@@ -103,12 +103,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textviewAddress"
                 android:layout_centerHorizontal="true"
-                android:padding="20dp"
+                android:padding="30dp"
                 android:gravity="center"
                 android:background="#07000000"
                 android:text="(Map)"
                 android:textColor="@color/colorWhite"
-                android:textSize="8dp" />
+                android:textSize="12dp" />
 
         </RelativeLayout>
 
