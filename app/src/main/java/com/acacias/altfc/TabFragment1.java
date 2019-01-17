@@ -23,35 +23,31 @@ public class TabFragment1 extends ListFragment {
 
     String[] players={
             "1-Courtney Halpin",
-            "3-Britany Palombi",
-            "4-Samantha Scarlato",
+            "2-Jen Bennett",
+            "3-Jenny Bisset",
+            "4-Lara Bosnich",
             "5-Olivia Cicco",
             "6-Lucy Gilfedder",
-            "7-Elaine Vatcky",
-            "8-Carla Canini",
-            "9-Christy Ferreyra",
+            "7-Carla Canini",
+            "8-Cass Chidgey",
+            "9-Logan Garard",
             "10-Filiz Urkanci",
-            "11-Ashleigh Palombi",
+            "11-Ash Palombi",
             "12-Maddie Latham",
-            "13-Beatrice Sim Sing",
-            "14-Rebecca Watts",
-            "15-Kylie Manias",
-            "16-Jennifer Bennett",
-            "17-Sarah Urquhart",
-            "18-Jessica Martinez",
-            "19-Karen Saavedra",
-            "20-Stephanie Marsh",
-            "21-Nicole Carmichael",
-            "23-Lorena Bugden",
-            "99-Gill Raymond" };
+            "13-Sarah Urquhart",
+            "14-Becky Watts",
+            "15-Nicole Carmichael",
+            "17-Kerrie Ryan",
+            "18-Jessica Fallah",
+            "24-Georgia Bridges",
+            "40-Stephanie Grimbilos" };
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.halp,R.drawable.bpal,R.drawable.sca,R.drawable.cic,
-            R.drawable.gil,R.drawable.vat, R.drawable.can,R.drawable.fer
-            ,R.drawable.urk,R.drawable.palo,R.drawable.lath,R.drawable.sim
-            ,R.drawable.noi,R.drawable.man,R.drawable.ben,R.drawable.urq
-            ,R.drawable.mart,R.drawable.sav,R.drawable.mar,R.drawable.car
-            ,R.drawable.bug,R.drawable.noi};
+    int[] images={R.drawable.halp,R.drawable.ben,R.drawable.noi,R.drawable.noi,
+            R.drawable.cic,R.drawable.gil, R.drawable.can,R.drawable.noi
+            ,R.drawable.noi,R.drawable.urk,R.drawable.palo,R.drawable.lath
+            ,R.drawable.urq,R.drawable.noi,R.drawable.car,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi,R.drawable.noi};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;

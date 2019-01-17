@@ -97,19 +97,6 @@
                 android:background="@null"
                 android:src="@mipmap/apia_logo" />
 
-            <TextView
-                android:id="@+id/textViewMAP"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textviewAddress"
-                android:layout_centerHorizontal="true"
-                android:padding="30dp"
-                android:gravity="center"
-                android:background="#07000000"
-                android:text="(Map)"
-                android:textColor="@color/colorWhite"
-                android:textSize="12dp" />
-
         </RelativeLayout>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -364,6 +351,15 @@
             android:text="-" />
     </LinearLayout>
 
+        <TextView
+            android:id="@+id/textViewMAP"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"
+            android:gravity="center"
+            android:text="(Round Report)"
+            android:textSize="12dp" />
 
     <ImageView
         android:id="@+id/imageViewcubic"

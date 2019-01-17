@@ -13,7 +13,7 @@
         <item
             android:id="@+id/nav_squads"
             android:icon="@drawable/ic_group_black_24dp"
-            android:title="2018 Squads" />
+            android:title="2019 Squads" />
         <item
             android:id="@+id/nav_reports"
             android:icon="@drawable/ic_library_books_black_24dp"
