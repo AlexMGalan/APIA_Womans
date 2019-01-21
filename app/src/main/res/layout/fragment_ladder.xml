@@ -4,14 +4,14 @@
     android:orientation="vertical"
     android:backgroundTint="@color/colorWhite">
 
-    <TextView
-        android:id="@+id/textViewdate"
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Tables as at 2 May 2018"
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-       />
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/npl_logo" />
 
     <Button
         android:id="@+id/buttoncc"
@@ -38,7 +38,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonshape"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
@@ -54,7 +54,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonshape"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
@@ -70,7 +70,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonshape"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
@@ -86,7 +86,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonshape"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
@@ -102,11 +102,20 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonshape"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser14"
         android:tag= "http://bit.ly/2VTH2gK"/>
+
+    <TextView
+        android:id="@+id/textViewdate"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Tables as at 2 May 2018"
+        android:gravity="center"
+        />
 
 </LinearLayout>

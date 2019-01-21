@@ -120,13 +120,6 @@ public class MainActivity extends AppCompatActivity
                     .replace(R.id.mainLayout, squadsfragment)
                     .commit();
 
-        } else if (id == R.id.nav_reports) {
-            ReportsFragment reportsfragment = new ReportsFragment();
-            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction()
-                    .replace(R.id.mainLayout, reportsfragment)
-                    .commit();
-
         } else if (id == R.id.nav_ladders) {
             LadderFragment ladderfragment = new LadderFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();

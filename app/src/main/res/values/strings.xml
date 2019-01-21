@@ -47,62 +47,12 @@
         <item>Round 22</item>
     </string-array>
 
-    <string-array name="MatchReports">
-        <item>R1: Southern Branch Away</item>
-        <item>R2: Central Coast Away</item>
-        <item>R3: SD Raiders Home</item>
-        <item>R4: Western NSW Home</item>
-        <item>R5: Sydney Olympic Home</item>
-        <item>R6: Nepean Away</item>
-        <item>R7: Inter Lions Home</item>
-        <item>R8: Marconi Away</item>
-        <item>R9: UNSW Home</item>
-        <item>R10: Gladesville Ravens Away</item>
-        <item>R11: St George Home</item>
-        <item>R12: Southern Branch Away</item>
-        <item>R13: Central Coast Home</item>
-        <item>R14: SD Raiders Away</item>
-        <item>R15: Western NSW Away</item>
-        <item>R16: Sydney Olympic Away</item>
-        <item>R17: Nepean Home</item>
-        <item>R18: Inter Lions Away</item>
-        <item>R19: Marconi Home</item>
-        <item>R20: UNSW Away</item>
-        <item>R21: Gladesville Ravens Home</item>
-        <item>R22: St George Away</item>
-    </string-array>
-
     <string-array name="News">
         <item>2018 Finals LIVE!</item>
         <item>Presentation Night</item>
         <item>Trials for NPL 2019</item>
     </string-array>
 
-
-    <string-array name="Date">
-        <item>11 March 2018</item>
-        <item>18 March 2018</item>
-        <item>25 March 2018</item>
-        <item>2 April 2018</item>
-        <item>8 April 2018</item>
-        <item>15 April 2018</item>
-        <item>22 April 2018</item>
-        <item>29 April 2018</item>
-        <item>6 May 2018</item>
-        <item>13 May 2018</item>
-        <item>20 May 2018</item>
-        <item>27 May 2018</item>
-        <item>3 June 2018</item>
-        <item>11 June 2018</item>
-        <item>17 June 2018</item>
-        <item>24 June 2018</item>
-        <item>1 July 2018</item>
-        <item>8 July 2018</item>
-        <item>15 July 2018</item>
-        <item>22 July 2018</item>
-        <item>29 July 2018</item>
-        <item>5 August 2018</item>
-    </string-array>
 
     <string name="title_activity_maps">Map</string>
 

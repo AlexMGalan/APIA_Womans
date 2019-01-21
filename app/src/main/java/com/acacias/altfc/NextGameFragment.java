@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +32,10 @@ public class NextGameFragment extends Fragment {
     int  IFirstLoad;
     View v;
     static boolean called=false;
-    int sRound;
+    int iRound;
+    String sLat;
+    String sLong;
+    String sGround;
 
     public NextGameFragment() {
         // Required empty public constructor
@@ -49,18 +54,6 @@ public class NextGameFragment extends Fragment {
         IPOS=0;
         sReport="";
 
-        // Call Google Maps Activity
-        TextView tvmap= (TextView)v.findViewById(R.id.textViewMAP);
-        tvmap.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Bundle dataBundle = new Bundle();
-                dataBundle.putInt("Round", IPOS);
-                Intent intent = new Intent(getActivity(), MapsActivity.class);
-                intent.putExtras(dataBundle);
-                startActivity(intent);
-            }
-        });
-
         //Set up Spinner for Rounds and Dates
         Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Rounds));
@@ -68,11 +61,72 @@ public class NextGameFragment extends Fragment {
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(myAdapter);
 
+
+       SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//
+//        //Get current date
+       String date1 = sdf.format(Calendar.getInstance().getTime());
+//
+        //Set up round dates
+        String Round1 = "2019-03-10";
+        String Round2 = "2019-03-17";
+        String Round3 = "2019-03-24";
+        String Round4 = "2019-03-31";
+        String Round5 = "2019-04-07";
+        String Round6 = "2019-04-14";
+        String Round7 = "2019-04-22";
+        String Round8 = "2019-04-28";
+        String Round9 = "2019-05-05";
+        String Round10 = "2019-05-12";
+        String Round11 = "2019-05-19";
+        String Round12 = "2019-05-26";
+        String Round13 = "2019-06-02";
+        String Round14 = "2019-06-09";
+        String Round15 = "2019-06-16";
+        String Round16 = "2019-06-23";
+        String Round17 = "2019-06-30";
+        String Round18= "2019-07-07";
+        String Round19 = "2019-07-14";
+        String Round20 = "2019-07-21";
+        String Round21 = "2019-07-28";
+        String Round22= "2019-08-04";
+
+       iRound=1;
+
+       //Get Next Round
+        if(Round1.compareTo(date1) < 0) {iRound=2;};
+        if (Round2.compareTo(date1) < 0) {iRound = 3; };
+        if (Round3.compareTo(date1) < 0) {iRound = 4; };
+        if (Round4.compareTo(date1) < 0) {iRound = 5; };
+        if (Round5.compareTo(date1) < 0) {iRound = 6; };
+        if (Round6.compareTo(date1) < 0) {iRound = 7; };
+        if (Round7.compareTo(date1) < 0) {iRound = 8; };
+        if (Round8.compareTo(date1) < 0) {iRound = 9; };
+        if (Round9.compareTo(date1) < 0) {iRound = 10; };
+        if (Round10.compareTo(date1) < 0) {iRound = 11; };
+        if (Round11.compareTo(date1) < 0) {iRound = 12; };
+        if (Round12.compareTo(date1) < 0) {iRound = 13; };
+        if (Round13.compareTo(date1) < 0) {iRound = 14; };
+        if (Round14.compareTo(date1) < 0) {iRound = 15; };
+        if (Round15.compareTo(date1) < 0) {iRound = 16; };
+        if (Round16.compareTo(date1) < 0) {iRound = 17; };
+        if (Round17.compareTo(date1) < 0) {iRound = 18; };
+        if (Round18.compareTo(date1) < 0) {iRound = 19; };
+        if (Round19.compareTo(date1) < 0) {iRound = 20; };
+        if (Round20.compareTo(date1) < 0) {iRound = 21; };
+        if (Round21.compareTo(date1) < 0) {iRound = 22; };
+        if (Round22.compareTo(date1) < 0) {iRound = 23; };
+
+       if (iRound>1) {
+        mySpinner.setSelection(iRound-1);
+       };
+
         //Listener for Rounds Spinner
         mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                sRound= position;
+
+                iRound= position+ 1;
 
 
                 LoadScreen(position);
@@ -106,17 +160,55 @@ public class NextGameFragment extends Fragment {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yyyy");
         String currentDate = sdf.format(new Date());
 
-        sRound=sRound+1;
+       // iRound=iRound+1;
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef  = database.getReference().child( Integer.toString(sRound));
+        DatabaseReference myRef  = database.getReference().child( Integer.toString(iRound));
 
         // DatabaseReference myRef = database.getReference();
 
-// For Listener, get data direct from snapshot
+        // Call Google Maps Activity
+        TextView tvmap= (TextView)v.findViewById(R.id.textviewAddress);
+        tvmap.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Bundle dataBundle = new Bundle();
+              //  dataBundle.putInt("Round", IPOS);
+                dataBundle.putString("Lat", sLat);
+                dataBundle.putString("Long", sLong);
+                dataBundle.putString("Ground", sGround);
+                Intent intent = new Intent(getActivity(), MapsActivity.class);
+                intent.putExtras(dataBundle);
+                startActivity(intent);
+            }
+        });
+
+
+        // Call Match Report Activity
+        TextView tvreport= (TextView)v.findViewById(R.id.textViewREPORT);
+        tvreport.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            ListItemActivity1 fragment2 = new ListItemActivity1();
+            FragmentManager fragmentManager = getFragmentManager();
+            Bundle args = new Bundle();
+            args.putInt("Round", iRound);
+            fragment2.setArguments(args);
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.mainLayout, fragment2);
+            fragmentTransaction.commit();
+                }
+            });
+
+
+        // For Listener, get data direct from snapshot
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                //Lat Long
+                sLat= dataSnapshot.child("Lat").getValue(String.class);
+                sLong= dataSnapshot.child("Long").getValue(String.class);
+                sGround= dataSnapshot.child("Ground").getValue(String.class);
 
                 //Date
                 TextView tvDate= (TextView) v.findViewById(R.id.textviewDate);

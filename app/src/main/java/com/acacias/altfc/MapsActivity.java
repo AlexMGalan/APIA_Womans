@@ -33,19 +33,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Bundle bundle = getIntent().getExtras();
 
         //Extract the data…
-        int stuff = bundle.getInt("Round");
+        double dLat = Double.parseDouble(bundle.getString("Lat"));
+        double dLong = Double.parseDouble(bundle.getString("Long"));
+        String sGrround = bundle.getString("Ground");
 
-        final DatabaseHandler db = new DatabaseHandler(this);
-        Match match = db.getMatch(stuff);
+       // final DatabaseHandler db = new DatabaseHandler(this);
+       // Match match = db.getMatch(stuff);
 
         //LatLng sydney = new LatLng(-34.9003438, 150.604564);
-        LatLng matchlocation = new LatLng(match.getlat(), match.getlong());
+        LatLng matchlocation = new LatLng(dLat, dLong);
 
         float zoomLevel = 16.0f; //This goes up to 21
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(matchlocation, 14));
         mMap.getUiSettings().setMapToolbarEnabled(true);
 
-        Marker marker = mMap.addMarker(new MarkerOptions().position(matchlocation).title(match.getGround()));
+        Marker marker = mMap.addMarker(new MarkerOptions().position(matchlocation).title(sGrround));
         marker.showInfoWindow();
     }
 }

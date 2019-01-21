@@ -31,29 +31,30 @@ public class ListItemActivity1 extends Fragment {
         final View v = inflater.inflate(R.layout.list_item_activity_1, container, false);
 
        //Get the Round Nbr
-       Integer value = getArguments().getInt("Match");
+       Integer value = getArguments().getInt("Round");
 
-        getActivity().setTitle("Round " + (value +1));
+        getActivity().setTitle("Match Report Round " + (value));
 
         Toolbar mToolbar = (Toolbar) v.findViewById(R.id.toolbar);
-        mToolbar.setTitle("Back to Match List");
+        mToolbar.setTitle("Back");
         mToolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
 
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                ReportsFragment fragment2 = new ReportsFragment();
+                NextGameFragment nextgamefragment = new NextGameFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.mainLayout, fragment2);
+                fragmentTransaction.replace(R.id.mainLayout, nextgamefragment);
                 fragmentTransaction.commit();
+
             }
         });
 
         //Set up Firebase Database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference().child(String.valueOf(value+1));
+        DatabaseReference myRef = database.getReference().child(String.valueOf(value));
 
         // For Listener, get data direct from snapshot
         myRef.addValueEventListener(new ValueEventListener() {

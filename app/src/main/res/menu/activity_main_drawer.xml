@@ -15,10 +15,6 @@
             android:icon="@drawable/ic_group_black_24dp"
             android:title="2019 Squads" />
         <item
-            android:id="@+id/nav_reports"
-            android:icon="@drawable/ic_library_books_black_24dp"
-            android:title="Match Reports" />
-        <item
             android:id="@+id/nav_ladders"
             android:icon="@drawable/ic_view_list_black_24dp"
             android:title="Ladders" />

@@ -46,12 +46,12 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
                 android:textStyle="bold"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:background="#07000000"
                 android:text="13 March 2019"
                 android:textColor="@color/colorWhite"
-                android:textSize="12dp" />
+                android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/textViewGround"
@@ -61,10 +61,9 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:background="#07000000"
-                android:padding="5dp"
                 android:text="Lambert Park"
                 android:textColor="@color/colorWhite"
-                android:textSize="12dp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:id="@+id/textviewAddress"
@@ -74,9 +73,9 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:background="#07000000"
+                android:textColor="@color/colorAccent"
                 android:text="20-22 Marion St, Leichhardt"
-                android:textColor="@color/colorWhite"
-                android:textSize="11dp" />
+                android:textSize="12dp" />
 
             <ImageView
                 android:id="@+id/imageViewVISIT"
@@ -352,12 +351,13 @@
     </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewMAP"
+            android:id="@+id/textViewREPORT"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:padding="15dp"
             android:gravity="center"
+            android:textColor="@color/colorAccent"
             android:text="(Round Report)"
             android:textSize="12dp" />
 
