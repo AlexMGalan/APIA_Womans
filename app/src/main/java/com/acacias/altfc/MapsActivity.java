@@ -37,9 +37,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         double dLong = Double.parseDouble(bundle.getString("Long"));
         String sGrround = bundle.getString("Ground");
 
-       // final DatabaseHandler db = new DatabaseHandler(this);
-       // Match match = db.getMatch(stuff);
-
         //LatLng sydney = new LatLng(-34.9003438, 150.604564);
         LatLng matchlocation = new LatLng(dLat, dLong);
 

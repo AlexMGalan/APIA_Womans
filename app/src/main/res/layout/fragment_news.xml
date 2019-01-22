@@ -5,8 +5,18 @@
     android:backgroundTint="@color/colorWhite">
 
     <!-- List Selector Code in ListView -->
+    <TextView
+        android:text="News"
+        android:id="@+id/TextViewNews"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
     <ListView
-        android:id="@+id/simpleListView"
+        android:id="@+id/listViewNews"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:divider="#5E1529"

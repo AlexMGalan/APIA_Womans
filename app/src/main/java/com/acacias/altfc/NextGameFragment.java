@@ -28,7 +28,6 @@ import java.util.Date;
 public class NextGameFragment extends Fragment {
 
     int  IPOS;
-    String sReport;
     int  IFirstLoad;
     View v;
     static boolean called=false;
@@ -41,7 +40,6 @@ public class NextGameFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -50,9 +48,8 @@ public class NextGameFragment extends Fragment {
         v = inflater.inflate(R.layout.fragment_next_game, container, false);
         getActivity().setTitle("Next Game");
 
-        IFirstLoad=1;
+       // IFirstLoad=1;
         IPOS=0;
-        sReport="";
 
         //Set up Spinner for Rounds and Dates
         Spinner mySpinner = (Spinner) v.findViewById(R.id.spRound);
@@ -127,8 +124,6 @@ public class NextGameFragment extends Fragment {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 
                 iRound= position+ 1;
-
-
                 LoadScreen(position);
             }
 
@@ -138,17 +133,16 @@ public class NextGameFragment extends Fragment {
             }
         });
 
-
         return v;}
 
     //Main Load Screen
     void LoadScreen(int Pos) {
 
-        if (IFirstLoad == 1) {
-            IPOS = 22;
-        } else {
-            IPOS = Pos + 1;
-        }
+     //   if (IFirstLoad == 1) {
+       //     IPOS = 22;
+      //  } else {
+      //     IPOS = Pos + 1;
+     //  }
 
 
         if (!called)

@@ -369,6 +369,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="40dp"
+        android:onClick="openBrowserCubic"
         android:src="@drawable/cubiclargenew"
         android:tag="http://cubicgroup.biz/cubic-design-construction/"/>
 </LinearLayout>
