@@ -21,6 +21,6 @@
         android:layout_height="wrap_content"
         android:divider="#5E1529"
         android:dividerHeight="1dp"
-        android:padding="20dp"
-        android:listSelector="#7CB9D6"/> <!--list selector in green color-->
+        android:listSelector="#7CB9D6"
+        android:padding="20dp" /> <!--list selector in green color-->
 </LinearLayout>
