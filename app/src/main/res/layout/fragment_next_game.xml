@@ -24,21 +24,6 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/grass2" />
 
-<!--            <TextView
-               android:id="@+id/textview"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/rounded_corner"
-                android:gravity="center"
-                android:lines="3"
-                android:padding="5dp"
-                android:text="13 March 2019 Lambert Park 20-22 Marion St, Leichhardt"
-                android:textColor="@color/colorblack"
-                android:textSize="10dp" />-->
-
             <TextView
                 android:id="@+id/textviewDate"
                 android:layout_width="120dp"
@@ -55,7 +40,7 @@
 
             <TextView
                 android:id="@+id/textViewGround"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textviewDate"
                 android:layout_centerHorizontal="true"
@@ -67,7 +52,7 @@
 
             <TextView
                 android:id="@+id/textviewAddress"
-                android:layout_width="120dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textViewGround"
                 android:layout_centerHorizontal="true"
