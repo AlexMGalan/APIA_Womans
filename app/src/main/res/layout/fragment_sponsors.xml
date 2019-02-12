@@ -1,78 +1,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:backgroundTint="@color/colorWhite">
+    android:clipToPadding="false"
+    android:background="@color/colorlightgrey">
 
-    <TextView
-        android:id="@+id/textViewSpace1"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewcubic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:onClick="openBrowserCubic"
+        android:padding="10dp"
         android:src="@drawable/cubic"
-        android:tag="http://cubicgroup.biz/cubic-design-construction/" />
+        android:tag="http://cubicgroup.biz/cubic-design-construction/"
+        android:background="@drawable/back"/>
 
-    <TextView
-        android:id="@+id/textViewSpace2"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewGFDA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
         android:onClick="openBrowserGFDA"
+
         android:src="@drawable/gfda"
+        android:background="@drawable/back"
         android:tag="https://www.girlsfootballacademyaustralia.com/" />
-    <TextView
-        android:id="@+id/textViewSpace3"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageViewWests"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
+        android:padding="10dp"
         android:src="@drawable/wests_ashfield"
         android:tag="http://westsashfield.com.au/"
+        android:background="@drawable/back"
         android:onClick="openBrowserWests" />
 
-    <TextView
-        android:id="@+id/textViewSpace4"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:background="@color/colorlightgrey" />
 
     <ImageView
         android:id="@+id/imageacacia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
-        android:layout_alignParentBottom = "true"
+        android:padding="40dp"
         android:onClick="openBrowserWests"
         android:src="@drawable/acacia_sw"
+        android:background="@drawable/back"
+
         android:tag="http://acaciasoftware.com/" />
 
 

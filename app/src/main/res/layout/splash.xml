@@ -33,7 +33,7 @@
         android:fontFamily="sans-serif-smallcaps"
         android:layout_below="@+id/imageViewAPIA"
         android:gravity="center_horizontal"
-        android:text="NSW Womans NPL 2"
+        android:text="NSW Womans NPL 2 2019"
         android:textColor="#ffffff"
         android:textSize="18dp"
         android:textStyle="bold" />
