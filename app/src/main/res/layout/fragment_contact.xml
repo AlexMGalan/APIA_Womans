@@ -68,7 +68,7 @@
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/imageViewAlex"
         android:layout_below="@id/TextViewPia3"
-        android:text="APIA Womans Administration: Alex Ciccio"
+        android:text="APIA Womans Administration: Alex Cicco"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold" />
