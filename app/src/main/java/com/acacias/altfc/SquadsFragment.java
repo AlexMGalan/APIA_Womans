@@ -25,7 +25,7 @@ public class SquadsFragment extends Fragment {
         // return inflater.inflate(R.layout.fragment_history, container, false);
 
         View v = inflater.inflate(R.layout.fragment_squads, container, false);
-        getActivity().setTitle("2018 Squads");
+        getActivity().setTitle("2019 Squads");
 
         TabLayout tabLayout = (TabLayout) v.findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("First Grade"));

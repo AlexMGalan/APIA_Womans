@@ -46,8 +46,8 @@ public class TabFragment1 extends ListFragment {
     int[] images={R.drawable.halp,R.drawable.ben,R.drawable.bis,R.drawable.boz,
             R.drawable.cic,R.drawable.gil, R.drawable.can,R.drawable.chi
             ,R.drawable.gar,R.drawable.urk,R.drawable.palo,R.drawable.lath
-            ,R.drawable.urq,R.drawable.noi,R.drawable.car,R.drawable.rya
-            ,R.drawable.fal,R.drawable.bri,R.drawable.noi};
+            ,R.drawable.urq,R.drawable.wat,R.drawable.car,R.drawable.rya
+            ,R.drawable.fal,R.drawable.bri,R.drawable.grim};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;

@@ -63,9 +63,9 @@
         android:id="@+id/recipe_list_view"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textSize="12sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="40sp"
         android:isScrollContainer="false"
         android:background="#ffffff">
     </ListView>

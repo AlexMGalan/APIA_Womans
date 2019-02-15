@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="188dp"
+        android:layout_height="158dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="30dp"
@@ -21,7 +21,9 @@
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imageView1"
         android:layout_marginTop="19dp"
+        android:gravity="center_vertical"
         android:padding="10dp"
+        android:textSize="20dp"
         android:layout_toRightOf="@+id/imageView1"
         android:text="Name"
         android:textAppearance="?android:attr/textAppearanceMedium" />
