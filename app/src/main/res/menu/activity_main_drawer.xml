@@ -11,9 +11,13 @@
             android:icon="@drawable/baseline_announcement_black_18dp"
             android:title="News" />
         <item
-            android:id="@+id/nav_squads"
+            android:id="@+id/nav_squads_npl"
             android:icon="@drawable/ic_group_black_24dp"
-            android:title="2019 Squads" />
+            android:title="2019 NPL Squads" />
+        <item
+            android:id="@+id/nav_squads_sap"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="2019 SAP Squads" />
         <item
             android:id="@+id/nav_ladders"
             android:icon="@drawable/ic_view_list_black_24dp"

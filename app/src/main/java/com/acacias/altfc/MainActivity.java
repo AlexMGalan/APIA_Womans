@@ -113,11 +113,18 @@ public class MainActivity extends AppCompatActivity
                 .commit();
             this.setTitle("Next Game");
 
-        } else if (id == R.id.nav_squads) {
+        } else if (id == R.id.nav_squads_npl) {
             SquadsFragment squadsfragment = new SquadsFragment();
             android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction()
                     .replace(R.id.mainLayout, squadsfragment)
+                    .commit();
+
+        } else if (id == R.id.nav_squads_sap) {
+            SquadsFragmentSAP squadsfragmentSAP = new SquadsFragmentSAP();
+            android.support.v4.app.FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction()
+                    .replace(R.id.mainLayout, squadsfragmentSAP)
                     .commit();
 
         } else if (id == R.id.nav_ladders) {

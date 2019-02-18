@@ -15,37 +15,32 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class TabFragment3 extends ListFragment {
+public class TabFragment11SAP extends ListFragment {
 
     ListView listView ;
     private String[] drawerListViewItems;
     private ListView drawerListView;
 
-    String[] players={
-            "1-Claira Jovanovski",
-            "42-Steph Volos",
-            "43-Ashleigh Warr",
-            "47-Natalie Bartolotto",
-            "48-Caitlin Webster",
-            "49-Lilly Dummett",
-            "50-Sofia Issa",
-            "51-Therese Bechara",
-            "52-Alina Stojcevski",
-            "53-Danielle Rustein",
-            "54-Alyssa Sklias",
-            "55-Hazel Duwenbeck",
-            "56-Alannah Galan",
-            "57-Lara Mascaro",
-            "58-Natalie Marchese",
-            "59-Katerina Samaras"};
+    String[] players11={
+            "1-Charlotte So",
+            "68-Willow Bodecott",
+            "70-Bianka Pavela",
+            "71-Tayla Hand",
+            "72-Samantha Pak",
+            "73-Isabel Fitzpatrick",
+            "74-Cecilia Cicco",
+            "75-Alexia Mavraidis",
+            "76-Bianca Iacono",
+            "77-Eliana Tzouganatos",
+            "78-Allegra Butera",
+            "79-Lexi Modena" };
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.claj17,R.drawable.stev17,R.drawable.ashw17,R.drawable.natb17,
-            R.drawable.caitw17,R.drawable.lild17, R.drawable.sofi17,R.drawable.therb17
-            ,R.drawable.alis17,R.drawable.danr17,R.drawable.alys17,R.drawable.noi
-            ,R.drawable.alag17,R.drawable.laram17,R.drawable.natm17,R.drawable.kats17
-    };
+    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
+            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi,R.drawable.noi};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
@@ -54,16 +49,16 @@ public class TabFragment3 extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.tab_fragment_3, container, false);
+        View v = inflater.inflate(R.layout.tab_fragment_sap11, container, false);
 
         //MAP
         HashMap<String, String> map=new HashMap<String, String>();
 
         //FILL
-        for(int i=0;i<players.length;i++)
+        for(int i=0;i<players11.length;i++)
         {
             map=new HashMap<String, String>();
-            map.put("Player", players[i]);
+            map.put("Player", players11[i]);
             map.put("Image", Integer.toString(images[i]));
 
             data.add(map);
