@@ -71,7 +71,7 @@ public class TabFragment11SAP extends ListFragment {
         int[] to={R.id.nameTxt,R.id.imageView1};
 
         //ADAPTER
-        adapter=new SimpleAdapter(getActivity(), data, R.layout.model, from, to);
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model_sap, from, to);
         setListAdapter(adapter);
 
         return super.onCreateView(inflater, container, savedInstanceState);
