@@ -25,7 +25,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
-        android:onClick="openBrowserCC"
+        android:onClick="openBrowser"
         android:tag="http://nplnsw.com.au/club-championship-2-nsw-womens/"
 
         />
@@ -42,7 +42,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
-        android:onClick="openBrowser1st"
+        android:onClick="openBrowser"
         android:tag= "http://bit.ly/2CoUaBD"
         />
 
@@ -58,7 +58,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
-        android:onClick="openBrowserRes"
+        android:onClick="openBrowser"
         android:tag= "http://bit.ly/2FuF3u7"
         />
 
@@ -74,7 +74,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
-        android:onClick="openBrowser17"
+        android:onClick="openBrowser"
         android:tag= "http://bit.ly/2TRjnLQ"
         />
 
@@ -90,7 +90,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
-        android:onClick="openBrowser15"
+        android:onClick="openBrowser"
         android:tag= "http://bit.ly/2suTF4m"
         />
 
@@ -106,7 +106,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
-        android:onClick="openBrowser14"
+        android:onClick="openBrowser"
         android:tag= "http://bit.ly/2VTH2gK"/>
 
     <TextView

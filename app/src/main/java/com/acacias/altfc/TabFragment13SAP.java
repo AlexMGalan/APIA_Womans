@@ -40,10 +40,10 @@ public class TabFragment13SAP extends ListFragment {
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
-            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi};
+    int[] images={R.drawable.romy_m,R.drawable.sienna_h,R.drawable.grace_d,R.drawable.claudia_p,
+            R.drawable.maria_r,R.drawable.lucia_b, R.drawable.danielle_m,R.drawable.isabel_a
+            ,R.drawable.mya_c,R.drawable.olivia_m,R.drawable.ava_b,R.drawable.maddox_f
+            ,R.drawable.noi,R.drawable.aliyssa_w,R.drawable.ella_b};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
@@ -74,7 +74,7 @@ public class TabFragment13SAP extends ListFragment {
         int[] to={R.id.nameTxt,R.id.imageView1};
 
         //ADAPTER
-        adapter=new SimpleAdapter(getActivity(), data, R.layout.model_sap, from, to);
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model, from, to);
         setListAdapter(adapter);
 
         return super.onCreateView(inflater, container, savedInstanceState);

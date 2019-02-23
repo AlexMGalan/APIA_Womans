@@ -40,7 +40,7 @@ public class TabFragment10SAP extends ListFragment {
     int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
             R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
             ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi};
+            ,R.drawable.noi,R.drawable.ava_b,R.drawable.noi};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
@@ -71,7 +71,7 @@ public class TabFragment10SAP extends ListFragment {
         int[] to={R.id.nameTxt,R.id.imageView1};
 
         //ADAPTER
-        adapter=new SimpleAdapter(getActivity(), data, R.layout.model_sap, from, to);
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model, from, to);
         setListAdapter(adapter);
 
         return super.onCreateView(inflater, container, savedInstanceState);

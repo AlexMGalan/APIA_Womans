@@ -104,26 +104,47 @@
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewC1"
+        android:id="@+id/imageViewGSAP13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCF"
         android:layout_marginTop="20dp"
-        android:text="Proudly sponsored by:"
+        android:text="GSAP Under 13: Roberto Maiorana"
         android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textSize="14sp" />
 
-    <ImageView
-        android:id="@+id/imageViewC2"
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewGSAP12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewC1"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="10dp"
-        android:onClick="openBrowser"
-        android:src="@drawable/cubiclargenew"
-        android:tag="http://cubicgroup.biz/cubic-design-construction/" />
+        android:layout_below="@id/imageViewGSAP13"
+        android:text="GSAP Under 12: John Jiggins"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewGSAP11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGSAP12"
+        android:text="GSAP Under 11: Filiz Urkanci"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewGSAP10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGSAP11"
+        android:text="GSAP Under 10: Ernesto Bivona"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+
+
+
+
+
 
 </RelativeLayout>
 

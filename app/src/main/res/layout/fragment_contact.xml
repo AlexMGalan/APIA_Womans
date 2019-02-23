@@ -126,7 +126,7 @@
         android:layout_centerHorizontal="true"
         android:src="@mipmap/instagram2"
         android:tag="https://www.instagram.com/apiawomens"
-        android:onClick="openBrowserInstagram"/>
+        android:onClick="openBrowser"/>
 
     <android.support.design.widget.FloatingActionButton
     android:id="@+id/imageViewfb"
@@ -140,7 +140,7 @@
     android:layout_centerHorizontal="true"
     android:src="@mipmap/facebook"
     android:tag="https://www.facebook.com/apiatigerswomens/"
-    android:onClick="openBrowserFacebook" />
+    android:onClick="openBrowser" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/imageViewTW"
@@ -153,7 +153,7 @@
         android:layout_toRightOf="@id/imageViewig"
         android:src="@mipmap/twitter"
         android:tag="https://twitter.com/apialeichhardt?lang=en"
-        android:onClick="openBrowserTwitter" />
+        android:onClick="openBrowser" />
 
     <TextView
         android:text="https://www.apiatigers.com"
