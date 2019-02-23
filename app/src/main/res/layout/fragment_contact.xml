@@ -159,13 +159,41 @@
         android:text="https://www.apiatigers.com"
         android:id="@+id/TextViewWeb"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_below="@id/imageViewfb"
         android:layout_marginTop="10dp"
+        android:autoLink="web"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewAcacia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/TextViewWeb"
+        android:text="App Design:"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:text="http://acaciasoftware.com/"
+        android:id="@+id/TextViewAcaciaSW"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/TextViewAcacia"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
         android:autoLink="web"
         android:linksClickable="true"
         android:layout_centerHorizontal="true">
     </TextView>
+
 
 </RelativeLayout>
 
