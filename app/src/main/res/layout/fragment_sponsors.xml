@@ -1,4 +1,15 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -114,7 +125,7 @@
         android:id="@+id/TextViewTeamSpon1"
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:text="First Grade"
         android:textSize="14sp"
@@ -124,7 +135,7 @@
         android:id="@+id/imageViewSnad"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:src="@drawable/snaidero"
         android:tag="https://www.snaidero.com/"
@@ -135,7 +146,7 @@
         android:id="@+id/imageViewSlip"
         android:layout_width="110dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:src="@drawable/slipstop"
         android:tag="http://slipstop.com.au/"
@@ -149,7 +160,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:clipToPadding="false"
+
         android:background="@color/colorlightgrey">
 
         <android.support.v7.widget.AppCompatTextView
@@ -159,15 +170,14 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:text="Reserves"
-            android:textSize="14sp"
-        />
+            android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/imageViewSnad2"
             android:layout_width="110dp"
             android:layout_height="50dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+
             android:src="@drawable/snaidero"
             android:tag="https://www.snaidero.com/"
             android:background="@drawable/back"
@@ -179,7 +189,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:clipToPadding="false"
         android:background="@color/colorlightgrey">
 
         <android.support.v7.widget.AppCompatTextView
@@ -195,14 +204,44 @@
             android:id="@+id/imageViewGym"
             android:layout_width="110dp"
             android:layout_height="50dp"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/summer_hill"
             android:tag="https://summerhillgym.com.au/"
             android:background="@drawable/back"
             android:onClick="openBrowser" />
 
     </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:background="@color/colorlightgrey">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/TextViewTeamSpon4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Under 15"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imageViewRSM"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/rsm"
+            android:tag="https://www.rsm.global/australia/"
+            android:background="@drawable/back"
+            android:onClick="openBrowser" />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -225,7 +264,7 @@
             android:layout_width="110dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/back"
             android:src="@drawable/razcon" />
 
@@ -234,7 +273,7 @@
             android:layout_width="110dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/back"
             android:onClick="openBrowser"
             android:src="@drawable/continental"
@@ -243,36 +282,8 @@
 
     </LinearLayout>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:clipToPadding="false"
-        android:background="@color/colorlightgrey">
-
-        <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/TextViewTeamSpon4"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:text="Under 15"
-            android:textSize="14sp" />
-
-        <ImageView
-            android:id="@+id/imageViewRSM"
-            android:layout_width="110dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/rsm"
-            android:tag="https://www.rsm.global/australia/"
-            android:background="@drawable/back"
-            android:onClick="openBrowser" />
-
-    </LinearLayout>
-
 
 </LinearLayout>
 
-
+    </TableLayout>
+</ScrollView>
