@@ -22,6 +22,7 @@ public class TabFragment2 extends ListFragment {
     private ListView drawerListView;
 
     String[] players={
+            "40-Stephanie Grimbilos",
             "16-Emma Mason",
             "26-Ramona Spicer",
             "27-Hannah Bollom",
@@ -36,11 +37,11 @@ public class TabFragment2 extends ListFragment {
             "36-Nicola Simmons",
             "37-Kim Cozens",
             "38-Amelia Griffin",
-            "39-Elizabeth Donnelly" };
+            "39-Elizabeth Donnelly"            };
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
+    int[] images={R.drawable.grim, R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
             R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
             ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
             ,R.drawable.noi,R.drawable.noi,R.drawable.noi

@@ -39,15 +39,14 @@ public class TabFragment1 extends ListFragment {
             "15-Nicole Carmichael",
             "17-Kerrie Ryan",
             "18-Jessica Fallah",
-            "24-Georgia Bridges",
-            "40-Stephanie Grimbilos" };
+            "24-Georgia Bridges"};
 
     // Array of integers points to images stored in /res/drawable-ldpi/
     int[] images={R.drawable.halp,R.drawable.ben,R.drawable.bis,R.drawable.boz,
             R.drawable.cic,R.drawable.gil, R.drawable.can,R.drawable.chi
             ,R.drawable.gar,R.drawable.urk,R.drawable.palo,R.drawable.lath
             ,R.drawable.urq,R.drawable.wat,R.drawable.car,R.drawable.rya
-            ,R.drawable.fal,R.drawable.bri,R.drawable.grim};
+            ,R.drawable.fal,R.drawable.bri};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
