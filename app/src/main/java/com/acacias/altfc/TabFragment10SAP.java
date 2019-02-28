@@ -27,7 +27,7 @@ public class TabFragment10SAP extends ListFragment {
             "90-Jade Labalan",
             "91-Cassie Ryall",
             "92-Stella Trieste",
-            "93-Evangelina Matelis",
+            "93-Evangelia Matelis",
             "94-Elanor Lenton",
             "95-Isabella Crnogorac",
             "96-Micky Cooper",
