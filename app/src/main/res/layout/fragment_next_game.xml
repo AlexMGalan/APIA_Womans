@@ -250,7 +250,7 @@
             android:text="-" />
 
         <TextView
-            android:id="@+id/textViewr17"
+            android:id="@+id/textView17"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="Under 17 : 3:00pm"
@@ -323,8 +323,6 @@
             android:layout_weight="3"
             android:gravity="center"
             android:textSize="14dp" />
-
-
 
         <TextView
             android:id="@+id/textView5VisitScore"

@@ -208,6 +208,22 @@ public class NextGameFragment extends Fragment {
                 TextView tvDate= (TextView) v.findViewById(R.id.textviewDate);
                 tvDate.setText(dataSnapshot.child("Date").getValue(String.class));
 
+                //Times
+                TextView tvTime14= (TextView) v.findViewById(R.id.textView14);
+                tvTime14.setText("Under 14 : " + dataSnapshot.child("Time14").getValue(String.class));
+
+                TextView tvTime15= (TextView) v.findViewById(R.id.textView15);
+                tvTime15.setText("Under 15 : " + dataSnapshot.child("Time15").getValue(String.class));
+
+                TextView tvTime17= (TextView) v.findViewById(R.id.textView17);
+                tvTime17.setText("Under 17 : " + dataSnapshot.child("Time17").getValue(String.class));
+
+                TextView tvTimeRes= (TextView) v.findViewById(R.id.textViewres);
+                tvTimeRes.setText("Reserves : " + dataSnapshot.child("TimeRes").getValue(String.class));
+
+                TextView tvTimelst= (TextView) v.findViewById(R.id.textViewfirst);
+                tvTimelst.setText("1st Grade : " + dataSnapshot.child("Time1").getValue(String.class));
+
 
                 //Ground
                 TextView tvGround= (TextView) v.findViewById(R.id.textViewGround);
