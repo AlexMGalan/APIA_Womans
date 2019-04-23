@@ -3,6 +3,15 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary" >
 
+    <ImageView
+        android:id="@+id/imageViewCubic"
+        android:layout_width="201dp"
+        android:layout_height="34dp"
+        android:background="@drawable/cubic_sponsor"
+        android:layout_above="@+id/textViewTitle1"
+        android:layout_centerHorizontal="true"
+ />
+
     <TextView
         android:id="@+id/textViewTitle1"
         android:layout_width="fill_parent"
