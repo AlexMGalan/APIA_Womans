@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/lambert_bw" />
+        android:src="@drawable/apia_team2020" />
 
     <ImageView
         android:id="@+id/imageViewPia"

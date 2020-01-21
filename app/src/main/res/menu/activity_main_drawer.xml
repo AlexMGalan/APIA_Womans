@@ -13,11 +13,11 @@
         <item
             android:id="@+id/nav_squads_npl"
             android:icon="@drawable/ic_group_black_24dp"
-            android:title="2019 NPL Squads" />
+            android:title="2020 NPL Squads" />
         <item
             android:id="@+id/nav_squads_sap"
             android:icon="@drawable/ic_group_black_24dp"
-            android:title="2019 SAP Squads" />
+            android:title="2020 SAP Squads" />
         <item
             android:id="@+id/nav_ladders"
             android:icon="@drawable/ic_view_list_black_24dp"

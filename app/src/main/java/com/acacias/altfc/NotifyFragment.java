@@ -74,7 +74,7 @@ public class NotifyFragment extends Fragment {
     private void addNotification() {
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(getActivity())
-                        .setSmallIcon(R.drawable.apialogo_trans)
+                        .setSmallIcon(R.drawable.apia_logo_new)
                         .setContentTitle("GOAL!")   //this is the title of notification
                         .setColor(101)
                         .setContentText("APIA " +  igoalAPIA + " SD Raiders " + igoalOpp );

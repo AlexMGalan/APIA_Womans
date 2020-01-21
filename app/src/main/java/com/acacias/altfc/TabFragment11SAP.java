@@ -22,25 +22,25 @@ public class TabFragment11SAP extends ListFragment {
     private ListView drawerListView;
 
     String[] players11={
-            "1-Charlotte So",
-            "68-Willow Bodecott",
-            "70-Bianka Pavela",
-            "71-Tayla Hand",
-            "72-Samantha Pak",
-            "73-Isabel Fitzpatrick",
-            "74-Cecilia Cicco",
-            "75-Alexia Mavraidis",
-            "76-Bianca Iacono",
-            "77-Eliana Tzouganatos",
-            "78-Allegra Butera",
-            "79-Lexi Modena",
-            "Danielle Boutros"  };
+            "1-?",
+            "68-?",
+            "70-?",
+            "71-?",
+            "72-?",
+            "73-?",
+            "74-?",
+            "75-?",
+            "76-?",
+            "77-?",
+            "78-?",
+            "79-?",
+            "?"  };
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.char_so,R.drawable.willow_b,R.drawable.bianka_p,R.drawable.tayla_h,
-            R.drawable.samantha_p,R.drawable.isabel_w, R.drawable.cecilia_c,R.drawable.alexia_m
-            ,R.drawable.bianca_i,R.drawable.eliana_t,R.drawable.allegra_b,R.drawable.lexi_m, R.drawable.danielle_b};
+    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
+            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi, R.drawable.noi};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;

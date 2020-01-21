@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">APIA Leichhardt Tigers Womens</string>
+    <string name="app_name">APIA Leichhardt FC Womens</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Exit</string>
-    <string name="About">The APIA Leichhardt Tigers FC is based in the heartland of Australian Football</string>
+    <string name="About">The APIA Leichhardt FC is based in the heartland of Australian Football</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -50,7 +50,7 @@
     <string-array name="News">
         <item>2018 Finals LIVE!</item>
         <item>Presentation Night</item>
-        <item>Trials for NPL 2019</item>
+        <item>Trials for NPL 2020</item>
     </string-array>
 
 

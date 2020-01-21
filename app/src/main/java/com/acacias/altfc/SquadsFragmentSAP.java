@@ -25,7 +25,7 @@ public class SquadsFragmentSAP extends Fragment {
         // return inflater.inflate(R.layout.fragment_history, container, false);
 
         View v = inflater.inflate(R.layout.fragment_squads_sap, container, false);
-        getActivity().setTitle("2019 SAP Squads");
+        getActivity().setTitle("2020 SAP Squads");
 
         TabLayout tabLayoutSAP = (TabLayout) v.findViewById(R.id.tab_layoutSAP);
         tabLayoutSAP.addTab(tabLayoutSAP.newTab().setText("Under 13"));

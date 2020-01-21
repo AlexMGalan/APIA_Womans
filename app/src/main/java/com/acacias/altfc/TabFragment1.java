@@ -22,31 +22,34 @@ public class TabFragment1 extends ListFragment {
     private ListView drawerListView;
 
     String[] players={
-            "1-Courtney Halpin",
-            "2-Jen Bennett",
-            "3-Jenny Bisset",
-            "4-Lara Bosnich",
-            "5-Olivia Cicco",
-            "6-Lucy Gilfedder",
-            "7-Carla Canini",
-            "8-Cass Chidgey",
-            "9-Logan Garard",
-            "10-Filiz Urkanci",
-            "11-Ash Palombi",
-            "12-Maddie Latham",
-            "13-Sarah Urquhart",
-            "14-Becky Watts",
-            "15-Nicole Carmichael",
-            "17-Kerrie Ryan",
-            "18-Jessica Fallah",
-            "24-Georgia Bridges"};
+            "1-?",
+            "2-?",
+            "3-?",
+            "4-?",
+            "5-?",
+            "6-?",
+            "7-?",
+            "8-?",
+            "9-?",
+            "10-?",
+            "11-?",
+            "12-?",
+            "13-?",
+            "14-B?",
+            "15-?",
+            "17-?",
+            "18-?",
+            "24-?",
+            "19-?",
+            "20-?"
+    };
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.halp,R.drawable.ben,R.drawable.bis,R.drawable.boz,
-            R.drawable.cic,R.drawable.gil, R.drawable.can,R.drawable.chi
-            ,R.drawable.gar,R.drawable.urk,R.drawable.palo,R.drawable.lath
-            ,R.drawable.urq,R.drawable.wat,R.drawable.car,R.drawable.rya
-            ,R.drawable.fal,R.drawable.bri};
+    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
+            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
+            ,R.drawable.noi,R.drawable.noi, R.drawable.noi, R.drawable.noi};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;

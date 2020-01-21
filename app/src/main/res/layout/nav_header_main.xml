@@ -14,22 +14,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="126dp"
+        android:layout_height="110dp"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:src="@mipmap/apia_logo"
-        />
+        android:src="@drawable/apia_logo_new" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Menu" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="admin@apiatigers.com.au" />
 
 </LinearLayout>

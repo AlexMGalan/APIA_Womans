@@ -6,11 +6,11 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_width="207dp"
+        android:layout_height="44dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:src="@mipmap/npl_logo" />
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser"
-        android:tag="http://nplnsw.com.au/club-championship-2-nsw-womens/"
+        android:tag="http://bit.ly/2RFat4G"
 
         />
 
@@ -43,7 +43,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser"
-        android:tag= "http://bit.ly/2CoUaBD"
+        android:tag= "http://bit.ly/30GC2Pu"
         />
 
     <Button
@@ -59,7 +59,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser"
-        android:tag= "http://bit.ly/2FuF3u7"
+        android:tag= "http://bit.ly/2TGULJ9"
         />
 
     <Button
@@ -75,7 +75,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser"
-        android:tag= "http://bit.ly/2TRjnLQ"
+        android:tag= "http://bit.ly/2THCE5S"
         />
 
     <Button
@@ -91,7 +91,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser"
-        android:tag= "http://bit.ly/2suTF4m"
+        android:tag= "http://bit.ly/37hqvbG"
         />
 
     <Button
@@ -107,7 +107,7 @@
         android:layout_gravity="center_horizontal"
         android:shadowColor="#ff5e1529"
         android:onClick="openBrowser"
-        android:tag= "http://bit.ly/2VTH2gK"/>
+        android:tag= "http://bit.ly/2RaC5Qc"/>
 
     <TextView
         android:id="@+id/textViewdate"

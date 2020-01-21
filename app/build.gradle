@@ -15,8 +15,8 @@ android {
         applicationId "com.acacias.altfc"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 31
-        versionName "2019 Apr v31"
+        versionCode 35
+        versionName "2020 Jan v35"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="APIA Staff 2019 Season"
+        android:text="APIA Staff 2020 Season"
         android:textAlignment="center"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -24,7 +24,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:src="@mipmap/coaches" />
+        android:src="@mipmap/promo_new_kit" />
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/imageViewMM1"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewAC"
         android:layout_marginTop="10dp"
-        android:text="2019 Coaches:"
+        android:text="2020 Coaches:"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold" />
@@ -72,7 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewMM"
-        android:text="Reserve Grade: Paul De Lucca"
+        android:text="Reserve Grade: Paul Costantini"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewPL"
-        android:text="Under 17: Roberto Maiorana"
+        android:text="Under 17: "
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -90,7 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewRM"
-        android:text="Under 15: Paul Costantini"
+        android:text="Under 15: John Jiggins"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -99,7 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCC"
-        android:text="Under 14: John Jiggins"
+        android:text="Under 14: Roberto Maiorana"
         android:textAlignment="center"
         android:textSize="14sp" />
 

@@ -65,28 +65,28 @@ public class NextGameFragment extends Fragment {
        String date1 = sdf.format(Calendar.getInstance().getTime());
 //
         //Set up round dates
-        String Round1 = "2019-03-10";
-        String Round2 = "2019-03-17";
-        String Round3 = "2019-03-24";
-        String Round4 = "2019-03-31";
-        String Round5 = "2019-04-07";
-        String Round6 = "2019-04-14";
-        String Round7 = "2019-04-22";
-        String Round8 = "2019-04-28";
-        String Round9 = "2019-05-05";
-        String Round10 = "2019-05-12";
-        String Round11 = "2019-05-19";
-        String Round12 = "2019-05-26";
-        String Round13 = "2019-06-02";
-        String Round14 = "2019-06-09";
-        String Round15 = "2019-06-16";
-        String Round16 = "2019-06-23";
-        String Round17 = "2019-06-30";
-        String Round18= "2019-07-07";
-        String Round19 = "2019-07-14";
-        String Round20 = "2019-07-21";
-        String Round21 = "2019-07-28";
-        String Round22= "2019-08-04";
+        String Round1 = "2020-03-08";
+        String Round2 = "2020-03-15";
+        String Round3 = "2020-03-22";
+        String Round4 = "2020-03-29";
+        String Round5 = "2020-04-05";
+        String Round6 = "2020-04-12";
+        String Round7 = "2020-04-19";
+        String Round8 = "2020-04-26";
+        String Round9 = "2020-05-03";
+        String Round10 = "2020-05-10";
+        String Round11 = "2020-05-17";
+        String Round12 = "2020-05-24";
+        String Round13 = "2020-05-31";
+        String Round14 = "2020-06-07";
+        String Round15 = "2020-06-14";
+        String Round16 = "2020-06-21";
+        String Round17 = "2020-06-28";
+        String Round18= "2020-07-05";
+        String Round19 = "2020-07-12";
+        String Round20 = "2020-07-19";
+        String Round21 = "2020-07-26";
+        String Round22= "2020-08-02";
 
        iRound=1;
 
@@ -112,7 +112,7 @@ public class NextGameFragment extends Fragment {
         if (Round19.compareTo(date1) < 0) {iRound = 20; };
         if (Round20.compareTo(date1) < 0) {iRound = 21; };
         if (Round21.compareTo(date1) < 0) {iRound = 22; };
-        if (Round22.compareTo(date1) < 0) {iRound = 23; };
+        if (Round22.compareTo(date1) < 0) {iRound = 22; };
 
        if (iRound>1) {
         mySpinner.setSelection(iRound-1);
@@ -237,7 +237,7 @@ public class NextGameFragment extends Fragment {
                 if (tvGround.getText().equals("Lambert Park")) {
 
                     ImageView IVLogohome = (ImageView) v.findViewById(R.id.imageViewHOME);
-                      IVLogohome.setImageResource(R.mipmap.apia_logo);
+                      IVLogohome.setImageResource(R.drawable.apia_logo_new);
 
                        ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
                        Context context = IVLogohome.getContext();
@@ -259,7 +259,7 @@ public class NextGameFragment extends Fragment {
                      IVLogohome.setImageResource(idl);
 
                      ImageView IVVisit = (ImageView) v.findViewById(R.id.imageViewVISIT);
-                     IVVisit.setImageResource(R.mipmap.apia_logo);
+                     IVVisit.setImageResource(R.drawable.apia_logo_new);
 
                     TextView tvHome = (TextView) v.findViewById(R.id.textViewHome);
                     tvHome.setText(dataSnapshot.child("Opponent").getValue(String.class));
