@@ -1,16 +1,24 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
+    android:fillViewport="true">
 
-    <TextView
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+<TextView
         android:id="@+id/txtvChamp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="APIA Staff 2020 Season"
+        android:text="APIA Coaches 2020 Season"
         android:textAlignment="center"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -34,26 +42,16 @@
         android:layout_below="@id/imageView1"
         android:text="Technical Director: Matteo Maiorana"
         android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewAC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewMM1"
-        android:text=" Administration: Alex Cicco"
-        android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewCoaches"
+        android:id="@+id/imageViewCoachesSen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewAC"
-        android:layout_marginTop="10dp"
-        android:text="2020 Coaches:"
+        android:layout_below="@id/imageViewMM1"
+        android:layout_marginTop="5dp"
+        android:text="Seniors:"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold" />
@@ -62,8 +60,8 @@
         android:id="@+id/imageViewMM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewCoaches"
-        android:text="First Grade:  Mat Costantini"
+        android:layout_below="@id/imageViewCoachesSen"
+        android:text="Coach:  Mat Costantini"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -77,74 +75,203 @@
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewRM"
+        android:id="@+id/imageViewPLAss"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewPL"
-        android:text="Under 17: "
+        android:text="Assistant Coach: Andrew Tucker"
         android:textAlignment="center"
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewCC"
+        android:id="@+id/imageViewPLAss2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewRM"
-        android:text="Under 15: John Jiggins"
+        android:layout_below="@id/imageViewPLAss"
+        android:text="Assistant Coach: Sam Batshon"
         android:textAlignment="center"
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewCF"
+        android:id="@+id/imageViewPLStre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewCC"
-        android:text="Under 14: Roberto Maiorana"
+        android:layout_below="@id/imageViewPLAss2"
+        android:text="Strength and Conditioning: Pat Manfrin"
         android:textAlignment="center"
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewGSAP13"
+        android:id="@+id/imageViewKit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewCF"
-        android:layout_marginTop="20dp"
-        android:text="GSAP Under 13: Roberto Maiorana"
+        android:layout_below="@id/imageViewPLStre"
+        android:text="Kit Co Ordinator: Trudy"
         android:textAlignment="center"
         android:textSize="14sp" />
 
     <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/imageViewGSAP12"
+        android:id="@+id/imageViewMgr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewGSAP13"
-        android:text="GSAP Under 12: John Jiggins"
+        android:layout_below="@id/imageViewKit"
+        android:text="Manager: Filiz Urkanci "
         android:textAlignment="center"
         android:textSize="14sp" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewMgr"
+        android:layout_marginTop="5dp"
+        android:text="Under 17s:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCoaches17"
+        android:text="Coach Mario Corio, Manager: Adaam Schwereb"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewMC"
+        android:layout_marginTop="5dp"
+        android:text="Under 15s:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewJJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCoaches15"
+        android:text="Coach: John Jiggins, Mansger: Stephanie Hughes"
+        android:textAlignment="center"
+        android:textSize="14sp" />\
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewJJ"
+        android:layout_marginTop="5dp"
+        android:text="Under 14s:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewMR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCoaches14"
+        android:text="Coasch: Roberto Maiorana, Manager - Victoria Kakoliris"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewHD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewMR"
+        android:text="Asst Coasch Hazel Duwenbeck"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches13GSAP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewHD"
+        android:layout_marginTop="5dp"
+        android:text="Under 13 GSAP:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewGSApMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCoaches13GSAP"
+        android:text="Coach: Matt Costantini, Manager: Themi Karakaidos"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches12GSAP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGSApMC"
+        android:layout_marginTop="5dp"
+        android:text="Under 12 GSAP:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatTextView
+    android:id="@+id/imageViewGSAP12FU"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imageViewCoaches12GSAP"
+    android:text="Coach: Filiz Urkanci, Manager: Belinda Cicco"
+    android:textAlignment="center"
+    android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches11GSAP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGSAP12FU"
+        android:layout_marginTop="5dp"
+        android:text="Under 11 GSAP:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/imageViewGSAP11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewGSAP12"
-        android:text="GSAP Under 11: Filiz Urkanci"
+        android:layout_below="@id/imageViewCoaches11GSAP"
+        android:text="Coach: John Jiggins, Manager: Anthony Trieste"
         android:textAlignment="center"
         android:textSize="14sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/imageViewCoaches110SAP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGSAP11"
+        android:layout_marginTop="5dp"
+        android:text="Under 10 GSAP:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/imageViewGSAP10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageViewGSAP11"
-        android:text="GSAP Under 10: Ernesto Bivona"
+        android:layout_below="@id/imageViewCoaches110SAP"
+        android:text="Coach: Alyssa Janssen Manager: Angela Dossiter"
         android:textAlignment="center"
         android:textSize="14sp" />
 
-
-
-
-
-
-
-</RelativeLayout>
-
+        </RelativeLayout>
+    </TableLayout>
+</ScrollView>

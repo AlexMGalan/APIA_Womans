@@ -22,20 +22,20 @@ public class TabFragment12SAP extends ListFragment {
     private ListView drawerListView;
 
     String[] players12={
-            "20-?",
-            "47-?",
-            "48-?",
-            "49-?",
-            "50-?",
-            "51-?",
-            "52-?",
-            "53-?",
-            "54-?",
-            "55-?",
-            "56-?",
-            "57-?",
-            "58-?",
-            "59-?"};
+            "1-Charlotte So",
+            "48-TBA",
+            "49-TBA",
+            "50-Charlotte Butler",
+            "51-Matisse Emery",
+            "52-Tayla Hand",
+            "53-Samantha Pak",
+            "54-Isabel Fitzpatrick",
+            "55-Cecilia Cicco",
+            "56-Alexia Mavraidis",
+            "57-Bianka Pavela",
+            "58-Eliana Tzouganatos",
+            "59-Allegra Butera",
+            "60-Lexi Modena" };
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/

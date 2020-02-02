@@ -22,22 +22,22 @@ public class TabFragment5 extends ListFragment {
     private ListView drawerListView;
 
     String[] players={
-            "30-?",
-            "85-?",
-            "86-?",
-            "87-?",
-            "88-?",
-            "89-?",
-            "90-?",
-            "91-?",
-            "92-?",
-            "93-?",
-            "94-?",
-            "95-?",
-            "96-?",
-            "97-?",
-            "98-?",
-            "99-?"};
+            "1-Keira Schwereb",
+            "80-Olivia Chapman",
+            "81-Jessica Lampasona",
+            "82-Layla Hamden",
+            "83-Ella Botwood",
+            "84-Claudia Parinetto",
+            "85-Alyssa Walsh",
+            "86-Xanthe Coote",
+            "87-Zoey Patterson",
+            "88-Ava Boeckenhauer",
+            "89-Mya Callil",
+            "90-Luca Mackinnon",
+            "91-Olivia Mazzotta",
+            "92-Mia Lay",
+            "93-Daniela Mandile",
+            "94-Isabelle Antoniou" };
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
