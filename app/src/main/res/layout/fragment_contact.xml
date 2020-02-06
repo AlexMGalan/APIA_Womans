@@ -194,6 +194,17 @@
         android:layout_centerHorizontal="true">
     </TextView>
 
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewLM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/TextViewAcaciaSW"
+        android:text="Official Photographer: Luciano Marchese"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
 

@@ -28,8 +28,8 @@ public class SquadsFragment extends Fragment {
         getActivity().setTitle("2019 Squads");
 
         TabLayout tabLayout = (TabLayout) v.findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("First Grade"));
-        tabLayout.addTab(tabLayout.newTab().setText("Reserve Grade"));
+        tabLayout.addTab(tabLayout.newTab().setText("Seniors"));
+        tabLayout.addTab(tabLayout.newTab().setText("Seniors"));
         tabLayout.addTab(tabLayout.newTab().setText("Under 17"));
         tabLayout.addTab(tabLayout.newTab().setText("Under 15"));
         tabLayout.addTab(tabLayout.newTab().setText("Under 14"));

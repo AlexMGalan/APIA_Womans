@@ -115,7 +115,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewKit"
-        android:text="Manager: Filiz Urkanci "
+        android:text="Manager: Filiz Urkanci"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -156,7 +156,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCoaches15"
-        android:text="Coach: John Jiggins, Mansger: Stephanie Hughes"
+        android:text="Coach: John Jiggins, Manager: Stephanie Hughes"
         android:textAlignment="center"
         android:textSize="14sp" />\
 
@@ -176,7 +176,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCoaches14"
-        android:text="Coasch: Roberto Maiorana, Manager - Victoria Kakoliris"
+        android:text="Coach: Roberto Maiorana, Manager: Victoria Kakoliris"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -185,7 +185,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewMR"
-        android:text="Asst Coasch Hazel Duwenbeck"
+        android:text="Asst Coach: Hazel Duwenbeck"
         android:textAlignment="center"
         android:textSize="14sp" />
 
@@ -268,7 +268,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCoaches110SAP"
-        android:text="Coach: Alyssa Janssen Manager: Angela Dossiter"
+        android:text="Coach: Alyssa Janssen, Manager: Angela Dossiter"
         android:textAlignment="center"
         android:textSize="14sp" />
 

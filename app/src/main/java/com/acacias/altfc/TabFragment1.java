@@ -22,34 +22,33 @@ public class TabFragment1 extends ListFragment {
     private ListView drawerListView;
 
     String[] players={
-            "1-?",
-            "2-?",
-            "3-?",
-            "4-?",
-            "5-?",
-            "6-?",
-            "7-?",
-            "8-?",
-            "9-?",
-            "10-?",
-            "11-?",
-            "12-?",
-            "13-?",
-            "14-B?",
-            "15-?",
-            "17-?",
-            "18-?",
-            "24-?",
-            "19-?",
-            "20-?"
-    };
+            "1-Courtney Halpin",
+            "2-Julia De Angelis",
+            "3-Jen Bisset",
+            "4-Elizabeth Ralston",
+            "5-Alex Huynh",
+            "6-Rhianna Pollicina",
+            "7-Carla Abou-Haidar",
+            "8-Deborah De La Harpe",
+            "9-Logan Garard",
+            "10-Ashleigh Palombi",
+            "11-Princess Ibini",
+            "12-Lara Bosnich",
+            "13-Sarah Urquhart",
+            "14-Rebecca Watts",
+            "15-Nicole Carmichael",
+            "16-Jen Bennett",
+            "17-Natasha Aitken",
+            "18-Jessica Fallah",
+            "19-Sofia Merkoureaus",
+            };
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
-            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi, R.drawable.noi, R.drawable.noi};
+    int[] images={R.drawable.courtney_halpin,R.drawable.julia_deangelis,R.drawable.jennifer_bisset,R.drawable.elizabeth_ralston,
+            R.drawable.alex_huynh,R.drawable.rhianna_pollicina, R.drawable.carla,R.drawable.deborah_anne_delaharpe
+            ,R.drawable.logan_garard,R.drawable.ashleigh_palombi,R.drawable.princess_ibini_isei,R.drawable.lara_bosnich
+            ,R.drawable.sarah_urquhart,R.drawable.rebecca_watts,R.drawable.nicole_carmichael,R.drawable.jennifer_bennett
+            ,R.drawable.natasha_aitken,R.drawable.jessica_fallah, R.drawable.sofia_merkoureas};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;

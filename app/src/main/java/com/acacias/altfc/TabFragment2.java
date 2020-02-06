@@ -22,29 +22,31 @@ public class TabFragment2 extends ListFragment {
     private ListView drawerListView;
 
     String[] players={
-            "40-?",
-            "16-?",
-            "26-?",
-            "27-?",
-            "28-?",
-            "29-?",
-            "30-?",
-            "31-?",
-            "32-?",
-            "33-?",
-            "34-?",
-            "35-?",
-            "36-?",
-            "37-?",
-            "38-?",
-            "39-?"            };
+            "20-Amy Dahdah",
+            "21-Ella Mastrantonio",
+            "22-Hannah Macri",
+            "23-Marissa Papoulidis",
+            "24-Genevieve Tucker",
+            "25-Lauren Pruscino",
+            "26-Alexandra Timms",
+            "27-Ailish McDonagh",
+            "28-Abbey Harrison",
+            "29-Beth McGhee",
+            "30-Sophie Magus",
+            "31-Alyssa Janssen",
+            "32-Lillian Dummett",
+            "33-Alina Stojevski",
+            "34-Alannah Galan",
+            "35-Tara Pender",
+            "39-Georgia Bridges",
+            "40-Stephanie Grimbilos" };
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.noi, R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
-            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi
+    int[] images={R.drawable.amy_dahdah, R.drawable.ella_matrantonio, R.drawable.hannah_macri,R.drawable.marissa_papoulidis,R.drawable.genevieve_tucker,R.drawable.lauren_pruscino,
+            R.drawable.alex_tims,R.drawable.ailish_mcdonagh, R.drawable.abby_harrison,R.drawable.bethany_mcghee
+            ,R.drawable.sophie_magus,R.drawable.alyssa_janssen,R.drawable.lilly_dummett,R.drawable.alina_stojcevski
+            ,R.drawable.alannah_galan,R.drawable.tara_pender,R.drawable.georgia_bridges, R.drawable.stephanie_grimbilos
             };
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
