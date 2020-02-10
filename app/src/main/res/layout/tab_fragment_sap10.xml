@@ -61,14 +61,13 @@
 
     <ListView
         android:id="@+id/recipe_list_view_sap"
-        android:layout_height="match_parent"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:textSize="12sp"
+        android:background="#ffffff"
         android:isScrollContainer="false"
-        android:background="#ffffff">
-    </ListView>
+        android:textSize="12sp"></ListView>
 
 </LinearLayout>
 

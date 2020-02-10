@@ -39,10 +39,10 @@ public class TabFragment12SAP extends ListFragment {
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
-            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi};
+    int[] images={R.drawable.charlotte_so,R.drawable.noi,R.drawable.noi,R.drawable.charlotte_butler,
+            R.drawable.matisse_emery,R.drawable.tayla_hand, R.drawable.samantha_pak,R.drawable.noi
+            ,R.drawable.cecilia_cicco,R.drawable.noi,R.drawable.bianka_pavela,R.drawable.eliana_tzouganatos
+            ,R.drawable.noi,R.drawable.lexi_modena};
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
