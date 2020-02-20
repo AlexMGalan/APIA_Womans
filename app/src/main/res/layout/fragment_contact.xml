@@ -115,12 +115,23 @@
         android:textSize="14sp"
         />
 
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/TextViewLM"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewMatteo2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Photography: Luciano Marchese"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/imageViewig"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:layout_below="@id/TextViewMatteo2"
+        android:layout_below="@id/TextViewLM"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:layout_centerHorizontal="true"
@@ -135,7 +146,7 @@
     android:layout_marginTop="40dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    android:layout_below="@id/TextViewMatteo2"
+    android:layout_below="@id/TextViewLM"
     android:layout_toLeftOf="@id/imageViewig"
     android:layout_centerHorizontal="true"
     android:src="@mipmap/facebook"
@@ -149,7 +160,7 @@
         android:layout_marginTop="40dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:layout_below="@id/TextViewMatteo2"
+        android:layout_below="@id/TextViewLM"
         android:layout_toRightOf="@id/imageViewig"
         android:src="@mipmap/twitter"
         android:tag="https://twitter.com/apialeichhardt?lang=en"
@@ -168,32 +179,19 @@
         android:layout_centerHorizontal="true">
     </TextView>
 
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/TextViewLM"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
+
+    <ImageView
+        android:id="@+id/imageViewASW"
+        android:layout_width="154dp"
+        android:layout_height="43dp"
         android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
         android:layout_below="@id/TextViewWeb"
-        android:text="Photography: Luciano Marchese"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="14sp"
-        android:textStyle="bold" />
-
-
-    <TextView
-        android:text="http://acaciasoftware.com/"
-        android:id="@+id/TextViewAcaciaSW"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:layout_below="@id/TextViewLM"
-        android:textAlignment="center"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:autoLink="web"
-        android:linksClickable="true"
-        android:layout_centerHorizontal="true">
-    </TextView>
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/acaciasw_small"
+        android:tag="http://acaciasoftware.com/"
+        android:onClick="openBrowser" />
 
 
 

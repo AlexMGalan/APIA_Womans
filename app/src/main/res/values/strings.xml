@@ -23,28 +23,28 @@
     </string-array>
 
     <string-array name="Rounds">
-        <item>Round 1</item>
-        <item>Round 2</item>
-        <item>Round 3</item>
-        <item>Round 4</item>
-        <item>Round 5</item>
-        <item>Round 6</item>
-        <item>Round 7</item>
-        <item>Round 8</item>
-        <item>Round 9</item>
-        <item>Round 10</item>
-        <item>Round 11</item>
-        <item>Round 12</item>
-        <item>Round 13</item>
-        <item>Round 14</item>
-        <item>Round 15</item>
-        <item>Round 16</item>
-        <item>Round 17</item>
-        <item>Round 18</item>
-        <item>Round 19</item>
-        <item>Round 20</item>
-        <item>Round 21</item>
-        <item>Round 22</item>
+        <item>Round 1: Sydney Olympic</item>
+        <item>Round 2: Emerging Jets</item>
+        <item>Round 3: Manly United</item>
+        <item>Round 4: Illawarra Stingrays</item>
+        <item>Round 5: FNSW Institute</item>
+        <item>Round 6: Bankstown City FC</item>
+        <item>Round 7: Sydney University SFC</item>
+        <item>Round 8: Blacktown Spartans FC</item>
+        <item>Round 9: North West Sydney Koalas</item>
+        <item>Round 10: Northern Tigers FC</item>
+        <item>Round 11: Macarthur Rams Womens FC</item>
+        <item>Round 12: Sydney Olympic FC</item>
+        <item>Round 13: Emerging Jets</item>
+        <item>Round 14: Manly United FC</item>
+        <item>Round 15: Illawarra Stingrays</item>
+        <item>Round 16: FNSW Institute</item>
+        <item>Round 17: Bankstown City FC</item>
+        <item>Round 18: Sydney University SFC</item>
+        <item>Round 19: Blacktown Spartans FC</item>
+        <item>Round 20: North West Sydney Koalas FC</item>
+        <item>Round 21: Northern Tigers FC</item>
+        <item>Round 22: Macarthur Rams Womens FC</item>
     </string-array>
 
     <string-array name="News">

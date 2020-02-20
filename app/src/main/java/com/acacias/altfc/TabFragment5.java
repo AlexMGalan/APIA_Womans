@@ -41,10 +41,10 @@ public class TabFragment5 extends ListFragment {
 
 
     // Array of integers points to images stored in /res/drawable-ldpi/
-    int[] images={R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi,
-            R.drawable.noi,R.drawable.noi, R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
-            ,R.drawable.noi,R.drawable.noi,R.drawable.noi,R.drawable.noi
+    int[] images={R.drawable.keira_schwereb,R.drawable.olivia_chapman,R.drawable.jessica_lampasona,R.drawable.layla_hamdan,
+            R.drawable.ella_botwood,R.drawable.claudia_parinetto, R.drawable.alyssa_walsh,R.drawable.xanthe_coote
+            ,R.drawable.zoe_patterson,R.drawable.ava_boeckenhauer,R.drawable.mya_callil,R.drawable.luca_mackinnon
+            ,R.drawable.olivia_mazzotta,R.drawable.mia_lay,R.drawable.daniela_mandile,R.drawable.isabelle_antoniou
     };
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
