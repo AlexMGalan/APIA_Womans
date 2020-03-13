@@ -370,22 +370,7 @@
         android:background="@drawable/back"
         android:tag="https://www.boutiqueresidential.com.au/" />
 
-            <ImageView
-                android:id="@+id/imageViewDPP"
-                android:layout_width="200dp"
-                android:layout_height="42dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"
-                android:onClick="openBrowser"
-                android:src="@drawable/dpp_new"
-                android:background="@drawable/back"
-                android:tag="http://www.dpphysio.com.au/" />
 
-
-
-
-
-</LinearLayout>
+        </LinearLayout>
     </TableLayout>
 </ScrollView>

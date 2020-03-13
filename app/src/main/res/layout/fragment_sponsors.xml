@@ -26,23 +26,24 @@
         android:layout_marginLeft="10dp"
         android:layout_gravity="center"
         android:text="Major Sponsors NPL"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
+        <ImageView
+            android:id="@+id/imageViewCubic"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/cubiclargenew"
+            android:tag="https://cubic.com.au/"
+            android:background="@drawable/back"
+            android:onClick="openBrowser" />
 
-    <ImageView
-        android:id="@+id/imageViewcubic"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:onClick="openBrowser"
-        android:src="@drawable/cubiclargenew"
-        android:tag="http://cubicgroup.biz/cubic-design-construction/"
-        android:background="@drawable/back"/>
 
-    </LinearLayout>
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,38 +51,68 @@
             android:clipToPadding="false"
             android:background="@color/colorlightgrey">
 
-
             <ImageView
-                android:id="@+id/imageViewbout"
-                android:layout_width="100dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/back"
-                android:onClick="openBrowser"
-                android:src="@drawable/boutiqueessential"
-                android:tag="https://www.boutiqueresidential.com.au/" />
-
-            <ImageView
-                android:id="@+id/imageDPP"
+                android:id="@+id/imageViewPara"
                 android:layout_width="100dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/back"
                 android:layout_weight="1"
-                android:onClick="openBrowser"
-                android:src="@drawable/dpp_new"
-                android:tag="http://www.dpphysio.com.au/" />
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/paramount"
+                android:tag="https://www.paramountlawyers.com.au/"
+                android:background="@drawable/back"
+                android:onClick="openBrowser" />
+
+            <ImageView
+                android:id="@+id/imageViewSTE"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/specialisttunnelexcavation"
+                android:tag="http://bit.ly/2T2cUSy"
+                android:background="@drawable/back"
+                android:onClick="openBrowser" />
+
         </LinearLayout>
 
+
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:clipToPadding="false"
             android:background="@color/colorlightgrey">
 
+            <ImageView
+                android:id="@+id/imageViewBout1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/boutiqueessential"
+                android:tag="https://www.boutiqueresidential.com.au/"
+                android:background="@drawable/back"
+                android:onClick="openBrowser" />
+
+            <ImageView
+                android:id="@+id/imageViewIGS"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:src="@drawable/igs"
+                android:tag="https://www.igs.com.au/"
+                android:background="@drawable/back"
+                android:onClick="openBrowser" />
+
+        </LinearLayout>
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/TextViewMSGSAP"
@@ -91,46 +122,23 @@
         android:layout_marginLeft="10dp"
         android:layout_gravity="center"
         android:text="Major Sponsors GSAP"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
 
-    <ImageView
-        android:id="@+id/imageViewFDC"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/fdc"
-        android:tag="https://fdcbuilding.com.au/"
-        android:background="@drawable/back"
-        android:onClick="openBrowser" />
-
-    <ImageView
-        android:id="@+id/imageViewBout"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/boutiqueessential"
-        android:tag="https://www.boutiqueresidential.com.au/"
-        android:background="@drawable/back"
-        android:onClick="openBrowser" />
-
-    <ImageView
-        android:id="@+id/imageViewExcav"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="5dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
-
-        android:src="@drawable/specialisttunnelexcavation"
-        android:tag="http://bit.ly/2T2cUSy"
-        android:background="@drawable/back"
-        android:onClick="openBrowser" />
+        <ImageView
+            android:id="@+id/imageViewSnadGSAP"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/snaidero"
+            android:tag="https://www.snaidero.com/"
+            android:background="@drawable/back"
+            android:onClick="openBrowser" />
 
         </LinearLayout>
 
@@ -142,95 +150,9 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="NPL Team Sponsors"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textStyle="bold" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:clipToPadding="false"
-        android:background="@color/colorlightgrey">
-
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/TextViewTeamSpon1"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="5dp"
-        android:text="First Grade"
-        android:textSize="14sp"
-        />
-
-    <ImageView
-        android:id="@+id/imageViewSnad"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/snaidero"
-        android:tag="https://www.snaidero.com/"
-        android:background="@drawable/back"
-        android:onClick="openBrowser" />
-
-        <ImageView
-            android:id="@+id/imageViewAxis"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/axis"
-            android:tag="https://www.axisplumbing.com.au/"
-            android:background="@drawable/back"
-            android:onClick="openBrowser" />
-
-
-        <ImageView
-            android:id="@+id/imageViewSlip"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/slipstop"
-            android:tag="http://slipstop.com.au/"
-            android:background="@drawable/back"
-            android:onClick="openBrowser" />
-
-    </LinearLayout>
-
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-
-        android:background="@color/colorlightgrey">
-
-        <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/TextViewTeamSpon2"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="5dp"
-            android:text="Reserves"
-            android:textSize="14sp" />
-
-        <ImageView
-            android:id="@+id/imageViewSnad2"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:src="@drawable/snaidero"
-            android:tag="https://www.snaidero.com/"
-            android:background="@drawable/back"
-            android:onClick="openBrowser" />
-
-        <ImageView
-            android:id="@+id/imageViewAxis2"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:src="@drawable/axis"
-            android:tag="https://www.axisplumbing.com.au/"
-            android:background="@drawable/back"
-            android:onClick="openBrowser" />
-
-    </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
@@ -242,18 +164,18 @@
             android:id="@+id/TextViewTeamSpon3"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
             android:text="Under 17"
             android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/imageViewGym"
-            android:layout_width="110dp"
+            android:id="@+id/imageViewCloud"
+            android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/summer_hill"
-            android:tag="https://summerhillgym.com.au/"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/it_on_cloud"
+            android:tag="https://www.itoncloud.com/"
             android:background="@drawable/back"
             android:onClick="openBrowser" />
 
@@ -270,30 +192,22 @@
             android:id="@+id/TextViewTeamSpon4"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
             android:text="Under 15"
             android:textSize="14sp" />
 
-        <ImageView
-            android:id="@+id/imageViewRSM"
-            android:layout_width="110dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:src="@drawable/rsm"
-            android:tag="https://www.rsm.global/australia/"
-            android:background="@drawable/back"
-            android:onClick="openBrowser" />
+
 
         <ImageView
             android:id="@+id/imageViewRazcon"
-            android:layout_width="110dp"
+            android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/back"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/paz"
             android:tag="http://www.ontimeconstruction.com.au/nsw/drummoyne_nsw.html"
-            android:onClick="openBrowser"
-            android:src="@drawable/razcon" />
+            android:background="@drawable/back"
+            android:onClick="openBrowser" />
 
     </LinearLayout>
 
@@ -309,23 +223,22 @@
             android:id="@+id/TextViewTeamSpon5"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
             android:text="Under 14"
             android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/imageViewCont"
-            android:layout_width="110dp"
+            android:id="@+id/imageViewPain"
+            android:layout_width="200dp"
             android:layout_height="50dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pain"
+            android:tag="https://painaway.com.au/"
             android:background="@drawable/back"
-            android:onClick="openBrowser"
-            android:src="@drawable/continental"
-            android:tag="http://www.cianomotors.com.au/" />
+            android:onClick="openBrowser" />
 
-
-</LinearLayout>
+    </LinearLayout>
 
     </TableLayout>
 </ScrollView>

@@ -50,6 +50,15 @@ public class TabFragment1 extends ListFragment {
             ,R.drawable.sarah_urquhart,R.drawable.rebecca_watts,R.drawable.nicole_carmichael,R.drawable.jennifer_bennett
             ,R.drawable.natasha_aitken,R.drawable.jessica_fallah, R.drawable.sofia_merkoureas};
 
+
+    // Array of integers points to images stored in /res/drawable-ldpi/
+    int[] sponsors={R.drawable.mini,R.drawable.williams,R.drawable.unified_commerce,R.drawable.ray_white,
+            R.drawable.blank,R.drawable.amelionne, R.drawable.cubiclargenew,R.drawable.blank
+            ,R.drawable.gfda,R.drawable.gfda,R.drawable.blank,R.drawable.energetics
+            ,R.drawable.enviro,R.drawable.new_level,R.drawable.kim_beach,R.drawable.strengh
+            ,R.drawable.gfm,R.drawable.michal_arthur, R.drawable.apac};
+
+
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
 
@@ -68,18 +77,20 @@ public class TabFragment1 extends ListFragment {
             map=new HashMap<String, String>();
             map.put("Player", players[i]);
             map.put("Image", Integer.toString(images[i]));
+            map.put("Sponsor", Integer.toString(sponsors[i]));
+
 
             data.add(map);
         }
 
         //KEYS IN MAP
-        String[] from={"Player","Image"};
+        String[] from={"Player","Image", "Sponsor"};
 
         //IDS OF VIEWS
-        int[] to={R.id.nameTxt,R.id.imageView1};
+        int[] to={R.id.nameTxt,R.id.imageView1, R.id.imageSpon};
 
         //ADAPTER
-        adapter=new SimpleAdapter(getActivity(), data, R.layout.model, from, to);
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model_sen, from, to);
         setListAdapter(adapter);
 
         return super.onCreateView(inflater, container, savedInstanceState);

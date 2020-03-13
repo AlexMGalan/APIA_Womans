@@ -38,6 +38,7 @@ public class TabFragment2 extends ListFragment {
             "33-Alina Stojevski",
             "34-Alannah Galan",
             "35-Tara Pender",
+            "36-Georgia Yeoman-Dale",
             "39-Georgia Bridges",
             "40-Stephanie Grimbilos" };
 
@@ -46,8 +47,16 @@ public class TabFragment2 extends ListFragment {
     int[] images={R.drawable.amy_dahdah, R.drawable.ella_matrantonio, R.drawable.hannah_macri,R.drawable.marissa_papoulidis,R.drawable.genevieve_tucker,R.drawable.lauren_pruscino,
             R.drawable.alex_tims,R.drawable.ailish_mcdonagh, R.drawable.abby_harrison,R.drawable.bethany_mcghee
             ,R.drawable.sophie_magus,R.drawable.alyssa_janssen,R.drawable.lilly_dummett,R.drawable.alina_stojcevski
-            ,R.drawable.alannah_galan,R.drawable.tara_pender,R.drawable.georgia_bridges, R.drawable.stephanie_grimbilos
+            ,R.drawable.alannah_galan,R.drawable.tara_pender,R.drawable.georgia_yeoman_dale, R.drawable.georgia_bridges, R.drawable.stephanie_grimbilos
             };
+
+    // Array of integers points to images stored in /res/drawable-ldpi/
+    int[] sponsors={R.drawable.enviro,R.drawable.strategic_pest,R.drawable.decc,R.drawable.williams,
+            R.drawable.audi,R.drawable.urban, R.drawable.blank,R.drawable.dulwich
+            ,R.drawable.annandale,R.drawable.camperdown,R.drawable.williams,R.drawable.artgame
+            ,R.drawable.di_lorenzo,R.drawable.nova,R.drawable.acaciasw_small,R.drawable.bac
+            ,R.drawable.apac,R.drawable.fruit, R.drawable.smart};
+
 
     ArrayList<HashMap<String, String>> data=new ArrayList<HashMap<String,String>>();
     SimpleAdapter adapter;
@@ -67,18 +76,19 @@ public class TabFragment2 extends ListFragment {
             map=new HashMap<String, String>();
             map.put("Player", players[i]);
             map.put("Image", Integer.toString(images[i]));
+            map.put("Sponsor", Integer.toString(sponsors[i]));
 
             data.add(map);
         }
 
         //KEYS IN MAP
-        String[] from={"Player","Image"};
+        String[] from={"Player","Image", "Sponsor"};
 
         //IDS OF VIEWS
-        int[] to={R.id.nameTxt,R.id.imageView1};
+        int[] to={R.id.nameTxt,R.id.imageView1 ,R.id.imageSpon};
 
         //ADAPTER
-        adapter=new SimpleAdapter(getActivity(), data, R.layout.model, from, to);
+        adapter=new SimpleAdapter(getActivity(), data, R.layout.model_sen, from, to);
         setListAdapter(adapter);
 
         return super.onCreateView(inflater, container, savedInstanceState);

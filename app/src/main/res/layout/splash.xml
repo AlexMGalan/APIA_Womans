@@ -10,7 +10,7 @@
         android:background="@drawable/cubic_sponsor"
         android:layout_above="@+id/textViewTitle1"
         android:layout_centerHorizontal="true"
- />
+        />
 
     <TextView
         android:id="@+id/textViewTitle1"
@@ -18,12 +18,26 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center_horizontal"
-        android:padding="40dp"
-        android:layout_above="@+id/imageViewAPIA"
+        android:padding="20dp"
+        android:layout_above="@+id/textViewTitle2"
         android:text="APIA Leichhardt FC"
         android:textColor="#ffffff"
         android:textSize="24dp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_above="@+id/imageViewAPIA"
+        android:gravity="center_horizontal"
+        android:text="NSW Womens NPL / Girls SAP 2020"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
 
     <ImageView
         android:id="@+id/imageViewAPIA"
@@ -34,18 +48,59 @@
         android:layout_centerVertical="true"
         android:layout_centerInParent="true" />
 
-    <TextView
-        android:id="@+id/textViewTitle2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="40dp"
-        android:fontFamily="sans-serif-smallcaps"
+
+
+    <ImageView
+        android:id="@+id/imageViewPara"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
         android:layout_below="@+id/imageViewAPIA"
-        android:gravity="center_horizontal"
-        android:text="NSW Womens NPL / Girls SAP 2020"
-        android:textColor="#ffffff"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/paramount"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/imageViewSTE"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imageViewAPIA"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+
+        android:src="@drawable/specialisttunnelexcavation"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageViewBout1"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imageViewPara"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:src="@drawable/boutiqueessential" />
+
+    <ImageView
+        android:id="@+id/imageViewIGS"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imageViewSTE"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+
+
+        android:src="@drawable/igs"
+       />
+
 
 
 </RelativeLayout >

@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_below="@id/imageView1"
-        android:text="Technical Director: Matteo Maiorana"
+        android:text="Womens Football Manager: Matteo Maiorana"
         android:textAlignment="center"
         android:textSize="14sp"
         android:textStyle="bold" />
@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewCoachesSen"
-        android:text="Coach:  Mat Costantini"
+        android:text="Coach:  Matt Costantini"
         android:textAlignment="center"
         android:textSize="14sp" />
 

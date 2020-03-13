@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -70,8 +71,9 @@ public class TabFragment3 extends ListFragment {
             data.add(map);
         }
 
+
         //KEYS IN MAP
-        String[] from={"Player","Image"};
+        String[] from={"Player","Image", "Sponsor"};
 
         //IDS OF VIEWS
         int[] to={R.id.nameTxt,R.id.imageView1};
@@ -83,10 +85,14 @@ public class TabFragment3 extends ListFragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
+
+
     @Override
     public void onStart() {
         // TODO Auto-generated method stub
         super.onStart();
+
+
 
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
