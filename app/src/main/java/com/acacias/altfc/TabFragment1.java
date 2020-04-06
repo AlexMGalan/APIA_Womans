@@ -53,8 +53,8 @@ public class TabFragment1 extends ListFragment {
 
     // Array of integers points to images stored in /res/drawable-ldpi/
     int[] sponsors={R.drawable.mini,R.drawable.williams,R.drawable.unified_commerce,R.drawable.ray_white,
-            R.drawable.blank,R.drawable.amelionne, R.drawable.cubiclargenew,R.drawable.blank
-            ,R.drawable.gfda,R.drawable.gfda,R.drawable.blank,R.drawable.energetics
+            R.drawable.mercato,R.drawable.amelionne, R.drawable.cubiclargenew,R.drawable.it_on_cloud
+            ,R.drawable.gfda,R.drawable.gfda,R.drawable.juventus,R.drawable.energetics
             ,R.drawable.enviro,R.drawable.new_level,R.drawable.kim_beach,R.drawable.strengh
             ,R.drawable.gfm,R.drawable.michal_arthur, R.drawable.apac};
 
